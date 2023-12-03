@@ -4,7 +4,7 @@
 		<!-- Animated Logo -->
 		<figure>
 			<section class="img-bg" />
-			<img src="SG.png">
+			<img src="SG.png" alt="Singapore's skyline" class="skyline">
 		</figure>
 		<div class="space-y-6">
 			<p class="font-bold md:text-4xl text-2xl text-secondary-50">July 10-12</p>
@@ -25,8 +25,23 @@
 	}
 	.img-bg {
 		@apply absolute z-[-1] rounded-full blur-[100px] transition-all;
-		animation: pulse 8s cubic-bezier(0, 0, 0, 0.5) infinite,
-			glow 8s linear infinite;
+		animation: pulse 15s cubic-bezier(0, 0, 0, 0.5) infinite,
+			glow 15s linear infinite;
+	}
+
+	.skyline {
+		animation: city 90s linear infinite;
+	}
+	@keyframes city {
+		0% {
+			filter: hue-rotate(0deg);
+		}
+		50% {
+			filter: hue-rotate(-60deg);
+		}
+		100% {
+			filter: hue-rotate(0deg);
+		}
 	}
 	@keyframes glow {
 		0% {

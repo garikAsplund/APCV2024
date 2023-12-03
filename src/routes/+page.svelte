@@ -9,6 +9,7 @@
 		<div class="space-y-6">
 			<p class="font-bold md:text-4xl text-2xl text-secondary-50">July 10-12</p>
 			<p><code class="code md:text-xl text-lg">National University of Singapore</code></p>
+			<p>Call for abstracts <code class="code text-lg">January 15</code></p>
 			<p>More information soon</p>
 		</div>
 	</div>

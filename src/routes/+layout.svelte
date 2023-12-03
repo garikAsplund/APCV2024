@@ -5,6 +5,10 @@
 	// Floating UI for Popups
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { storePopup } from '@skeletonlabs/skeleton';
+	import { dev } from '$app/environment';
+	import { inject } from '@vercel/analytics';
+
+	inject({ mode: dev ? 'development' : 'production' });
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 </script>
 
@@ -14,7 +18,7 @@
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<strong class="text-xl uppercase">APCV 2024 SG</strong>
+				<strong class="text-xl uppercase"><a href="/" class="hover:text-primary-100">APCV 2024 SG</a></strong>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
 				<!-- <a

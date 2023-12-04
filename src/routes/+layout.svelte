@@ -28,12 +28,23 @@
 		bgBackdrop: 'bg-gradient-to-tr from-indigo-500/10 via-purple-500/10 to-pink-500/10',
 		width: 'w-[280px] md:w-[480px]',
 		// blur: 'backdrop-blur-sm',
-		padding: 'p-4',
+		padding: 'p-4 pt-16',
 		rounded: 'rounded-lg',
+		position: 'right'
 	};
 </script>
 
-<Drawer position="right">
+<svelte:head>
+	<title>APCV 2024</title>
+	<meta
+		name="description"
+		content="The 16th Asia Pacific Conference on Vision will be held in Singapore from 10-12 July 2024. 
+		The conference aims to facilitate discussion on vision research in the Asia and Pacific regions, while participants from all over the world are also welcome. 
+		The program consists of invited lectures, symposia and contributed papers (both oral and poster presentations). Original works on all aspects of vision research are invited to present."
+	/>
+</svelte:head>
+
+<Drawer>
 	<Navigation />
 </Drawer>
 
@@ -56,6 +67,7 @@
 				<div class="flex items-end">
 					<button
 						class="md:hidden btn btn-sm mr-4 hover:rotate-90"
+						aria-label="menu"
 						on:click={() => drawerStore.open(drawerSettings)}
 					>
 						<span>

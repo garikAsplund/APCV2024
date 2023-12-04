@@ -19,7 +19,17 @@
 		<!-- Animated Logo -->
 		<figure>
 			<section class="img-bg" />
-			<img src="SG.png" alt="Singapore's skyline" class="skyline" />
+			<picture>
+				<source type="image/webp" srcset="SG_sm.webp 480w, SG_lg.webp 768w" />
+				<source type="image/png" srcset="SG_sm.png 480w, SG_lg.png 768w" />
+				<img
+					src="SG_sm.png"
+					srcset="SG_sm.png 480w, SG_lg.png 768w"
+					sizes="(max-width: 480px) 100vw, (max-width: 768px) 80vw"
+					alt="Singapore's skyline"
+					class="skyline"
+				/>
+			</picture>
 		</figure>
 		<div class="space-y-6">
 			<p class="font-bold md:text-4xl text-2xl text-secondary-50">July 10-12</p>
@@ -53,7 +63,7 @@
 	figure {
 		@apply flex relative flex-col;
 	}
-	figure svg,
+	
 	.img-bg {
 		@apply w-64 h-64 md:w-80 md:h-80;
 	}

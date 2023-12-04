@@ -20,6 +20,7 @@
 		<figure>
 			<section class="img-bg" />
 			<picture>
+				<source type="image/avif" srcset="SG.avif" />
 				<source type="image/webp" srcset="SG_sm.webp 480w, SG_lg.webp 768w" />
 				<source type="image/png" srcset="SG_sm.png 480w, SG_lg.png 768w" />
 				<img

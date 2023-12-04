@@ -48,7 +48,7 @@
 				>
 			</svelte:fragment>
 			<svelte:fragment slot="default">
-				<div class="hidden md:flex">
+				<div class="hidden md:flex md:justify-around">
 					<Navigation />
 				</div>
 			</svelte:fragment>

@@ -15,7 +15,6 @@
 	import { inject } from '@vercel/analytics';
 	import SideBar from '$lib/components/SideBar.svelte';
 	import Navigation from '$lib/components/Navigation.svelte';
-	import { page } from '$app/stores';
 
 	initializeStores();
 	const drawerStore = getDrawerStore();
@@ -37,7 +36,7 @@
 </script>
 
 <svelte:head>
-	<title>APCV 2024</title>
+	<title>APCV 2024 SG</title>
 	<meta
 		name="description"
 		content="The 16th Asia Pacific Conference on Vision will be held in Singapore from 10-12 July 2024. 

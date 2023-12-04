@@ -1,15 +1,41 @@
 <script lang="ts">
 	import '../app.postcss';
-	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
+	import {
+		AppShell,
+		AppBar,
+		storePopup,
+		initializeStores,
+		getDrawerStore,
+		Drawer
+	} from '@skeletonlabs/skeleton';
+	import type { DrawerSettings, DrawerStore } from '@skeletonlabs/skeleton';
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
-	import { storePopup } from '@skeletonlabs/skeleton';
 	import { dev } from '$app/environment';
 	import { inject } from '@vercel/analytics';
 	import SideBar from '$lib/components/SideBar.svelte';
+	import Navigation from '$lib/components/Navigation.svelte';
+
+	initializeStores();
+	const drawerStore = getDrawerStore();
 
 	inject({ mode: dev ? 'development' : 'production' });
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
+
+	const drawerSettings: DrawerSettings = {
+		id: 'example-3',
+		// Provide your property overrides:
+		bgDrawer: 'bg-surface-900 text-white flex flex-col',
+		bgBackdrop: 'bg-gradient-to-tr from-indigo-500/10 via-purple-500/10 to-pink-500/10',
+		width: 'w-[280px] md:w-[480px]',
+		// blur: 'backdrop-blur-sm',
+		padding: 'p-4',
+		rounded: 'rounded-lg',
+	};
 </script>
+
+<Drawer position="right">
+	<Navigation />
+</Drawer>
 
 <!-- App Shell -->
 <AppShell>
@@ -22,12 +48,24 @@
 				>
 			</svelte:fragment>
 			<svelte:fragment slot="default">
-				<div class="flex justify-around">
-					{#each ['Registration', 'Program', 'Presenters', 'Venue', 'Contact'] as item}
-						<a class="btn btn-lg text-lg hover:bg-primary-600/20" href="/{item.toLowerCase()}">
-							{item}
-						</a>
-					{/each}
+				<div class="hidden md:flex">
+					<Navigation />
+				</div>
+			</svelte:fragment>
+			<svelte:fragment slot="trail">
+				<div class="flex items-end">
+					<button
+						class="md:hidden btn btn-sm mr-4 hover:rotate-90"
+						on:click={() => drawerStore.open(drawerSettings)}
+					>
+						<span>
+							<svg viewBox="0 0 100 80" class="fill-token w-6 h-6">
+								<rect width="100" height="20" />
+								<rect y="30" width="100" height="20" />
+								<rect y="60" width="100" height="20" />
+							</svg>
+						</span>
+					</button>
 				</div>
 			</svelte:fragment>
 		</AppBar>

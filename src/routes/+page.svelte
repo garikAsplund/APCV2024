@@ -1,10 +1,14 @@
 <div class="container h-full mx-auto flex justify-center items-center">
 	<div class="space-y-10 text-center flex flex-col items-center -translate-y-12">
-		<h2 class=" md:text-6xl lg:text-8xl drop-shadow-lg overline decoration-0 text-3xl text-secondary-100 leading-loose tracking-wider ">APCV 2024 SG</h2>
+		<h2
+			class=" md:text-6xl lg:text-8xl overline decoration-0 text-3xl text-secondary-100 leading-loose tracking-wider"
+		>
+			APCV 2024 SG
+		</h2>
 		<!-- Animated Logo -->
 		<figure>
 			<section class="img-bg" />
-			<img src="SG.png" alt="Singapore's skyline" class="skyline ">
+			<img src="SG.png" alt="Singapore's skyline" class="skyline" />
 		</figure>
 		<div class="space-y-6">
 			<p class="font-bold md:text-4xl text-2xl text-secondary-50">July 10-12</p>
@@ -25,7 +29,8 @@
 	}
 	.img-bg {
 		@apply absolute z-[-1] rounded-full blur-[100px] transition-all;
-		animation: pulse 15s cubic-bezier(0, 0, 0, 0.5) infinite,
+		animation:
+			pulse 15s cubic-bezier(0, 0, 0, 0.5) infinite,
 			glow 15s linear infinite;
 	}
 
@@ -62,4 +67,5 @@
 			transform: scale(2.5);
 		}
 	}
+
 </style>

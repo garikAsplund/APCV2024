@@ -5,6 +5,7 @@
 	import { storePopup } from '@skeletonlabs/skeleton';
 	import { dev } from '$app/environment';
 	import { inject } from '@vercel/analytics';
+	import SideBar from '$lib/components/SideBar.svelte';
 
 	inject({ mode: dev ? 'development' : 'production' });
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
@@ -16,35 +17,26 @@
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<strong class="text-xl uppercase"><a href="/" class="hover:text-primary-100">APCV 2024 SG</a></strong>
+				<strong class="text-2xl font-light uppercase scale-105"
+					><a href="/" class="hover:text-primary-100">APCV24SG</a></strong
+				>
 			</svelte:fragment>
-			<svelte:fragment slot="trail">
-				<!-- <a
-					class="btn btn-sm variant-ghost-surface"
-					href="https://discord.gg/EXqV7W8MtY"
-					target="_blank"
-					rel="noreferrer"
-				>
-					Discord
-				</a>
-				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="https://twitter.com/SkeletonUI"
-					target="_blank"
-					rel="noreferrer"
-				>
-					Twitter
-				</a>
-				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="https://github.com/skeletonlabs/skeleton"
-					target="_blank"
-					rel="noreferrer"
-				>
-					GitHub
-				</a> -->
+			<svelte:fragment slot="default">
+				<div class="flex justify-around">
+					{#each ['Registration', 'Program', 'Speakers', 'Venue', 'Contact'] as item}
+						<a class="btn btn-lg text-lg hover:bg-primary-600/20" href="/{item.toLowerCase()}">
+							{item}
+						</a>
+					{/each}
+				</div>
 			</svelte:fragment>
 		</AppBar>
+	</svelte:fragment>
+	<svelte:fragment slot="sidebarLeft">
+		<!-- Hidden below Tailwind's large breakpoint -->
+		<div id="sidebar-left" class="hidden lg:block">
+			<!-- <SideBar /> -->
+		</div>
 	</svelte:fragment>
 	<!-- Page Route Content -->
 	<slot />

@@ -28,6 +28,8 @@
 					sizes="(max-width: 480px) 100vw, (max-width: 768px) 80vw"
 					alt="Singapore's skyline"
 					class="skyline"
+					height="170"
+					width="1024"
 				/>
 			</picture>
 		</figure>

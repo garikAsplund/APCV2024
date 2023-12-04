@@ -6,9 +6,10 @@
 		storePopup,
 		initializeStores,
 		getDrawerStore,
-		Drawer
+		Drawer,
+		LightSwitch
 	} from '@skeletonlabs/skeleton';
-	import type { DrawerSettings, DrawerStore } from '@skeletonlabs/skeleton';
+	import type { DrawerSettings } from '@skeletonlabs/skeleton';
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { dev } from '$app/environment';
 	import { inject } from '@vercel/analytics';
@@ -24,7 +25,7 @@
 	const drawerSettings: DrawerSettings = {
 		id: 'example-3',
 		// Provide your property overrides:
-		bgDrawer: 'bg-surface-900 text-white flex flex-col',
+		bgDrawer: 'bg-tertiary-100/90 dark:bg-secondary-800/90 text-white-token flex flex-col',
 		bgBackdrop: 'bg-gradient-to-tr from-indigo-500/10 via-purple-500/10 to-pink-500/10',
 		width: 'w-[280px] md:w-[480px]',
 		// blur: 'backdrop-blur-sm',
@@ -40,7 +41,8 @@
 		name="description"
 		content="The 16th Asia Pacific Conference on Vision will be held in Singapore from 10-12 July 2024. 
 		The conference aims to facilitate discussion on vision research in the Asia and Pacific regions, while participants from all over the world are also welcome. 
-		The program consists of invited lectures, symposia and contributed papers (both oral and poster presentations). Original works on all aspects of vision research are invited to present."
+		The program consists of invited lectures, symposia and contributed papers (both oral and poster presentations). Original works on all aspects of vision research are invited to present.
+		APCV APCV24SG APCV2024 NUS National University of Singapore"
 	/>
 </svelte:head>
 
@@ -59,12 +61,16 @@
 				>
 			</svelte:fragment>
 			<svelte:fragment slot="default">
-				<div class="hidden md:flex md:justify-around">
+				<div class="hidden md:flex md:justify-around md:items-center">
 					<Navigation />
+					<LightSwitch />
 				</div>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
-				<div class="flex items-end">
+				<div class="flex items-center">
+					<div class="md:hidden mx-4">
+						<LightSwitch />
+					</div>
 					<button
 						class="md:hidden btn btn-sm mr-4 hover:rotate-90"
 						aria-label="menu"

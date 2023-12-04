@@ -15,6 +15,7 @@
 	import { inject } from '@vercel/analytics';
 	import SideBar from '$lib/components/SideBar.svelte';
 	import Navigation from '$lib/components/Navigation.svelte';
+	import { page } from '$app/stores';
 
 	initializeStores();
 	const drawerStore = getDrawerStore();

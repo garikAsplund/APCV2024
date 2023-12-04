@@ -7,6 +7,10 @@
 	];
 </script>
 
+<svelte:head>
+    <title>APCV24 | Program</title>
+</svelte:head>
+
 <div class="container h-full mx-auto flex justify-center items-center">
 	<div class="space-y-10 text-center flex flex-col items-center -translate-y-12">
 		<h2

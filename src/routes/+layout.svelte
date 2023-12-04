@@ -57,7 +57,7 @@
 		<AppBar>
 			<svelte:fragment slot="lead">
 				<strong class="text-2xl font-light uppercase scale-105"
-					><a href="/" class="hover:text-primary-100">APCV24SG</a></strong
+					><a href="/" class="hover:text-primary-400">APCV24SG</a></strong
 				>
 			</svelte:fragment>
 			<svelte:fragment slot="default">

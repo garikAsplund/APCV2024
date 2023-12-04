@@ -23,7 +23,7 @@
 			</svelte:fragment>
 			<svelte:fragment slot="default">
 				<div class="flex justify-around">
-					{#each ['Registration', 'Program', 'Speakers', 'Venue', 'Contact'] as item}
+					{#each ['Registration', 'Program', 'Presenters', 'Venue', 'Contact'] as item}
 						<a class="btn btn-lg text-lg hover:bg-primary-600/20" href="/{item.toLowerCase()}">
 							{item}
 						</a>

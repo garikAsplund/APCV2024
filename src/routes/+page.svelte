@@ -1,3 +1,14 @@
+<script lang="ts">
+	import { popup } from '@skeletonlabs/skeleton';
+	import type { PopupSettings } from '@skeletonlabs/skeleton';
+
+	const popupHover: PopupSettings = {
+		event: 'click',
+		target: 'popupHover',
+		placement: 'top'
+	};
+</script>
+
 <div class="container h-full mx-auto flex justify-center items-center">
 	<div class="space-y-10 text-center flex flex-col items-center -translate-y-12">
 		<h2
@@ -12,7 +23,26 @@
 		</figure>
 		<div class="space-y-6">
 			<p class="font-bold md:text-4xl text-2xl text-secondary-50">July 10-12</p>
-			<p><code class="code md:text-xl text-lg">National University of Singapore</code></p>
+			<p>
+				<code class="code md:text-xl text-lg" use:popup={popupHover}
+					>National University of Singapore</code
+				>
+			</p>
+			<!-- <div class="card p-4 w-72 shadow-xl" data-popup="popupHover">
+				<div class="space-y-4">
+					<div>
+						<p class="font-bold">Skeleton</p>
+						<p class="opacity-50">@SkeletonUI</p>
+					</div>
+					<p>INFO HERE</p>
+					<div class="flex gap-4">
+						<small><strong>100</strong> <span class="opacity-50">Following</span></small>
+						<small><strong>1000</strong> <span class="opacity-50">Followers</span></small>
+					</div>
+					<a class="btn variant-soft w-full" href="https://nus.edu.sg/" target="_blank" rel="noreferrer"> NUS website </a>
+				</div>
+				<div class="arrow bg-surface-100-800-token" />
+			</div> -->
 			<p>Call for abstracts <code class="code text-lg">January 15</code></p>
 			<p>More information soon</p>
 		</div>
@@ -67,5 +97,4 @@
 			transform: scale(2.5);
 		}
 	}
-
 </style>

@@ -7,6 +7,7 @@
 	import Navigation from '$lib/components/Navigation.svelte';
 	import { page } from '$app/stores';
 	import NavBar from '$lib/components/NavBar.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 
 	initializeStores();
 
@@ -37,4 +38,7 @@
 	</svelte:fragment>
 	<!-- Page Route Content -->
 	<slot />
+	<svelte:fragment slot="pageFooter">
+		<Footer />
+	</svelte:fragment>
 </AppShell>

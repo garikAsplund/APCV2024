@@ -7,8 +7,7 @@
 		initializeStores,
 		getDrawerStore,
 		Drawer,
-		LightSwitch,
-		autoModeWatcher
+		LightSwitch
 	} from '@skeletonlabs/skeleton';
 	import type { DrawerSettings } from '@skeletonlabs/skeleton';
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
@@ -39,15 +38,13 @@
 </script>
 
 <svelte:head>
-	{@html `<script>${autoModeWatcher.toString()} autoModeWatcher();</script>`}
-
 	<title>APCV24 | {$page.data.path ? $page.data.path : 'Home'}</title>
 	<meta
 		name="description"
 		content="The 16th Asia Pacific Conference on Vision (APCV) will be held in Singapore from 10-12 July 2024. 
 		The conference aims to facilitate discussion on vision research in the Asia and Pacific regions, while participants from all over the world are also welcome. 
 		The program consists of invited lectures, symposia and contributed papers (both oral and poster presentations). Original works on all aspects of vision research are invited to present.
-		APCV24SG APCV2024 will be held at the National University of Singapore (NUS)"
+		APCV2024 will be held at the National University of Singapore (NUS)"
 	/>
 </svelte:head>
 

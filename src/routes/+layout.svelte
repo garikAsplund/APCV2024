@@ -30,7 +30,7 @@
 </Drawer>
 
 <!-- App Shell -->
-<AppShell>
+<AppShell  regionPage="scroll-smooth">
 	<svelte:fragment slot="header">
 		<!-- App Bar -->
 		<NavBar />

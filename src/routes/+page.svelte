@@ -12,7 +12,7 @@
 <div class="container h-full mx-auto flex justify-center items-center">
 	<div class="space-y-10 text-center flex flex-col items-center -translate-y-12">
 		<h2
-			class=" md:text-6xl lg:text-8xl overline decoration-0 text-3xl text-secondary-100-token leading-loose tracking-wider"
+			class="h2 md:text-6xl lg:text-8xl overline decoration-0 text-3xl text-secondary-100-token leading-loose tracking-wider"
 		>
 			APCV 2024 SG
 		</h2>
@@ -66,12 +66,12 @@
 	figure {
 		@apply flex relative flex-col;
 	}
-	
+
 	.img-bg {
 		@apply w-64 h-64 md:w-80 md:h-80;
 	}
 	.img-bg {
-		@apply absolute z-[-1] rounded-full blur-[100px] transition-all;
+		@apply absolute rounded-full blur-[100px] transition-all;
 		animation:
 			pulse 15s cubic-bezier(0, 0, 0, 0.5) infinite,
 			glow 15s linear infinite;

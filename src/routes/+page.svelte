@@ -9,7 +9,7 @@
 	};
 </script>
 
-<div class="container h-full mx-auto flex justify-center items-center">
+<div class="container h-full mx-auto flex justify-center items-center ">
 	<div class="space-y-10 text-center flex flex-col items-center mt-16">
 		<h2
 			class="h2 md:text-6xl lg:text-8xl overline decoration-0 text-3xl text-secondary-100-token leading-loose tracking-tighter"

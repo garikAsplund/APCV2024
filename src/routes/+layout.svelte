@@ -7,7 +7,8 @@
 		initializeStores,
 		getDrawerStore,
 		Drawer,
-		LightSwitch
+		LightSwitch,
+		autoModeWatcher
 	} from '@skeletonlabs/skeleton';
 	import type { DrawerSettings } from '@skeletonlabs/skeleton';
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
@@ -27,7 +28,7 @@
 	const drawerSettings: DrawerSettings = {
 		id: 'example-3',
 		// Provide your property overrides:
-		bgDrawer: 'bg-tertiary-100/90 dark:bg-secondary-800/90 text-white-token flex flex-col',
+		bgDrawer: 'bg-tertiary-100 dark:bg-secondary-800 text-white-token flex flex-col',
 		bgBackdrop: 'bg-gradient-to-tr from-indigo-500/10 via-purple-500/10 to-pink-500/10',
 		width: 'w-[280px] md:w-[480px]',
 		// blur: 'backdrop-blur-sm',
@@ -38,6 +39,8 @@
 </script>
 
 <svelte:head>
+	{@html `<script>${autoModeWatcher.toString()} autoModeWatcher();</script>`}
+
 	<title>APCV24 | {$page.data.path ? $page.data.path : 'Home'}</title>
 	<meta
 		name="description"

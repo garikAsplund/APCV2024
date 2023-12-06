@@ -4,10 +4,8 @@
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { dev } from '$app/environment';
 	import { inject } from '@vercel/analytics';
-	import Navigation from '$lib/components/Navigation.svelte';
 	import { page } from '$app/stores';
-	import NavBar from '$lib/components/NavBar.svelte';
-	import Footer from '$lib/components/Footer.svelte';
+	import { Navigation, NavBar, Footer, ProgramNav } from '$lib/components/components';
 
 	initializeStores();
 
@@ -30,11 +28,20 @@
 	<Navigation />
 </Drawer>
 
+
 <!-- App Shell -->
-<AppShell  regionPage="scroll-smooth">
+<AppShell regionPage="scroll-smooth">
 	<svelte:fragment slot="header">
 		<!-- App Bar -->
 		<NavBar />
+	</svelte:fragment>
+	<svelte:fragment slot="sidebarLeft">
+		<!-- Left Sidebar -->
+		{#if $page.data.path.includes('Program')}
+
+<p class="font-bold p-4 pb-0 text-2xl">Program</p>
+			<ProgramNav />
+		{/if}
 	</svelte:fragment>
 	<!-- Page Route Content -->
 	<slot />

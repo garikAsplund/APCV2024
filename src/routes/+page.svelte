@@ -1,4 +1,4 @@
-<div class="container h-full mx-auto flex justify-center items-center">
+<div class="container h-screen mx-auto flex justify-center items-center">
 	<div class="space-y-10 text-center flex flex-col items-center mt-16">
 		<h2
 			class="h2 md:text-6xl lg:text-8xl overline decoration-0 text-3xl text-secondary-100-token leading-loose tracking-tighter"
@@ -20,6 +20,7 @@
 					class="skyline"
 					height="170"
 					width="1024"
+					loading="lazy"
 				/>
 			</picture>
 		</figure>
@@ -34,6 +35,29 @@
 			</div>
 			<p>More information soon</p>
 		</div>
+		<svg
+			class="scroll-down"
+			fill="#b6d6f2"
+			height="75"
+			viewBox="0 0 24 24"
+			width="75"
+			xmlns="http://www.w3.org/2000/svg"
+		>
+			<path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z" />
+			<path d="M0-.75h24v24H0z" fill="none" />
+		</svg>
+	</div>
+</div>
+<div class="flex justify-center">
+	<div class="w-5/6 text-lg md:text-xl md:w-2/3 lg: w-7/12 xl:w-5/12 space-y-4">
+		<h3 class="h3 text-center">The Asia Pacific Conference on Vision is returning soon!</h3>
+		<hr />
+		<p>
+			The conference aims to facilitate discussion on vision research in Asia and the Pacific,
+			though participants from all over the world are also welcome.
+		</p>
+		<p>The program consists of invited lectures, symposia, and contributed papers.</p>
+		<p>Original works on all aspects of vision research are invited to present.</p>
 	</div>
 </div>
 
@@ -54,6 +78,16 @@
 
 	.skyline {
 		animation: city 90s linear infinite;
+	}
+
+	.scroll-down {
+		margin: 0 auto;
+		position: relative;
+		top: 50%;
+		animation-name: bounce;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
 	}
 	@keyframes city {
 		0% {
@@ -83,6 +117,15 @@
 	@keyframes pulse {
 		50% {
 			transform: scale(2.5);
+		}
+	}
+
+	@keyframes bounce {
+		from {
+			transform: translateY(0px);
+		}
+		to {
+			transform: translateY(10px);
 		}
 	}
 </style>

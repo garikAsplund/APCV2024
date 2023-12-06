@@ -14,7 +14,8 @@
 			<p>Registration fees will be announced shortly.</p>
 			<hr />
 			<h2 class="h2">Cancellations</h2>
-			<p>Cancel before 31 May 2024 for full refund less a small handling charge.</p>			
+			<p>Cancel before 31 May 2024 for full refund less a small handling charge.</p>	
+		
 		</div>
 	</div>
 </div>

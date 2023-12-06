@@ -1,12 +1,12 @@
 <script lang="ts">
 	import { AppBar, LightSwitch, getDrawerStore } from '@skeletonlabs/skeleton';
-    import type { DrawerSettings } from '@skeletonlabs/skeleton';
+	import type { DrawerSettings } from '@skeletonlabs/skeleton';
 	import Navigation from './Navigation.svelte';
 
 	const drawerSettings: DrawerSettings = {
-		id: 'example-3',
+		id: 'mobile-drawer-settings',
 		// Provide your property overrides:
-		bgDrawer: 'bg-tertiary-100 dark:bg-secondary-800 text-white-token flex flex-col',
+		bgDrawer: 'bg-tertiary-100 dark:bg-secondary-800 text-white-token flex flex-col items-start text-xl',
 		bgBackdrop: 'bg-gradient-to-tr from-indigo-500/10 via-purple-500/10 to-pink-500/10',
 		width: 'w-[280px] md:w-[480px]',
 		// blur: 'backdrop-blur-sm',
@@ -37,7 +37,7 @@
 			</div>
 			<button
 				class="md:hidden btn btn-sm mr-4 hover:rotate-90"
-				aria-label="menu"
+				aria-label="Expandable menu"
 				on:click={() => drawerStore.open(drawerSettings)}
 			>
 				<span>

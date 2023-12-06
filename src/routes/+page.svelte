@@ -3,9 +3,15 @@
 	import { popup } from '@skeletonlabs/skeleton';
 	import type { PopupSettings } from '@skeletonlabs/skeleton';
 
-	const popupClick: PopupSettings = {
+	const popupSymposia: PopupSettings = {
 		event: 'click',
-		target: 'popupClick',
+		target: 'popupSymposia',
+		placement: 'top'
+	};
+
+	const popupAbstracts: PopupSettings = {
+		event: 'click',
+		target: 'popupAbstracts',
 		placement: 'top'
 	};
 </script>
@@ -41,8 +47,11 @@
 			<p>
 				<code class="code md:text-xl text-lg">National University of Singapore</code>
 			</p>
-			<div class="md:text-lg lg:text-xl space-y-4">
-				<div class="card p-6 md:w-3/4 lg:w-7/12 xl:w-1/2 space-y-3 text-left" data-popup="popupClick">
+			<div class="flex flex-col md:text-lg lg:text-xl space-y-4">
+				<div
+					class="card p-6 md:w-3/4 lg:w-7/12 xl:w-1/2 space-y-3 text-left"
+					data-popup="popupSymposia"
+				>
 					<p>
 						We welcome original research work on all aspects of vision, multisensory perception,
 						decision and action, and related topics.
@@ -64,12 +73,30 @@
 						<li>Any additional information or requests</li>
 					</ul>
 				</div>
-				<button class="btn hover:variant-outline-primary" use:popup={popupClick}
+				<button class="btn hover:variant-outline-primary" use:popup={popupSymposia}
 					><p class="text-xl">
 						Call for symposia <code class="code text-lg">December 15</code>
 					</p></button
 				>
-				<p>Call for abstracts <code class="code text-lg">January 15</code></p>
+				<div
+					class="card p-6 md:w-3/4 lg:w-7/12 xl:w-1/2 space-y-3 text-left"
+					data-popup="popupAbstracts"
+				>
+					<p>
+						We welcomes original research work on all aspects of vision. We invite contributions as
+						talks or posters.
+					</p>
+					<p>
+						Abstracts are limited to 200 words — no images, no references. Abstracts will be
+						published on-line in <code class="code">i-Perception</code>.
+					</p>
+					<p>Before submitting an abstract, participants must complete conference registration.</p>
+				</div>
+				<button class="btn hover:variant-outline-primary" use:popup={popupAbstracts}
+					><p class="text-xl">
+						Call for abstracts <code class="code text-lg">January 15</code>
+					</p></button
+				>
 			</div>
 			<p>More information soon</p>
 		</div>
@@ -96,7 +123,7 @@
 			The conference aims to facilitate discussion on vision research in Asia and the Pacific,
 			though participants from all over the world are also welcome.
 		</p>
-		<p>The program consists of invited lectures, symposia, and contributed papers.</p>
+		<p>The program consists of lectures, symposia, and contributed papers.</p>
 		<p>Original works on all aspects of vision research are invited to present.</p>
 	</div>
 </div>

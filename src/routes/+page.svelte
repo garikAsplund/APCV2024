@@ -116,8 +116,8 @@
 	</div>
 </div>
 <div class="flex justify-center">
-	<div class="w-5/6 text-lg md:text-xl md:w-2/3 lg: w-7/12 xl:w-5/12 space-y-4">
-		<h3 class="h3 text-center">The Asia Pacific Conference on Vision is returning soon!</h3>
+	<div class="w-5/6 text-lg md:text-xl md:w-2/3 lg: w-7/12 xl:w-5/12 space-y-4 mb-36">
+		<h3 class="h3 text-center">The Asia Pacific Conference on Vision is returning!</h3>
 		<hr />
 		<p>
 			The conference aims to facilitate discussion on vision research in Asia and the Pacific,

@@ -3,7 +3,7 @@
 </script>
 
 <div class="flex justify-center mt-12 h3">
-    Poster information is currently not available.
+    Symposia information will be posted when available.
 </div>
 
 <!-- <Symposia /> -->

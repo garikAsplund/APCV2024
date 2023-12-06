@@ -57,8 +57,8 @@
 						decision and action, and related topics.
 					</p>
 					<p>
-						Symposia should be 90-120 minutes in length. Number of speakers and lenghth of each talk
-						is not limited but 20-30 minutes per talk with 5 minutes for discussion is preferred.
+						Symposia should be 90-120 minutes in length. Number of speakers and length of each talk
+						is not limited but 20-30 minute talks with 5 minute discussions is preferred.
 					</p>
 					<p>
 						Please send proposals to <code class="code text-lg"> apcv2024@gmail.com</code> along with:
@@ -88,7 +88,7 @@
 					</p>
 					<p>
 						Abstracts are limited to 200 words — no images, no references. Abstracts will be
-						published on-line in <code class="code">i-Perception</code>.
+						published online in <code class="code"><a href="https://journals.sagepub.com/home/ipe" target="_blank">i-Perception</a></code>.
 					</p>
 					<p>Before submitting an abstract, participants must complete conference registration.</p>
 				</div>

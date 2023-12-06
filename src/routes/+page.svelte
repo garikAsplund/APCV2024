@@ -79,7 +79,7 @@
 					</p></button
 				>
 				<div
-					class="card p-6 md:w-3/4 lg:w-7/12 xl:w-1/2 space-y-3 text-left"
+					class="card p-6 md:w-3/4 lg:w-7/12 xl:w-1/2 space-y-3 text-left -translate-y-4"
 					data-popup="popupAbstracts"
 				>
 					<p>

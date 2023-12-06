@@ -6,6 +6,12 @@
 	import { inject } from '@vercel/analytics';
 	import { page } from '$app/stores';
 	import { Navigation, NavBar, Footer, ProgramNav } from '$lib/components/components';
+	import type { ComponentEvents } from 'svelte';
+	import { scroll } from '$lib/stores';
+
+	function scrollHandler(event: ComponentEvents<AppShell>['scroll']) {
+		$scroll = event.currentTarget.scrollTop;
+	}
 
 	initializeStores();
 
@@ -28,9 +34,8 @@
 	<Navigation />
 </Drawer>
 
-
 <!-- App Shell -->
-<AppShell regionPage="scroll-smooth">
+<AppShell regionPage="scroll-smooth" on:scroll={scrollHandler}>
 	<svelte:fragment slot="header">
 		<!-- App Bar -->
 		<NavBar />
@@ -38,9 +43,10 @@
 	<svelte:fragment slot="sidebarLeft">
 		<!-- Left Sidebar -->
 		{#if $page.data.path.includes('Program')}
-
-<p class="font-bold p-4 pb-0 text-2xl">Program</p>
-			<ProgramNav />
+			<div class="hidden md:block">
+				<p class="font-bold p-4 pb-0 text-2xl">Program</p>
+				<ProgramNav />
+			</div>
 		{/if}
 	</svelte:fragment>
 	<!-- Page Route Content -->

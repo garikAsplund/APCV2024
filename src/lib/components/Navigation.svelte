@@ -12,14 +12,14 @@
 
 {#each ['Registration', 'Program', 'Presenters', 'Venue', 'Contact'] as item}
 	<a
-		class="btn btn-lg text-xl md:text-lg hover:bg-primary-600/20"
+		class="btn btn-lg w-full text-xl md:text-lg hover:bg-primary-600/20"
 		href="/{item.toLowerCase()}"
 		on:click={drawerClose}
 	>
 		{item}
 	</a>
-	{#if $page.data.path.includes('Program') && item === 'Program'}
-		<div class="md:hidden px-6 text-lg text-primary-200">
+	{#if item === 'Program'}
+		<div class="md:hidden w-full px-6 text-lg text-primary-200">
 			<ProgramNav />
 		</div>
 	{/if}

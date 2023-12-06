@@ -1,4 +1,4 @@
-<nav class="list-nav p-2">
+<nav class="list-nav w-full md:p-2">
     <ul>
         <li><a href="/program/schedule">Schedule</a></li>
         <li><a href="/program/keynotes">Keynote Speakers</a></li>

@@ -1,3 +1,15 @@
+<script lang="ts">
+	import { scroll } from '$lib/stores';
+	import { popup } from '@skeletonlabs/skeleton';
+	import type { PopupSettings } from '@skeletonlabs/skeleton';
+
+	const popupClick: PopupSettings = {
+		event: 'click',
+		target: 'popupClick',
+		placement: 'top'
+	};
+</script>
+
 <div class="container h-screen mx-auto flex justify-center items-center">
 	<div class="space-y-10 text-center flex flex-col items-center mt-16">
 		<h2
@@ -29,23 +41,51 @@
 			<p>
 				<code class="code md:text-xl text-lg">National University of Singapore</code>
 			</p>
-			<div class="text-xl space-y-4">
-				<p>Call for symposia <code class="code text-lg">December 15</code></p>
+			<div class="md:text-lg lg:text-xl space-y-4">
+				<div class="card p-6 md:w-3/4 lg:w-7/12 xl:w-1/2 space-y-3 text-left" data-popup="popupClick">
+					<p>
+						We welcome original research work on all aspects of vision, multisensory perception,
+						decision and action, and related topics.
+					</p>
+					<p>
+						Symposia should be 90-120 minutes in length. Number of speakers and lenghth of each talk
+						is not limited but 20-30 minutes per talk with 5 minutes for discussion is preferred.
+					</p>
+					<p>
+						Please send proposals to <code class="code text-lg"> apcv2024@gmail.com</code> along with:
+					</p>
+					<ul class="text-base mx-24">
+						<li>Title of the symposium</li>
+						<li>Organizers and communication addresses</li>
+						<li>Symposium abstract — 200-300 words</li>
+						<li>Speakers and titles — CV, reference lists</li>
+						<li>Program details — Individual talk abstracts</li>
+						<li>Financial supports, if needed</li>
+						<li>Any additional information or requests</li>
+					</ul>
+				</div>
+				<button class="btn hover:variant-outline-primary" use:popup={popupClick}
+					><p class="text-xl">
+						Call for symposia <code class="code text-lg">December 15</code>
+					</p></button
+				>
 				<p>Call for abstracts <code class="code text-lg">January 15</code></p>
 			</div>
 			<p>More information soon</p>
 		</div>
-		<svg
-			class="scroll-down"
-			fill="#b6d6f2"
-			height="75"
-			viewBox="0 0 24 24"
-			width="75"
-			xmlns="http://www.w3.org/2000/svg"
+		<span style="opacity: {1 - Math.max(0, $scroll / 400)}">
+			<svg
+				class="scroll-down"
+				fill="#b6d6f2"
+				height="75"
+				viewBox="0 0 24 24"
+				width="75"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z" />
+				<path d="M0-.75h24v24H0z" fill="none" />
+			</svg></span
 		>
-			<path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z" />
-			<path d="M0-.75h24v24H0z" fill="none" />
-		</svg>
 	</div>
 </div>
 <div class="flex justify-center">

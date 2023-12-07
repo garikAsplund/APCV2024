@@ -1,9 +1,23 @@
 <script lang="ts">
-    import { inview } from "svelte-inview";
-    import { fade, fly } from "svelte/transition";
-    import { Accordion, AccordionItem } from "@skeletonlabs/skeleton";
+	import { inview } from 'svelte-inview';
+	import { fade, fly, blur } from 'svelte/transition';
+	import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
+	import { scroll } from '$lib/stores';
+	import type { ObserverEventDetails, ScrollDirection, Options } from 'svelte-inview';
 
-    interface Speaker {
+	let isInView: boolean;
+	let scrollDirection: ScrollDirection;
+	const options: Options = {
+		rootMargin: '20%',
+		unobserveOnEnter: true
+	};
+
+	const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
+		isInView = detail.inView;
+		scrollDirection = detail.scrollDirection.vertical;
+	};
+
+	interface Speaker {
 		slot: number;
 		time: string;
 		name: string;
@@ -15,75 +29,64 @@
 		photo: string;
 	}
 
-    let isInView: boolean;
-    let isInViewAbstract: boolean;
-
-
-    export let speaker: Speaker;
+	export let speaker: Speaker;
 </script>
 
-<div
-	class="h-screen"
-	use:inview={{ unobserveOnEnter: true, rootMargin: '-20%' }}
-	on:inview_change={({ detail }) => {
-		isInView = detail.inView;
-	}}
+<!-- <div use:inview={options} on:inview_change={handleChange}> -->
+<header
+	class="sticky flex justify-between items-baseline pt-12 top-0 px-6 z-10 h-24 bg-surface-100-800-token mt-36 mb-36"
 >
-	{#if isInView}
-		<div in:fade={{ duration: 1800 }} class="">
-			<header
-				class="sticky flex justify-between top-32 py-12 px-6 z-10 h-32 bg-surface-100-800-token mb-36"
-			>
-				<h2 class="h2" data-toc-ignore>Keynote {speaker.slot}</h2>
-				<h4 class="h4">{speaker.time}</h4>
-			</header>
-			<div class="h-screen">
-				<div class="card variant-glass overflow-hidden">
-					<div class="flex flex-col lg:flex-row">
-						<div class="p-4 space-y-4 flex flex-col text-left">
-							<div class="flex flex-col">
-								<h2 class="h2" data-toc-ignore>{speaker.title}</h2>
-							</div>
-							<div>
-								<h1 class="h3">{speaker.name}</h1>
-								<h5 class="h5 text-surface-600-300-token opacity-80">
-									{speaker.affiliation}
-								</h5>
-							</div>
+	<h2 class="h2">Keynote {speaker.slot}</h2>
+	<h4 class="h4" data-toc-ignore>{speaker.time}</h4>
+</header>
+<!-- </div> -->
+
+<div class="" >
+	<div use:inview={options} on:inview_change={handleChange}>
+		{#if isInView}
+			<div class="card variant-glass space-y-48">
+				<div class="flex flex-col lg:flex-row">
+					<div class="p-4 space-y-4 flex flex-col text-left">
+						<div class="flex flex-col">
+							<h2 class="h2" data-toc-ignore>{speaker.title}</h2>
 						</div>
-						<picture class="hidden lg:block">
-							<img
-								src={speaker.photo}
-								class="overflow-hidden object-top object-cover"
-								width="200"
-								height="auto"
-								alt={`Keynote speaker ${speaker.name}`}
-							/>
-						</picture>
+						<div>
+							<h1 class="h3">{speaker.name}</h1>
+							<h5 class="h5 text-surface-600-300-token opacity-80">
+								{speaker.affiliation}
+							</h5>
+						</div>
 					</div>
-                    <div
-                    class="h-screen"
-                    use:inview={{ unobserveOnEnter: true, rootMargin: '-20%' }}
-                    on:inview_change={({ detail }) => {
-                        isInViewAbstract = detail.inView;
-                    }}
-                >
-                    {#if isInView}
-                    <article class="text-left">
-                        <p>
-                            {speaker.abstract}
-                        </p>
-                    </article>
-                    {/if}
-                    </div>
+					<picture class="hidden lg:block">
+						<img
+							src={speaker.photo}
+							class="overflow-hidden object-top object-cover"
+							width="200"
+							height="auto"
+							alt={`Keynote speaker ${speaker.name}`}
+						/>
+					</picture>
+				</div>
+			</div>
+		{/if}
+	</div>
 
-                    <article class="text-left">
-                        <p>
-                            {speaker.bio}
-                        </p>
-                    </article>
+	<div class="mt-36 mb-6 space-y-36">
+		<article class="text-left">
+			<h3 class="h3 mb-2" data-toc-ignore>Abstract</h3>
+			<p>
+				{speaker.abstract}
+			</p>
+		</article>
 
-					<!-- <Accordion>
+		<article class="text-left">
+			<h3 class="h3 mb-2" data-toc-ignore>Bio</h3>
+			<p>
+				{speaker.bio}
+			</p>
+		</article>
+	</div>
+	<!-- <Accordion>
 						<AccordionItem>
 							<svelte:fragment slot="lead"
 								><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -125,14 +128,10 @@
 							</svelte:fragment>
 						</AccordionItem>
 					</Accordion> -->
-					<hr class="opacity-50" />
-					<footer class="p-4 flex justify-start items-center space-x-4">
-						<div class="flex-auto flex justify-between items-center">
-							<p class="" data-toc-ignore>Moderated by {speaker.moderator}</p>
-						</div>
-					</footer>
-				</div>
-			</div>
+	<hr class="opacity-50" />
+	<footer class="p-4 flex justify-start items-center space-x-4 mb-48">
+		<div class="flex-auto flex justify-between items-center">
+			<p class="" data-toc-ignore>Moderated by {speaker.moderator}</p>
 		</div>
-	{/if}
+	</footer>
 </div>

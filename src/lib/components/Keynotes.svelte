@@ -71,12 +71,17 @@
 	];
 </script>
 
-<div class="flex justify-center">
-	<div class="w-full lg:w-5/6 xl:w-4/6 text-token grid grid-cols-1">
-		<div class=" w-screen fixed z-20 h-32 backdrop-blur-lg">
-		</div>
-		{#each speakers as speaker}
-			<Speaker speaker={speaker} />	
+<div class="flex flex-row-reverse justify-center gap-24">
+	<aside class="hidden lg:block w-48">
+		<!-- Table of Contents -->
+		<TableOfContents class="sticky top-10">On the Page</TableOfContents>
+	</aside>
+	<div
+		class="w-full lg:w-5/6 xl:w-4/6 text-token grid grid-cols-1"
+		use:tocCrawler={{ mode: 'generate', scrollTarget: '#page', key: speakers.slot }}
+	>
+		{#each speakers as speaker (speaker.slot)}
+			<Speaker {speaker} />
 		{/each}
 	</div>
 </div>

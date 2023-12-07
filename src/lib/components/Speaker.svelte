@@ -4,6 +4,7 @@
 	import { Accordion, AccordionItem, tocCrawler } from '@skeletonlabs/skeleton';
 	import { scroll } from '$lib/stores';
 	import type { ObserverEventDetails, ScrollDirection, Options } from 'svelte-inview';
+	import { tocStore } from '@skeletonlabs/skeleton';
 
 	let isInView: boolean;
 	let scrollDirection: ScrollDirection;
@@ -30,9 +31,13 @@
 	}
 
 	export let speaker: Speaker;
+
+	
+
+	// $: console.log({ $tocStore });
 </script>
 
-<div use:tocCrawler={{ scrollTarget: '#page' }}>
+<div id="big" >
 	<header
 		class="sticky flex justify-between items-baseline pt-12 top-0 px-6 z-10 h-24 bg-surface-100-800-token mb-36"
 	>
@@ -79,7 +84,7 @@
 			</article>
 
 			<article class="text-left">
-				<h3 class="h3 mb-2" data-toc-ignore>Bio</h3>
+				<h3 class="h3 mb-2 scroll-mt-[100px]" id="Bio {speaker.slot}">Bio</h3>
 				<p>
 					{speaker.bio}
 				</p>

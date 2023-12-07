@@ -77,11 +77,11 @@
 		<TableOfContents class="sticky top-10">On the Page</TableOfContents>
 	</aside>
 	<div
-		class="w-full lg:w-5/6 xl:w-4/6 text-token grid grid-cols-1"
-		use:tocCrawler={{ mode: 'generate', scrollTarget: '#page', key: speakers.slot }}
-	>
-		{#each speakers as speaker (speaker.slot)}
-			<Speaker {speaker} />
-		{/each}
-	</div>
+        class="w-full lg:w-5/6 xl:w-4/6 text-token grid grid-cols-1"
+        use:tocCrawler={{ scrollTarget: '#page' }}
+    >
+        {#each speakers as speaker (speaker.slot)}
+            <Speaker {speaker} />
+        {/each}
+    </div>
 </div>

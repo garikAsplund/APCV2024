@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { inview } from 'svelte-inview';
 	import { fade, fly, blur } from 'svelte/transition';
-	import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
+	import { Accordion, AccordionItem, tocCrawler } from '@skeletonlabs/skeleton';
 	import { scroll } from '$lib/stores';
 	import type { ObserverEventDetails, ScrollDirection, Options } from 'svelte-inview';
 
@@ -32,61 +32,60 @@
 	export let speaker: Speaker;
 </script>
 
-<!-- <div use:inview={options} on:inview_change={handleChange}> -->
-<header
-	class="sticky flex justify-between items-baseline pt-12 top-0 px-6 z-10 h-24 bg-surface-100-800-token mt-36 mb-36"
->
-	<h2 class="h2">Keynote {speaker.slot}</h2>
-	<h4 class="h4" data-toc-ignore>{speaker.time}</h4>
-</header>
-<!-- </div> -->
+<div use:tocCrawler={{ scrollTarget: '#page' }}>
+	<header
+		class="sticky flex justify-between items-baseline pt-12 top-0 px-6 z-10 h-24 bg-surface-100-800-token mb-36"
+	>
+		<h2 class="h2" id="Keynote {speaker.slot}">Keynote {speaker.slot}</h2>
+		<h4 class="h4" data-toc-ignore>{speaker.time}</h4>
+	</header>
 
-<div class="" >
-	<div use:inview={options} on:inview_change={handleChange}>
-		{#if isInView}
-			<div class="card variant-glass space-y-48">
-				<div class="flex flex-col lg:flex-row">
-					<div class="p-4 space-y-4 flex flex-col text-left">
-						<div class="flex flex-col">
-							<h2 class="h2" data-toc-ignore>{speaker.title}</h2>
+	<div class="">
+		<div use:inview={options} on:inview_change={handleChange}>
+			{#if isInView}
+				<div class="card variant-glass space-y-48">
+					<div class="flex flex-col lg:flex-row">
+						<div class="p-4 space-y-4 flex flex-col text-left">
+							<div class="flex flex-col">
+								<h2 class="h2" data-toc-ignore>{speaker.title}</h2>
+							</div>
+							<div>
+								<h1 class="h3">{speaker.name}</h1>
+								<h5 class="h5 text-surface-600-300-token opacity-80">
+									{speaker.affiliation}
+								</h5>
+							</div>
 						</div>
-						<div>
-							<h1 class="h3">{speaker.name}</h1>
-							<h5 class="h5 text-surface-600-300-token opacity-80">
-								{speaker.affiliation}
-							</h5>
-						</div>
+						<picture class="hidden lg:block">
+							<img
+								src={speaker.photo}
+								class="overflow-hidden object-top object-cover"
+								width="200"
+								height="auto"
+								alt={`Keynote speaker ${speaker.name}`}
+							/>
+						</picture>
 					</div>
-					<picture class="hidden lg:block">
-						<img
-							src={speaker.photo}
-							class="overflow-hidden object-top object-cover"
-							width="200"
-							height="auto"
-							alt={`Keynote speaker ${speaker.name}`}
-						/>
-					</picture>
 				</div>
-			</div>
-		{/if}
-	</div>
+			{/if}
+		</div>
 
-	<div class="mt-36 mb-6 space-y-36">
-		<article class="text-left">
-			<h3 class="h3 mb-2" data-toc-ignore>Abstract</h3>
-			<p>
-				{speaker.abstract}
-			</p>
-		</article>
+		<div class="mt-36 mb-6 space-y-36">
+			<article class="text-left">
+				<h3 class="h3 mb-2 scroll-mt-[100px]" id="Abstract {speaker.slot}">Abstract</h3>
+				<p>
+					{speaker.abstract}
+				</p>
+			</article>
 
-		<article class="text-left">
-			<h3 class="h3 mb-2" data-toc-ignore>Bio</h3>
-			<p>
-				{speaker.bio}
-			</p>
-		</article>
-	</div>
-	<!-- <Accordion>
+			<article class="text-left">
+				<h3 class="h3 mb-2" data-toc-ignore>Bio</h3>
+				<p>
+					{speaker.bio}
+				</p>
+			</article>
+		</div>
+		<!-- <Accordion>
 						<AccordionItem>
 							<svelte:fragment slot="lead"
 								><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -128,10 +127,11 @@
 							</svelte:fragment>
 						</AccordionItem>
 					</Accordion> -->
-	<hr class="opacity-50" />
-	<footer class="p-4 flex justify-start items-center space-x-4 mb-48">
-		<div class="flex-auto flex justify-between items-center">
-			<p class="" data-toc-ignore>Moderated by {speaker.moderator}</p>
-		</div>
-	</footer>
+		<hr class="opacity-50" />
+		<footer class="p-4 flex justify-start items-center space-x-4 mb-48">
+			<div class="flex-auto flex justify-between items-center">
+				<p class="" data-toc-ignore>Moderated by {speaker.moderator}</p>
+			</div>
+		</footer>
+	</div>
 </div>

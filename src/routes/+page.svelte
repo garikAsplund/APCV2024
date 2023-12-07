@@ -83,12 +83,12 @@
 					data-popup="popupAbstracts"
 				>
 					<p>
-						We welcomes original research work on all aspects of vision. We invite contributions as
+						We welcome original research work on all aspects of vision. We invite contributions as
 						talks or posters.
 					</p>
 					<p>
 						Abstracts are limited to 200 words — no images, no references. Abstracts will be
-						published online in <code class="code"><a href="https://journals.sagepub.com/home/ipe" target="_blank">i-Perception</a></code>.
+						published online in <code class="code text-lg"><a href="https://journals.sagepub.com/home/ipe" target="_blank">i-Perception</a></code>.
 					</p>
 					<p>Before submitting an abstract, participants must complete conference registration.</p>
 				</div>

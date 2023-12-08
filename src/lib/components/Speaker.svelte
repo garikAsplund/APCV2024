@@ -32,16 +32,18 @@
 
 	export let speaker: Speaker;
 
-	
+    let screenHeight: number;
 
-	// $: console.log({ $tocStore });
+	$: console.log({ screenHeight });
 </script>
+
+<svelte:window bind:innerHeight={screenHeight} />
 
 <div id="big" >
 	<header
 		class="sticky flex justify-between items-baseline pt-12 top-0 px-6 z-10 h-24 bg-surface-100-800-token mb-36"
 	>
-		<h2 class="h2" id="Keynote {speaker.slot}">Keynote {speaker.slot}</h2>
+		<h2 class="h2 -scroll-mt-[{screenHeight}px]" id="Keynote {speaker.slot}">Keynote {speaker.slot}</h2>
 		<h4 class="h4" data-toc-ignore>{speaker.time}</h4>
 	</header>
 

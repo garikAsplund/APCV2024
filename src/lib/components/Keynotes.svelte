@@ -1,5 +1,11 @@
 <script lang="ts">
-	import { Accordion, AccordionItem, TableOfContents, tocCrawler, tocStore } from '@skeletonlabs/skeleton';
+	import {
+		Accordion,
+		AccordionItem,
+		TableOfContents,
+		tocCrawler,
+		tocStore,
+	} from '@skeletonlabs/skeleton';
 	import { fly, fade } from 'svelte/transition';
 	import { inview } from 'svelte-inview';
 	import Speaker from './Speaker.svelte';
@@ -9,7 +15,7 @@
 	function tCrawler(node: HTMLElement, args?) {
 		let queryElements = 'h2, h3, h4, h5, h6';
 		let scrollTarget = 'body';
-		let headings;
+		let headings: NodeListOf<HTMLElement> | undefined;
 		let permalinks = [];
 
 		function init(): void {
@@ -53,8 +59,38 @@
 			tocStore.set(permalinks);
 		}
 
+		// Listens to scroll event, determines top-most heading, provides that to the `tocActiveId` store
+		function onWindowScroll(e: WindowEventMap['scroll']): void {
+			if (!headings?.length) return;
+			const targetElem = e.target;
+			if (!(targetElem instanceof HTMLElement))
+				throw new Error('scrollTarget is not an HTMLElement');
+
+			const scrollableTop = targetElem.getBoundingClientRect().top || 0;
+			const headingSizeThreshold = 40; // px
+
+			for (const elemHeading of headings) {
+				const headerBoundTop = elemHeading.getBoundingClientRect().top;
+				const offsetTop = headerBoundTop - scrollableTop + headingSizeThreshold;
+				if (offsetTop >= 0) return tocActiveId.set(elemHeading.id);
+			}
+		}
+
 		// Lifecycle
 		init();
+		if (scrollTarget)
+			document.querySelector(scrollTarget)?.addEventListener('scroll', onWindowScroll);
+
+		return {
+			update(newArgs) {
+				args = newArgs;
+				init();
+			},
+			destroy() {
+				if (scrollTarget)
+					document.querySelector(scrollTarget)?.removeEventListener('scroll', onWindowScroll);
+			}
+		};
 	}
 	interface Speaker {
 		slot: number;
@@ -126,12 +162,9 @@
 		<!-- Table of Contents -->
 		<TableOfContents class="sticky top-10">On the Page</TableOfContents>
 	</aside>
-	<div
-        class="w-full lg:w-5/6 xl:w-4/6 text-token grid grid-cols-1"
-        use:tCrawler
-    >
-        {#each speakers as speaker (speaker.slot)}
-            <Speaker {speaker} />
-        {/each}
-    </div>
+	<div class="w-full lg:w-5/6 xl:w-4/6 text-token grid grid-cols-1" use:tCrawler>
+		{#each speakers as speaker (speaker.slot)}
+			<Speaker {speaker} />
+		{/each}
+	</div>
 </div>

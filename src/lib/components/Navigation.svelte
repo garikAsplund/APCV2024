@@ -8,6 +8,8 @@
 	function drawerClose(): void {
 		drawerStore.close();
 	}
+
+	console.log({$page});
 </script>
 
 <nav class="list-nav w-full flex justify-center md:p-2 lg:px-6 lg:text-xl">
@@ -18,12 +20,13 @@
 					class="btn btn-lg w-full text-xl md:text-lg hover:bg-primary-600/20"
 					href="/{item.toLowerCase()}"
 					on:click={drawerClose}
+					class:border-b-2={$page.data.path === item}
 				>
 					{item}
 				</a>
 			</li>
 			{#if item === 'Program'}
-				<div class="md:hidden w-full px-6 text-lg text-primary-200">
+				<div class="md:hidden w-full px-6 text-lg text-primary-200-token">
 					<ProgramNav />
 				</div>
 			{/if}

@@ -1,3 +1,8 @@
+<script>
+
+	import Registration from "$lib/components/Registration.svelte";
+
+</script>
 <div class="container h-full mx-auto flex justify-center items-center">
 	<div class="space-y-10 text-center flex flex-col items-center mt-12">
 		<h2
@@ -12,6 +17,7 @@
 			<hr />
 			<h2 class="h2">Fees</h2>
 			<p>Registration fees will be announced shortly.</p>
+			<!-- <Registration /> -->
 			<hr />
 			<h2 class="h2">Cancellations</h2>
 			<p>Cancel before 31 May 2024 for full refund less a small handling charge.</p>	

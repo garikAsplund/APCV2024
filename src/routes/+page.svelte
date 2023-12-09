@@ -124,8 +124,8 @@
 	<div class="w-screen text-center">
 		<h3 class="h3">Thank you to our sponsors</h3>
 		<div class="flex flex-col md:flex-row md:justify-center items-center">
-			<a href="https://n1labs.org/"><N1 /></a>
-			<a href="https://nus.edu.sg/"><NUS /></a>
+			<a href="https://n1labs.org/" aria-label="Link to N One Institute for Health"><N1 /></a>
+			<a href="https://nus.edu.sg/" aria-label="Link to National University of Singapore"><NUS /></a>
 		</div>
 	</div>
 </div>

@@ -27,19 +27,19 @@
 	class="skyline w-screen relative overflow-hidden bg-center bg-fixed h-[calc(100vh+240px)] rounded-lg bg-cover bg-no-repeat text-center"
 	style="background-image: url('sgEye.webp'); background-opacity: 0.4"
 >
-	<div class="space-y-10 w-screen text-secondary-50 backdrop-blur-xl bg-slate-500/20 text-center flex flex-col items-center mt-24">
+	<div class="space-y-4 md:space-y-10 w-screen text-secondary-50 backdrop-blur-xl bg-slate-500/20 text-center flex flex-col items-center mt-24">
 		<h2
 			class="h2 mt-12 md:text-6xl lg:text-8xl overline decoration-0 text-3xl text-secondary-100 leading-loose tracking-tighter"
 		>
 			APCV 2024 SG
 		</h2>
 		<h3 class="h3">The 16th Asia Pacific Conference on Vision</h3>
-		<div class="space-y-10">
+		<div class="space-y-3 md:space-y-6">
 			<p class="font-bold md:text-4xl text-2xl">July 10-12</p>
 			<p>
-				<code class="code md:text-xl text-lg">National University of Singapore</code>
+				<code class="code !text-tertiary-300 md:text-xl text-lg">National University of Singapore</code>
 			</p>
-			<div class="flex flex-col md:text-lg lg:text-xl space-y-4">
+			<div class="flex flex-col md:text-lg lg:text-xl space-y-1">
 				<div
 					class="card p-6 md:w-3/4 lg:w-7/12 xl:w-1/2 space-y-3 text-left"
 					data-popup="popupSymposia"
@@ -67,7 +67,7 @@
 				</div>
 				<button class="btn hover:variant-outline-primary" use:popup={popupSymposia}
 					><p class="text-xl">
-						Call for symposia <code class="code text-lg">December 15</code>
+						Call for symposia <code class="code !text-tertiary-300 text-lg">December 15</code>
 					</p></button
 				>
 				<div
@@ -89,13 +89,13 @@
 				</div>
 				<button class="btn hover:variant-outline-primary" use:popup={popupAbstracts}
 					><p class="text-xl">
-						Call for abstracts <code class="code text-lg">January 15</code>
+						Call for abstracts <code class="code !text-tertiary-300 text-lg">January 15</code>
 					</p></button
 				>
 			</div>
 			<p>More information soon</p>
 		</div>
-		<span style="opacity: {1 - Math.max(0, $scroll / 400)}" class="pb-6">
+		<span style="opacity: {1 - Math.max(0, $scroll / 400)}" class=" -translate-y-6">
 			<svg
 				class="scroll-down"
 				fill="#b6d6f2"
@@ -121,9 +121,9 @@
 		<p>The program consists of lectures, symposia, and contributed papers.</p>
 		<p>Original works on all aspects of vision research are invited to present.</p>
 	</div>
-	<div class="text-center">
+	<div class="w-screen text-center">
 		<h3 class="h3">Thank you to our sponsors</h3>
-		<div class="flex items-center">
+		<div class="flex flex-col md:flex-row md:justify-center items-center">
 			<a href="https://n1labs.org/"><N1 /></a>
 			<a href="https://nus.edu.sg/"><NUS /></a>
 		</div>

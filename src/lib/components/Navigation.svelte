@@ -23,7 +23,7 @@
 				</a>
 			</li>
 			{#if item === 'Program'}
-				<div class="md:hidden w-full px-6 text-lg text-primary-200">
+				<div class="md:hidden w-full px-6 text-lg text-primary-200-token">
 					<ProgramNav />
 				</div>
 			{/if}

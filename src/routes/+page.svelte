@@ -14,12 +14,19 @@
 		target: 'popupAbstracts',
 		placement: 'top'
 	};
+
+	let innerHeight: number;
 </script>
 
-<div class="container h-screen mx-auto flex justify-center items-center">
-	<div class="space-y-10 text-center flex flex-col items-center mt-16">
+<svelte:window bind:innerHeight />
+<!-- class="container h-[innerHeight-48px] mx-auto flex justify-center items-center" -->
+
+<div 
+class="skyline w-screen relative overflow-hidden bg-center bg-fixed h-screen rounded-lg bg-cover bg-no-repeat text-center"
+  style="background-image: url('sgEye.webp'); background-opacity: 0.4">
+	<div class="space-y-10 w-screen variant-glass text-center flex flex-col items-center mt-24">
 		<h2
-			class="h2 md:text-6xl lg:text-8xl overline decoration-0 text-3xl text-secondary-100-token leading-loose tracking-tighter"
+			class="h2 mt-12 md:text-6xl lg:text-8xl overline decoration-0 text-3xl text-secondary-100-token leading-loose tracking-tighter"
 		>
 			APCV 2024 SG
 		</h2>
@@ -27,7 +34,7 @@
 		<figure>
 			<section class="img-bg" />
 			<picture>
-				<source type="image/avif" srcset="SG.avif" />
+				<!-- <source type="image/avif" srcset="SG.avif" />
 				<source type="image/webp" srcset="SG_sm.webp 480w, SG_lg.webp 768w" />
 				<source type="image/png" srcset="SG_sm.png 480w, SG_lg.png 768w" />
 				<img
@@ -39,7 +46,18 @@
 					height="170"
 					width="1024"
 					loading="lazy"
-				/>
+				/> -->
+				<!-- <source type="image/webp" srcset="sgEye.webp" />
+				<img
+				src="SG_sm.png"
+				srcset="SG_sm.png 480w, SG_lg.png 768w"
+				sizes="(max-width: 480px) 100vw, (max-width: 768px) 80vw"
+				alt="Singapore's skyline"
+				class="skyline opacity-80 dark:opacity-70"
+				height="170"
+				width="1024"
+				loading="lazy"
+			/> -->
 			</picture>
 		</figure>
 		<div class="space-y-6">
@@ -100,7 +118,7 @@
 			</div>
 			<p>More information soon</p>
 		</div>
-		<span style="opacity: {1 - Math.max(0, $scroll / 400)}">
+		<span style="opacity: {1 - Math.max(0, $scroll / 400)}" class="pb-6">
 			<svg
 				class="scroll-down"
 				fill="#b6d6f2"
@@ -116,7 +134,7 @@
 	</div>
 </div>
 <div class="flex justify-center">
-	<div class="w-5/6 text-lg md:text-xl md:w-2/3 lg: w-7/12 xl:w-5/12 space-y-4 mb-36">
+	<div class=" w-10/12 text-lg md:text-xl md:w-2/3 lg:w-7/12 xl:w-5/12 space-y-4 mt-36 mb-36">
 		<h3 class="h3 text-center">The Asia Pacific Conference on Vision is returning!</h3>
 		<hr />
 		<p>
@@ -161,7 +179,7 @@
 			filter: hue-rotate(0deg);
 		}
 		50% {
-			filter: hue-rotate(-60deg);
+			filter: hue-rotate(20deg);
 		}
 		100% {
 			filter: hue-rotate(0deg);

@@ -1,8 +1,10 @@
 <script lang="ts">
-	import { Accordion, AccordionItem, TabGroup, Tab, TabAnchor } from '@skeletonlabs/skeleton';
+	import { Accordion, AccordionItem, TabAnchor } from '@skeletonlabs/skeleton';
 	import { fly } from 'svelte/transition';
 	import Symposium from './Symposium.svelte';
 	import type { Symposiums } from '$lib/types';
+	import Tab from './Tab.svelte';
+	import TabGroup from './TabGroup.svelte';
 
 	const symposia: Symposiums[] = [
 		{
@@ -48,7 +50,7 @@
 					authors: 'Gingi and Wasabi',
 					affiliation: 'CatU',
 					abstract: 'heeeeeey'
-				},
+				}
 			]
 		},
 		{
@@ -109,17 +111,38 @@
 	});
 
 	let day: number = 1;
+	let innerHeight: number
 </script>
+
+<svelte:window bind:innerHeight />
 
 <div class="w-full text-token grid grid-cols-1 gap-4 mt-12">
 	<TabGroup>
-		<Tab bind:group={day} name="day1" value={1}>
-			<svelte:fragment slot="lead"></svelte:fragment>
-			<span>Day 1</span>
-		</Tab>
+		<Tab bind:group={day} name="day1" value={1}>Day 1</Tab>
 		<Tab bind:group={day} name="day2" value={2}>Day 2</Tab>
 		<Tab bind:group={day} name="day3" value={3}>Day 3</Tab>
-		<!-- Tab Panels --->
+		<svelte:fragment slot="panel">
+			<div class="bg-green-900 h-[600px] overscroll-y-auto ">
+				{#if day === 1}
+					{#each dayOne as symposium}
+						<Symposium {symposium} />
+					{/each}
+				{:else if day === 2}
+					{#each dayTwo as symposium}
+						<Symposium {symposium} />
+					{/each}
+				{:else if day === 3}
+					{#each dayThree as symposium}
+						<Symposium {symposium} />
+					{/each}
+				{/if}
+			</div>
+		</svelte:fragment>
+	</TabGroup>
+	<!-- <TabGroup >
+		<Tab bind:group={day} name="day1" value={1}>Day 1</Tab>
+		<Tab bind:group={day} name="day2" value={2}>Day 2</Tab>
+		<Tab bind:group={day} name="day3" value={3}>Day 3</Tab>
 		<svelte:fragment slot="panel">
 			{#if day === 1}
 				{#each dayOne as symposium}
@@ -135,5 +158,5 @@
 				{/each}
 			{/if}
 		</svelte:fragment>
-	</TabGroup>
+	</TabGroup> -->
 </div>

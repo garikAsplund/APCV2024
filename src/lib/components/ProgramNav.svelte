@@ -8,7 +8,7 @@
 	}
 </script>
 
-<nav class="list-nav w-full md:p-2 lg:px-6 lg:text-xl">
+<nav class="list-nav w-full md:p-2 lg:px-6 lg:text-xl border-l-2 border-surface-100/40">
 	<ul>
 		<li><a href="/program/schedule" on:click={drawerClose}>Schedule</a></li>
 		<li><a href="/program/keynotes" on:click={drawerClose}>Keynote Speakers</a></li>

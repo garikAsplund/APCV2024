@@ -2,6 +2,8 @@
 	import { scroll } from '$lib/stores';
 	import { popup } from '@skeletonlabs/skeleton';
 	import type { PopupSettings } from '@skeletonlabs/skeleton';
+	import NUS from '$lib/components/NUS.svelte';
+	import N1 from '$lib/components/N1.svelte';
 
 	const popupSymposia: PopupSettings = {
 		event: 'click',
@@ -21,45 +23,17 @@
 <svelte:window bind:innerHeight />
 <!-- class="container h-[innerHeight-48px] mx-auto flex justify-center items-center" -->
 
-<div 
-class="skyline w-screen relative overflow-hidden bg-center bg-fixed h-screen rounded-lg bg-cover bg-no-repeat text-center"
-  style="background-image: url('sgEye.webp'); background-opacity: 0.4">
+<div
+	class="skyline w-screen relative overflow-hidden bg-center bg-fixed h-screen rounded-lg bg-cover bg-no-repeat text-center"
+	style="background-image: url('sgEye.webp'); background-opacity: 0.4"
+>
 	<div class="space-y-10 w-screen variant-glass text-center flex flex-col items-center mt-24">
 		<h2
 			class="h2 mt-12 md:text-6xl lg:text-8xl overline decoration-0 text-3xl text-secondary-100-token leading-loose tracking-tighter"
 		>
 			APCV 2024 SG
 		</h2>
-		<!-- Animated Logo -->
-		<figure>
-			<section class="img-bg" />
-			<picture>
-				<!-- <source type="image/avif" srcset="SG.avif" />
-				<source type="image/webp" srcset="SG_sm.webp 480w, SG_lg.webp 768w" />
-				<source type="image/png" srcset="SG_sm.png 480w, SG_lg.png 768w" />
-				<img
-					src="SG_sm.png"
-					srcset="SG_sm.png 480w, SG_lg.png 768w"
-					sizes="(max-width: 480px) 100vw, (max-width: 768px) 80vw"
-					alt="Singapore's skyline"
-					class="skyline"
-					height="170"
-					width="1024"
-					loading="lazy"
-				/> -->
-				<!-- <source type="image/webp" srcset="sgEye.webp" />
-				<img
-				src="SG_sm.png"
-				srcset="SG_sm.png 480w, SG_lg.png 768w"
-				sizes="(max-width: 480px) 100vw, (max-width: 768px) 80vw"
-				alt="Singapore's skyline"
-				class="skyline opacity-80 dark:opacity-70"
-				height="170"
-				width="1024"
-				loading="lazy"
-			/> -->
-			</picture>
-		</figure>
+		<h3 class="h3">The 16th Asia Pacific Conference on Vision</h3>
 		<div class="space-y-6">
 			<p class="font-bold md:text-4xl text-2xl text-secondary-50-token">July 10-12</p>
 			<p>
@@ -106,7 +80,10 @@ class="skyline w-screen relative overflow-hidden bg-center bg-fixed h-screen rou
 					</p>
 					<p>
 						Abstracts are limited to 200 words — no images, no references. Abstracts will be
-						published online in <code class="code text-lg"><a href="https://journals.sagepub.com/home/ipe" target="_blank">i-Perception</a></code>.
+						published online in <code class="code text-lg"
+							><a href="https://journals.sagepub.com/home/ipe" target="_blank">i-Perception</a
+							></code
+						>.
 					</p>
 					<p>Before submitting an abstract, participants must complete conference registration.</p>
 				</div>
@@ -133,7 +110,7 @@ class="skyline w-screen relative overflow-hidden bg-center bg-fixed h-screen rou
 		>
 	</div>
 </div>
-<div class="flex justify-center">
+<div class="flex flex-col justify-center items-center space-y-12">
 	<div class=" w-10/12 text-lg md:text-xl md:w-2/3 lg:w-7/12 xl:w-5/12 space-y-4 mt-36 mb-36">
 		<h3 class="h3 text-center">The Asia Pacific Conference on Vision is returning!</h3>
 		<hr />
@@ -143,6 +120,13 @@ class="skyline w-screen relative overflow-hidden bg-center bg-fixed h-screen rou
 		</p>
 		<p>The program consists of lectures, symposia, and contributed papers.</p>
 		<p>Original works on all aspects of vision research are invited to present.</p>
+	</div>
+	<div class="text-center">
+		<h3 class="h3">Thank you to our sponsors</h3>
+		<div class="flex items-center">
+			<a href="https://n1labs.org/"><N1 /></a>
+			<a href="https://nus.edu.sg/"><NUS /></a>
+		</div>
 	</div>
 </div>
 

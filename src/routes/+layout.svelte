@@ -44,7 +44,7 @@
 		<!-- Left Sidebar -->
 		{#if $page.data.path.includes('Program')}
 			<div class="hidden md:block lg:pl-12 xl:pl-24 py-4 md:py-6 lg:py-8">
-				<p class="font-bold p-4 lg:p-6 pb-0 lg:pb-2 text-2xl lg:text-4xl">Program</p>
+				<p class="font-bold p-4 lg:p-6 pb-4 lg:pb-2 text-2xl lg:text-4xl">Program</p>
 				<ProgramNav />
 			</div>
 		{/if}

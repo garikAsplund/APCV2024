@@ -24,18 +24,18 @@
 <!-- class="container h-[innerHeight-48px] mx-auto flex justify-center items-center" -->
 
 <div
-	class="skyline w-screen relative overflow-hidden bg-center bg-fixed h-screen rounded-lg bg-cover bg-no-repeat text-center"
+	class="skyline w-screen relative overflow-hidden bg-center bg-fixed h-[calc(100vh+240px)] rounded-lg bg-cover bg-no-repeat text-center"
 	style="background-image: url('sgEye.webp'); background-opacity: 0.4"
 >
-	<div class="space-y-10 w-screen variant-glass text-center flex flex-col items-center mt-24">
+	<div class="space-y-10 w-screen text-secondary-50 backdrop-blur-xl bg-slate-500/20 text-center flex flex-col items-center mt-24">
 		<h2
-			class="h2 mt-12 md:text-6xl lg:text-8xl overline decoration-0 text-3xl text-secondary-100-token leading-loose tracking-tighter"
+			class="h2 mt-12 md:text-6xl lg:text-8xl overline decoration-0 text-3xl text-secondary-100 leading-loose tracking-tighter"
 		>
 			APCV 2024 SG
 		</h2>
 		<h3 class="h3">The 16th Asia Pacific Conference on Vision</h3>
-		<div class="space-y-6">
-			<p class="font-bold md:text-4xl text-2xl text-secondary-50-token">July 10-12</p>
+		<div class="space-y-10">
+			<p class="font-bold md:text-4xl text-2xl">July 10-12</p>
 			<p>
 				<code class="code md:text-xl text-lg">National University of Singapore</code>
 			</p>

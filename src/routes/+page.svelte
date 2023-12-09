@@ -16,18 +16,15 @@
 		target: 'popupAbstracts',
 		placement: 'top'
 	};
-
-	let innerHeight: number;
 </script>
-
-<svelte:window bind:innerHeight />
-<!-- class="container h-[innerHeight-48px] mx-auto flex justify-center items-center" -->
 
 <div
 	class="skyline w-screen relative overflow-hidden bg-center bg-fixed h-[calc(100vh+240px)] rounded-lg bg-cover bg-no-repeat text-center"
 	style="background-image: url('sgEye.webp'); background-opacity: 0.4"
 >
-	<div class="space-y-10 w-screen text-secondary-50 backdrop-blur-xl bg-slate-500/20 text-center flex flex-col items-center mt-24">
+	<div
+		class="space-y-10 w-screen text-secondary-50 backdrop-blur-xl bg-slate-500/20 text-center flex flex-col items-center mt-24"
+	>
 		<h2
 			class="h2 mt-12 md:text-6xl lg:text-8xl overline decoration-0 text-3xl text-secondary-100 leading-loose tracking-tighter"
 		>
@@ -36,7 +33,7 @@
 		<h3 class="h3">The 16th Asia Pacific Conference on Vision</h3>
 		<div class="space-y-10">
 			<p class="font-bold md:text-4xl text-2xl">July 10-12</p>
-			<p>
+			<p class="dark">
 				<code class="code md:text-xl text-lg">National University of Singapore</code>
 			</p>
 			<div class="flex flex-col md:text-lg lg:text-xl space-y-4">
@@ -66,7 +63,7 @@
 					</ul>
 				</div>
 				<button class="btn hover:variant-outline-primary" use:popup={popupSymposia}
-					><p class="text-xl">
+					><p class="text-xl dark">
 						Call for symposia <code class="code text-lg">December 15</code>
 					</p></button
 				>
@@ -88,7 +85,7 @@
 					<p>Before submitting an abstract, participants must complete conference registration.</p>
 				</div>
 				<button class="btn hover:variant-outline-primary" use:popup={popupAbstracts}
-					><p class="text-xl">
+					><p class="text-xl dark">
 						Call for abstracts <code class="code text-lg">January 15</code>
 					</p></button
 				>

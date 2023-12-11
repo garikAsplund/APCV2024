@@ -134,13 +134,13 @@
 
 	@media (max-width: 1024px) {
 		.eye {
-			background-image: url('sgEyeMedium.webp');
+			background-image: url('../../static/sgEyeMedium.webp');
 		}
 	}
 
 	@media (min-width: 1025px) {
 		.eye {
-			background-image: url('sgEyeLarge.webp');
+			background-image: url('../../static/sgEyeLarge.webp');
 		}
 	}
 

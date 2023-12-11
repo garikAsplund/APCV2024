@@ -1,13 +1,13 @@
-Organizing committee 実行委員会
+Organizing committee
 
-Chairs 大会長
+Chairs
 Izumi Ohzawa (CiNet, Osaka Univ) 大澤五住
 Takao Sato (Ritsumeikan Univ) 佐藤隆夫
 
 Executive Chair 実行委員長
 Kowa Koida (Toyohashi Univ of Tech) 鯉田孝和
 
-Committee members 実行委員
+Committee members
 Hiroshi Ashida (Kyoto Univ) 蘆田宏
 Kaoru Amano (CiNet, NICT) 天野薫
 Chieko Koike (Ritsumeikan Univ) 小池千恵子

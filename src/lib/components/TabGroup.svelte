@@ -67,9 +67,8 @@
 
 <!-- FIXME: resolve a11y warnings -->
 <!-- svelte-ignore a11y-no-static-element-interactions -->
-<div class="h-[calc(80%)]">
 <div
-	class="tab-group flex flex-col {classesBase}"
+	class="tab-group flex justify-end sticky h-24 top-0 backdrop-blur-md z-10 flex-col {classesBase}"
 	data-testid="tab-group"
 	on:click
 	on:keypress
@@ -81,16 +80,14 @@
 		<slot />
 	</div>
 	<!-- Tab Panel -->
-	
 </div>
 {#if $$slots.panel}
-		<div
-			class="tab-panel h-[calc(innerHeight-120)] overflow-auto {classesPanel}"
-			role="tabpanel"
-			aria-labelledby={panel}
-			tabindex="0"
-		>
-			<slot name="panel" />
-		</div>
-	{/if}
+	<div
+		class="tab-panel h-[calc(innerHeight-120)] overflow-auto {classesPanel}"
+		role="tabpanel"
+		aria-labelledby={panel}
+		tabindex="0"
+	>
+		<slot name="panel" />
 	</div>
+{/if}

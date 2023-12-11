@@ -12,7 +12,7 @@
 		<div class="flex flex-col lg:flex-row mb-6">
 			<div class="px-4 mx-3 space-y-4 flex flex-col text-left">
 				<div class="flex flex-col items-baseline space-y-3">
-					<h2 class="h2" data-toc-ignore>{symposium.title}</h2>
+					<h2 class="h2">{symposium.title}</h2>
 					<hr class="opacity-50" />
 					<div class="">
 						<h4 class="h4 mb-3">Organizers:</h4>

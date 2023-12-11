@@ -116,13 +116,13 @@
 
 <svelte:window bind:innerHeight />
 
-<div class="w-full text-token grid grid-cols-1 gap-4 mt-12">
+<div class="w-full h-full text-token grid grid-cols-1 gap-4">
 	<TabGroup>
 		<Tab bind:group={day} name="day1" value={1}>Day 1</Tab>
 		<Tab bind:group={day} name="day2" value={2}>Day 2</Tab>
 		<Tab bind:group={day} name="day3" value={3}>Day 3</Tab>
 		<svelte:fragment slot="panel">
-			<div class="h-[740px] overscroll-y-auto ">
+			<div class=" overscroll-y-auto ">
 				{#if day === 1}
 					{#each dayOne as symposium}
 						<Symposium {symposium} />

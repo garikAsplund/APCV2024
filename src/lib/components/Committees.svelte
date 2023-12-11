@@ -1,54 +1,65 @@
-Organizing committee
+<script lang="ts">
+	const committee = {
+		Chairs: ['Izumi Ohzawa (CiNet, Osaka Univ)', 'Takao Sato (Ritsumeikan Univ)'],
+		'Executive Chairs': ['Kowa Koida (Toyohashi Univ of Tech)'],
+		Members: [
+			'Hiroshi Ashida (Kyoto Univ)',
+			'Kaoru Amano (CiNet, NICT)',
+			'Chieko Koike (Ritsumeikan Univ)',
+			'Ichiro Fujita (CiNet, Osaka Univ)',
+			'Hidetoshi Kanaya (Ritsumeikan Univ)',
+			'Akiyoshi Kitaoka (Ritsumeikan Univ)',
+			'Ichiro Kuriki (Tohoku Univ)',
+			'Takashi Murakami (Ritsumeikan Univ)',
+			"Shin'ya Nishida (Kyoto univ, NTT)",
+			'Takahiro Kawabe (NTT)',
+			'Tatsuya Sato (Ritsumeikan Univ)',
+			'Masataka Sawayama (NTT)',
+			'Satoshi Shioiri (Tohoku Univ)'
+		],
+		'Abstract Review Committee': [
+			'Akiyoshi Kitaoka (Ritsumeikan Univ)',
+			'Atsushi Wada (CiNet, NICT)',
+			'Chia-huei Tseng (Tohoku Univ)',
+			'Chieko Koike (Ritsumeikan Univ)',
+			'Hidetoshi Kanaya (Ritsumeikan Univ)',
+			'Hiromasa Takemura (CiNet, NICT)',
+			'Hiroshi Ashida (Kyoto Univ)',
+			'Hiroshi Ban (CiNet, NICT)',
+			'Hiroshi Tamura (CiNet, Osaka Univ)',
+			'Ichiro Fujita (CiNet, Osaka Univ)',
+			'Ichiro Kuriki (Tohoku Univ)',
+			'Izumi Ohzawa (CiNet, Osaka Univ)',
+			'Jun Saiki (Kyoto Univ)',
+			'Kaoru Amano (CiNet, NICT)',
+			'Katsunori Kitano (Ritsumeikan Univ)',
+			'Kota Sasaki (CiNet, Osaka Univ)',
+			'Kowa Koida (Toyohashi Univ of Tech)',
+			'Masataka Sawayama (NTT)',
+			'Mikio Inagaki (CiNet, Osaka Univ)',
+			'Naokazu Goda (NIPS)',
+			'Satoshi Shioiri (Tohoku Univ)',
+			"Shin'ya Nishida (NTT)",
+			'Takahiro Kawabe (NTT)',
+			'Takahisa Sanada (Kansai Medical Univ)',
+			'Tetsuya Yagi (Osaka Univ)',
+			'Tomoyuki Naito (Osaka Univ)',
+			'Yuji Wada (Ritsumeikan Univ)',
+			'Yuki Hayashida (Osaka Univ)'
+		]
+	};
+</script>
 
-Chairs
-Izumi Ohzawa (CiNet, Osaka Univ) 大澤五住
-Takao Sato (Ritsumeikan Univ) 佐藤隆夫
+<div class="w-full md:w-1/2 lg:w-1/4 flex flex-col justify-start">
+	<h2 class="h2 text-center mb-4">Organizing committee</h2>
 
-Executive Chair 実行委員長
-Kowa Koida (Toyohashi Univ of Tech) 鯉田孝和
-
-Committee members
-Hiroshi Ashida (Kyoto Univ) 蘆田宏
-Kaoru Amano (CiNet, NICT) 天野薫
-Chieko Koike (Ritsumeikan Univ) 小池千恵子
-Ichiro Fujita (CiNet, Osaka Univ) 藤田一郎
-Hidetoshi Kanaya (Ritsumeikan Univ) 金谷英俊
-Akiyoshi Kitaoka (Ritsumeikan Univ) 北岡明佳
-Ichiro Kuriki (Tohoku Univ) 栗木一郎
-Takashi Murakami (Ritsumeikan Univ) 村上嵩至
-Shin'ya Nishida (Kyoto univ, NTT) 西田眞也
-Takahiro Kawabe (NTT) 河邉隆寛
-Tatsuya Sato (Ritsumeikan Univ) サトウタツヤ
-Masataka Sawayama (NTT) 澤山正貴
-Satoshi Shioiri (Tohoku Univ) 塩入諭
-
-Abstract review committee
-Akiyoshi Kitaoka (Ritsumeikan Univ) 北岡明佳
-Atsushi Wada (CiNet, NICT) 和田充史
-Chia-huei Tseng (Tohoku Univ) 曽 加蕙
-Chieko Koike (Ritsumeikan Univ) 小池千恵子
-Hidetoshi Kanaya (Ritsumeikan Univ) 金谷英俊
-Hiromasa Takemura (CiNet, NICT) 竹村 浩昌
-Hiroshi Ashida (Kyoto Univ) 蘆田 宏
-Hiroshi Ban (CiNet, NICT) 番 浩志
-Hiroshi Tamura (CiNet, Osaka Univ) 田村 弘
-Ichiro Fujita (CiNet, Osaka Univ) 藤田一郎
-Ichiro Kuriki (Tohoku Univ) 栗木一郎
-Izumi Ohzawa (CiNet, Osaka Univ) Izumi Ohzawa (CiNet, Osaka Univ) 大澤五住
-Jun Saiki (Kyoto Univ) 齋木 潤
-Kaoru Amano (CiNet, NICT) 天野 薫
-Katsunori Kitano (Ritsumeikan Univ) 北野勝則
-Kota Sasaki (CiNet, Osaka Univ) 佐々木耕太
-Kowa Koida (Toyohashi Univ of Tech) 鯉田孝和
-Masataka Sawayama (NTT) 澤山正貴
-Mikio Inagaki (CiNet, Osaka Univ) 稲垣未来男
-Naokazu Goda (NIPS) 郷田直一
-Satoshi Shioiri (Tohoku Univ) 塩入 諭
-Shin'ya Nishida (NTT) 西田眞也
-Takahiro Kawabe (NTT) 河邉隆寛
-Takahisa Sanada (Kansai Medical Univ) 真田尚久
-Tetsuya Yagi (Osaka Univ) 八木哲也
-Tomoyuki Naito (Osaka Univ) 内藤智之
-Yuji Wada (Ritsumeikan Univ) 和田有史
-Yuki Hayashida (Osaka Univ) 林田祐樹
-
+	<hr class="h-0.5 bg-surface-800-100-token" />
+	{#each Object.entries(committee) as [title, content]}
+		<div class="m-6">
+			<h3 class="h3 mb-3">{title}</h3>
+			{#each content as member}
+				<p class="text-surface-600-300-token">{member}</p>
+			{/each}
+		</div>
+	{/each}
+</div>

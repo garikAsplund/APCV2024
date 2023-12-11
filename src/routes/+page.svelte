@@ -10,5 +10,5 @@
 <div class="flex flex-col justify-center items-center space-y-12">
 	<Welcome />
 	<Sponsors />
-	<Committees />
+	<!-- <Committees /> -->
 </div>

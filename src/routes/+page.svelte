@@ -19,8 +19,7 @@
 </script>
 
 <div
-	class="skyline w-screen relative overflow-hidden bg-center bg-fixed h-[calc(100vh+240px)] rounded-lg bg-cover bg-no-repeat text-center"
-	style="background-image: url('sgEye.webp'); background-opacity: 0.4"
+	class="eye w-screen relative overflow-hidden bg-center bg-fixed h-[calc(100vh+240px)] rounded-lg bg-cover bg-no-repeat text-center"
 >
 	<div
 		class="space-y-10 w-screen text-secondary-50 backdrop-blur-xl bg-slate-500/20 text-center flex flex-col items-center mt-24"
@@ -110,8 +109,8 @@
 <div class="flex flex-col justify-center items-center space-y-12">
 	<div class=" w-10/12 text-lg md:text-xl md:w-2/3 lg:w-7/12 xl:w-5/12 space-y-4 mt-36 mb-36">
 		<h3 class="h3 text-center">The Asia Pacific Conference on Vision is returning!</h3>
-		<hr class="h-0.5 bg-surface-800-100-token">
-<p>
+		<hr class="h-0.5 bg-surface-800-100-token" />
+		<p>
 			The conference aims to facilitate discussion on vision research in Asia and the Pacific,
 			though participants from all over the world are also welcome.
 		</p>
@@ -122,14 +121,27 @@
 		<h3 class="h3">Thank you to our sponsors</h3>
 		<div class="flex flex-col md:flex-row md:justify-center items-center">
 			<a href="https://n1labs.org/" aria-label="Link to N One Institute for Health"><N1 /></a>
-			<a href="https://nus.edu.sg/" aria-label="Link to National University of Singapore"><NUS /></a>
+			<a href="https://nus.edu.sg/" aria-label="Link to National University of Singapore"><NUS /></a
+			>
 		</div>
 	</div>
 </div>
 
 <style lang="postcss">
-	.skyline {
+	.eye {
 		animation: city 90s linear infinite;
+	}
+
+	@media (max-width: 1024px) {
+		.eye {
+			background-image: url('sgEyeMedium.webp');
+		}
+	}
+
+	@media (min-width: 1025px) {
+		.eye {
+			background-image: url('sgEyeLarge.webp');
+		}
 	}
 
 	.scroll-down {
@@ -150,25 +162,6 @@
 		}
 		100% {
 			filter: hue-rotate(0deg);
-		}
-	}
-	@keyframes glow {
-		0% {
-			@apply bg-primary-400/40;
-		}
-		33% {
-			@apply bg-secondary-400/40;
-		}
-		66% {
-			@apply bg-tertiary-400/40;
-		}
-		100% {
-			@apply bg-primary-400/40;
-		}
-	}
-	@keyframes pulse {
-		50% {
-			transform: scale(2.5);
 		}
 	}
 

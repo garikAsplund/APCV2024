@@ -8,10 +8,10 @@
 
 		<div class="space-y-6 text-xl">
 			<p><code class="code md:text-xl text-lg">Check back soon for more details</code></p>
-			<hr />
+			<hr class="h-0.5 bg-surface-800-100-token" />
 			<h2 class="h2">Oral presentation</h2>
 			<p>Lorem ipsum.</p>
-			<hr />
+			<hr class="h-0.5 bg-surface-800-100-token" />
 			<h2 class="h2">Poster presentation</h2>
 			<p>Lorem ipsum.</p>
 		</div>

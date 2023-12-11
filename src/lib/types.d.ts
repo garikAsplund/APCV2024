@@ -12,3 +12,15 @@ export interface Abstracts {
     affiliation: string;
     abstract: string;
 }
+
+export interface SpeakerType {
+    slot: number;
+    time: string;
+    name: string;
+    affiliation: string;
+    title: string;
+    abstract: string;
+    bio: string;
+    moderator: string;
+    photo: string;
+}

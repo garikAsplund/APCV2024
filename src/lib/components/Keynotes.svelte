@@ -1,30 +1,29 @@
 <script lang="ts">
 	import {
-		Accordion,
-		AccordionItem,
 		TableOfContents,
 		tocCrawler,
-		tocStore,
-		
 	} from '@skeletonlabs/skeleton';
-	import { fly, fade } from 'svelte/transition';
 	import { inview } from 'svelte-inview';
 	import Speaker from './Speaker.svelte';
+	import type { ObserverEventDetails, Options } from 'svelte-inview';
+	import { time, title } from '$lib/stores';
+	import type { SpeakerType } from '$lib/types';
 
 	let isInView: boolean;
-	interface Speaker {
-		slot: number;
-		time: string;
-		name: string;
-		affiliation: string;
-		title: string;
-		abstract: string;
-		bio: string;
-		moderator: string;
-		photo: string;
-	}
 
-	const speakers: Speaker[] = [
+	const options: Options = {
+		rootMargin: '-50%',
+		unobserveOnEnter: true
+	};
+
+	const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
+		isInView = detail.inView;
+		$title = detail.node.id;
+		$time = detail.node.className;
+		console.log({ $time });
+	};
+
+	const speakers: SpeakerType[] = [
 		{
 			slot: 1,
 			time: 'Monday, 9:30 AM - 10:30 AM',
@@ -77,14 +76,24 @@
 	];
 </script>
 
-<div class="flex  flex-row-reverse justify-center gap-24">
+<div class="flex flex-row-reverse justify-center gap-24 mr-4">
 	<aside class="hidden lg:block w-48">
 		<!-- Table of Contents -->
-		<TableOfContents class="sticky top-16">On the Page</TableOfContents>
+		<TableOfContents class="sticky top-12">On the Page</TableOfContents>
 	</aside>
-	<div class="w-full lg:w-5/6 xl:w-4/6 text-token grid grid-cols-1" use:tocCrawler={{ scrollTarget: '#page' }}>
+	<div
+		class="w-full overflow-hidden lg:w-5/6 xl:w-4/6 text-token grid grid-cols-1"
+		use:tocCrawler={{ scrollTarget: '#page' }}
+	>
 		{#each speakers as speaker (speaker.slot)}
-			<Speaker {speaker} />
+			<div
+				id={speaker.slot.toString()}
+				class={speaker.time}
+				use:inview={options}
+				on:inview_change={handleChange}
+			>
+				<Speaker {speaker} />
+			</div>
 		{/each}
 	</div>
 </div>

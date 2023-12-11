@@ -1,6 +1,4 @@
 <script lang="ts">
-	import { Accordion, AccordionItem, TabAnchor } from '@skeletonlabs/skeleton';
-	import { fly } from 'svelte/transition';
 	import Symposium from './Symposium.svelte';
 	import type { Symposiums } from '$lib/types';
 	import Tab from './Tab.svelte';
@@ -116,7 +114,7 @@
 
 <svelte:window bind:innerHeight />
 
-<div class="w-full h-full text-token grid grid-cols-1 gap-4">
+<div class="w-full lg:w-3/4 px-4 h-full text-token grid grid-cols-1 gap-4">
 	<TabGroup>
 		<Tab bind:group={day} name="day1" value={1}>Day 1</Tab>
 		<Tab bind:group={day} name="day2" value={2}>Day 2</Tab>
@@ -139,25 +137,4 @@
 			</div>
 		</svelte:fragment>
 	</TabGroup>
-	<!-- <TabGroup >
-		<Tab bind:group={day} name="day1" value={1}>Day 1</Tab>
-		<Tab bind:group={day} name="day2" value={2}>Day 2</Tab>
-		<Tab bind:group={day} name="day3" value={3}>Day 3</Tab>
-		<svelte:fragment slot="panel">
-			{#if day === 1}
-				{#each dayOne as symposium}
-					<Symposium {symposium} />
-				{/each}
-			{:else if day === 2}
-				{#each dayTwo as symposium}
-					<Symposium {symposium} />
-				{/each}
-			{:else if day === 3}
-				{#each dayThree as symposium}
-					<Symposium {symposium} />
-				{/each}
-			{/if}
-		</svelte:fragment>
-	</TabGroup> -->
-	<!-- And this is a text string to test the deploy builds -->
 </div>

@@ -11,7 +11,7 @@
 
 	// Props (Group)
 	/** Provide classes to set the tab list flex justification. */
-	export let justify: CssClasses = 'justify-start';
+	export let justify: CssClasses = 'justify-center';
 	/** Provide classes to set the tab group border styles. */
 	export let border: CssClasses = 'border-b border-surface-400-500-token';
 
@@ -68,7 +68,7 @@
 <!-- FIXME: resolve a11y warnings -->
 <!-- svelte-ignore a11y-no-static-element-interactions -->
 <div
-	class="tab-group flex justify-end sticky h-24 top-0 backdrop-blur-md z-10 flex-col {classesBase}"
+	class="tab-group flex justify-end sticky h-12 md:h-16 lg:h-24 top-0 backdrop-blur-xl z-10 flex-col {classesBase}"
 	data-testid="tab-group"
 	on:click
 	on:keypress

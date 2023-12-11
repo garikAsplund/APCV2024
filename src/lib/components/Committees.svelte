@@ -50,7 +50,7 @@
 	};
 </script>
 
-<div class="w-full md:w-1/2 lg:w-1/4 flex flex-col justify-start">
+<div class="w-full sm:w-2/3 md:w-1/2 lg:w-2/5 xl:w-1/3 flex flex-col justify-start">
 	<h2 class="h2 text-center mb-4">Organizing committee</h2>
 
 	<hr class="h-0.5 bg-surface-800-100-token" />

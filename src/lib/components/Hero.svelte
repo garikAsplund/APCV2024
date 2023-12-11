@@ -2,6 +2,7 @@
 	import { scroll } from '$lib/stores';
 	import { popup } from '@skeletonlabs/skeleton';
 	import type { PopupSettings } from '@skeletonlabs/skeleton';
+    import { imageNumber } from '$lib/stores';
 
 	const popupSymposia: PopupSettings = {
 		event: 'click',
@@ -15,7 +16,7 @@
 		placement: 'top'
 	};
 
-	const imageNumber = Math.floor(Math.random() * 4) + 1;
+	$imageNumber === 0 ? $imageNumber = Math.floor(Math.random() * 4) + 1 : $imageNumber;
 
 	let innerWidth: number;
 </script>
@@ -24,8 +25,8 @@
 <div
 	class="eye w-screen relative overflow-hidden bg-center bg-fixed h-[calc(100vh+240px)] rounded-lg bg-cover bg-no-repeat text-center"
 	style="background-image: url({innerWidth > 1024
-		? `/sgEye${imageNumber}Large.webp`
-		: `/sgEye${imageNumber}Medium.webp`})"
+		? `/sgEye${$imageNumber}Large.webp`
+		: `/sgEye${$imageNumber}Medium.webp`})"
 >
 <div
 		class="space-y-10 w-screen text-secondary-50 backdrop-blur-xl bg-slate-500/20 text-center flex flex-col items-center mt-24"

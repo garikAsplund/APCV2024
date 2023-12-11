@@ -150,7 +150,7 @@
 		<!-- Interface -->
 		<div class="tab-interface {classesInterface}">
 			{#if $$slots.lead}<div class="tab-lead"><slot name="lead" /></div>{/if}
-			<div class="tab-label"><slot /></div>
+			<div class="tab-label mb-1 text-xl"><slot /></div>
 		</div>
 	</div>
 </label>

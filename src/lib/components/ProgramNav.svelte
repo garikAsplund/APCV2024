@@ -14,32 +14,32 @@
 >
 	<ul >
 		<li>
-			<a href="/program/schedule" class="border-surface-800-100-token" on:click={drawerClose} class:border-b-2={$page.route.id?.slice(9) === 'schedule'}
+			<a href="/program/schedule" class="border-surface-800-100-token" on:click={drawerClose} class:border-l-2={$page.route.id?.slice(9) === 'schedule'}
 				>Schedule</a
 			>
 		</li>
 		<li>
-			<a href="/program/keynotes" class="border-surface-800-100-token" on:click={drawerClose} class:border-b-2={$page.route.id?.slice(9) === 'keynotes'}
+			<a href="/program/keynotes" class="border-surface-800-100-token" on:click={drawerClose} class:border-l-2={$page.route.id?.slice(9) === 'keynotes'}
 				>Keynote Speakers</a
 			>
 		</li>
 		<li>
-			<a href="/program/symposia" class="border-surface-800-100-token" on:click={drawerClose} class:border-b-2={$page.route.id?.slice(9) === 'symposia'}
+			<a href="/program/symposia" class="border-surface-800-100-token" on:click={drawerClose} class:border-l-2={$page.route.id?.slice(9) === 'symposia'}
 				>Symposia</a
 			>
 		</li>
 		<li>
-			<a href="/program/talks" class="border-surface-800-100-token" on:click={drawerClose} class:border-b-2={$page.route.id?.slice(9) === 'talks'}
+			<a href="/program/talks" class="border-surface-800-100-token" on:click={drawerClose} class:border-l-2={$page.route.id?.slice(9) === 'talks'}
 				>Talk Sessions</a
 			>
 		</li>
 		<li>
-			<a href="/program/posters" class="border-surface-800-100-token" on:click={drawerClose} class:border-b-2={$page.route.id?.slice(9) === 'posters'}
+			<a href="/program/posters" class="border-surface-800-100-token" on:click={drawerClose} class:border-l-2={$page.route.id?.slice(9) === 'posters'}
 				>Poster Sessions</a
 			>
 		</li>
 		<li>
-			<a href="/program/public" class="border-surface-800-100-token" on:click={drawerClose} class:border-b-2={$page.route.id?.slice(9) === 'public'}
+			<a href="/program/public" class="border-surface-800-100-token" on:click={drawerClose} class:border-l-2={$page.route.id?.slice(9) === 'public'}
 				>Public Event</a
 			>
 		</li>

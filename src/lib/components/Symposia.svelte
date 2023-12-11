@@ -122,7 +122,7 @@
 		<Tab bind:group={day} name="day2" value={2}>Day 2</Tab>
 		<Tab bind:group={day} name="day3" value={3}>Day 3</Tab>
 		<svelte:fragment slot="panel">
-			<div class="bg-green-900 h-[600px] overscroll-y-auto ">
+			<div class="h-[740px] overscroll-y-auto ">
 				{#if day === 1}
 					{#each dayOne as symposium}
 						<Symposium {symposium} />

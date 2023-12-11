@@ -31,26 +31,20 @@
 	}
 
 	export let speaker: Speaker;
-
-    let screenHeight: number;
-
-	$: console.log({ screenHeight });
 </script>
 
-<svelte:window bind:innerHeight={screenHeight} />
-
-<div id="big" >
+<div id="big" class=" " >
 	<header
-		class="sticky flex justify-between items-baseline pt-12 top-0 px-6 z-10 h-24 bg-surface-100-800-token mb-36"
+		class="sticky flex justify-between items-baseline p-14 top-0 px-6 z-10 h-24 bg-surface-100-800-token mb-36"
 	>
-		<h2 class="h2 -scroll-mt-[{screenHeight}px]" id="Keynote {speaker.slot}">Keynote {speaker.slot}</h2>
+		<h2 class="h2" id="Keynote {speaker.slot}">{"Keynote " + speaker.slot}</h2>
 		<h4 class="h4" data-toc-ignore>{speaker.time}</h4>
 	</header>
 
 	<div class="">
 		<div use:inview={options} on:inview_change={handleChange}>
 			{#if isInView}
-				<div class="card variant-glass space-y-48">
+				<div class=" space-y-48">
 					<div class="flex flex-col lg:flex-row">
 						<div class="p-4 space-y-4 flex flex-col text-left">
 							<div class="flex flex-col">
@@ -80,14 +74,14 @@
 		<div class="mt-36 mb-6 space-y-36">
 			<article class="text-left">
 				<h3 class="h3 mb-2 scroll-mt-[100px]" id="Abstract {speaker.slot}">Abstract</h3>
-				<p>
+				<p class="text-surface-500-400-token">
 					{speaker.abstract}
 				</p>
 			</article>
 
 			<article class="text-left">
 				<h3 class="h3 mb-2 scroll-mt-[100px]" id="Bio {speaker.slot}">Bio</h3>
-				<p>
+				<p class="text-surface-500-400-token">
 					{speaker.bio}
 				</p>
 			</article>
@@ -137,7 +131,7 @@
 		<hr class="opacity-50" />
 		<footer class="p-4 flex justify-start items-center space-x-4 mb-48">
 			<div class="flex-auto flex justify-between items-center">
-				<p class="" data-toc-ignore>Moderated by {speaker.moderator}</p>
+				<p class="opacity-40" data-toc-ignore>Moderated by {speaker.moderator}</p>
 			</div>
 		</footer>
 	</div>

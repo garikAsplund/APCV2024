@@ -5,93 +5,13 @@
 		TableOfContents,
 		tocCrawler,
 		tocStore,
+		
 	} from '@skeletonlabs/skeleton';
 	import { fly, fade } from 'svelte/transition';
 	import { inview } from 'svelte-inview';
 	import Speaker from './Speaker.svelte';
 
 	let isInView: boolean;
-
-	function tCrawler(node: HTMLElement, args?) {
-		let queryElements = 'h2, h3, h4, h5, h6';
-		let scrollTarget = 'body';
-		let headings: NodeListOf<HTMLElement> | undefined;
-		let permalinks = [];
-
-		function init(): void {
-			// Set accepted list of query elements
-			// (IMPORTANT: must proceed resetting `headings` below)
-			if (args?.queryElements) queryElements = args.queryElements;
-			// Set the desired scroll target to monitor
-			if (args?.scrollTarget) scrollTarget = args.scrollTarget;
-
-			// Reset local values
-			headings = node.querySelectorAll(queryElements);
-			permalinks = [];
-
-			// Query and process the headings
-			queryHeadings();
-		}
-
-		function queryHeadings(): void {
-			headings?.forEach((elemHeading) => {
-				// If heading has ignore attribute, skip it
-				if (elemHeading.hasAttribute('data-toc-ignore')) return;
-				// If generate mode and heading ID not present, assign one
-				if (args?.mode === 'generate' && !elemHeading.id) {
-					const newHeadingId = elemHeading.firstChild?.textContent
-						?.trim()
-						.replaceAll(/[^a-zA-Z0-9 ]/g, '')
-						.replaceAll(' ', '-')
-						.toLowerCase();
-					const prefix = args.prefix ? `${args.prefix}-` : '';
-					const suffix = args.suffix ? `-${args.suffix}` : '';
-					elemHeading.id = prefix + newHeadingId + suffix;
-				}
-				// Push heading data to the permalink array
-				permalinks.push({
-					element: elemHeading.nodeName.toLowerCase(),
-					id: elemHeading.id,
-					text: elemHeading.textContent?.trim() || ''
-				});
-			});
-			// Set the store with the permalink array
-			tocStore.set(permalinks);
-		}
-
-		// Listens to scroll event, determines top-most heading, provides that to the `tocActiveId` store
-		function onWindowScroll(e: WindowEventMap['scroll']): void {
-			if (!headings?.length) return;
-			const targetElem = e.target;
-			if (!(targetElem instanceof HTMLElement))
-				throw new Error('scrollTarget is not an HTMLElement');
-
-			const scrollableTop = targetElem.getBoundingClientRect().top || 0;
-			const headingSizeThreshold = 40; // px
-
-			for (const elemHeading of headings) {
-				const headerBoundTop = elemHeading.getBoundingClientRect().top;
-				const offsetTop = headerBoundTop - scrollableTop + headingSizeThreshold;
-				if (offsetTop >= 0) return tocActiveId.set(elemHeading.id);
-			}
-		}
-
-		// Lifecycle
-		init();
-		if (scrollTarget)
-			document.querySelector(scrollTarget)?.addEventListener('scroll', onWindowScroll);
-
-		return {
-			update(newArgs) {
-				args = newArgs;
-				init();
-			},
-			destroy() {
-				if (scrollTarget)
-					document.querySelector(scrollTarget)?.removeEventListener('scroll', onWindowScroll);
-			}
-		};
-	}
 	interface Speaker {
 		slot: number;
 		time: string;
@@ -157,12 +77,12 @@
 	];
 </script>
 
-<div class="flex flex-row-reverse justify-center gap-24">
+<div class="flex  flex-row-reverse justify-center gap-24">
 	<aside class="hidden lg:block w-48">
 		<!-- Table of Contents -->
-		<TableOfContents class="sticky top-10">On the Page</TableOfContents>
+		<TableOfContents class="sticky top-16">On the Page</TableOfContents>
 	</aside>
-	<div class="w-full lg:w-5/6 xl:w-4/6 text-token grid grid-cols-1" use:tCrawler>
+	<div class="w-full lg:w-5/6 xl:w-4/6 text-token grid grid-cols-1" use:tocCrawler={{ scrollTarget: '#page' }}>
 		{#each speakers as speaker (speaker.slot)}
 			<Speaker {speaker} />
 		{/each}

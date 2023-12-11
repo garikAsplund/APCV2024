@@ -2,11 +2,13 @@
 	import { AppBar, LightSwitch, getDrawerStore } from '@skeletonlabs/skeleton';
 	import type { DrawerSettings } from '@skeletonlabs/skeleton';
 	import Navigation from './Navigation.svelte';
+	import { browser } from '$app/environment';
 
 	const drawerSettings: DrawerSettings = {
 		id: 'mobile-drawer-settings',
 		// Provide your property overrides:
-		bgDrawer: 'p-4 bg-tertiary-100 dark:bg-surface-800 text-white-token flex flex-col items-start justify-start text-xl',
+		bgDrawer:
+			'p-4 bg-tertiary-100 dark:bg-surface-800 text-white-token flex flex-col items-start justify-start text-xl',
 		bgBackdrop: 'bg-gradient-to-tr from-indigo-500/10 via-purple-500/10 to-pink-500/10',
 		width: 'w-[260px] md:w-[480px]',
 		// blur: 'backdrop-blur-sm',
@@ -18,7 +20,7 @@
 	const drawerStore = getDrawerStore();
 </script>
 
-<AppBar>
+<AppBar background="variant-glass-surface" border="">
 	<svelte:fragment slot="lead">
 		<strong class="text-2xl font-mono font-light uppercase scale-105 lg:px-4"
 			><a href="/" class="hover:text-primary-400">APCV24SG</a></strong

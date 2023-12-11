@@ -35,7 +35,7 @@
 </Drawer>
 
 <!-- App Shell -->
-<AppShell regionPage="scroll-smooth" on:scroll={scrollHandler}>
+<AppShell regionPage="scroll-smooth" slotHeader={""} on:scroll={scrollHandler}>
 	<svelte:fragment slot="header">
 		<!-- App Bar -->
 		<NavBar />
@@ -52,6 +52,8 @@
 	<!-- Page Route Content -->
 	<slot />
 	<svelte:fragment slot="pageFooter">
-		<Footer />
+		{#if !$page.data.path.includes('Program')}
+			<Footer />
+		{/if}
 	</svelte:fragment>
 </AppShell>

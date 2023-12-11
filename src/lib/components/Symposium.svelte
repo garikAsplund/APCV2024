@@ -9,19 +9,21 @@
 <div class="my-24">
 	<div class="card variant-glass overflow-hidden text-left">
 		<header class="h3 p-3">Symposium {symposium.number}</header>
-		<div class="flex flex-col lg:flex-row">
-			<div class="px-4 space-y-4 flex flex-col text-left">
-				<div class="flex flex-col items-baseline">
+		<div class="flex flex-col lg:flex-row mb-6">
+			<div class="px-4 mx-3 space-y-4 flex flex-col text-left">
+				<div class="flex flex-col items-baseline space-y-3">
 					<h2 class="h2" data-toc-ignore>{symposium.title}</h2>
 					<hr class="opacity-50" />
-					Organizers:
-					{#each symposium.organizers as organizer}
-						<h5 class="h5 text-surface-600-300-token opacity-80">{organizer}</h5>
-					{/each}
+					<div class="">
+						<h4 class="h4 mb-3">Organizers:</h4>
+						{#each symposium.organizers as organizer}
+							<h5 class="h5 mx-2 text-surface-600-300-token opacity-80">{organizer}</h5>
+						{/each}
+					</div>
 				</div>
 				<hr class="opacity-50" />
 				<div>
-					<h4 class="h4">Speakers:</h4>
+					<h4 class="h4 mb-3">Speakers:</h4>
 					{#each symposium.speakers as speaker}
 						<h5 class="h5 mx-2 text-surface-600-300-token opacity-80">{speaker}</h5>
 					{/each}

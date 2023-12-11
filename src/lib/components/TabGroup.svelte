@@ -85,7 +85,7 @@
 </div>
 {#if $$slots.panel}
 		<div
-			class="tab-panel h-[calc(innerHeight-120)] bg-red-300 overflow-auto {classesPanel}"
+			class="tab-panel h-[calc(innerHeight-120)] overflow-auto {classesPanel}"
 			role="tabpanel"
 			aria-labelledby={panel}
 			tabindex="0"

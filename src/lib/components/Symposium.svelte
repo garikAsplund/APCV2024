@@ -28,6 +28,11 @@
 						<h5 class="h5 mx-2 text-surface-600-300-token opacity-80">{speaker}</h5>
 					{/each}
 				</div>
+				<hr class="opacity-50" />
+				<div>
+					<h4 class="h4">Abstract:</h4>
+					<p class="text-token mx-2">{symposium.abstract}</p>
+				</div>
 			</div>
 		</div>
 		<Accordion>
@@ -46,9 +51,9 @@
 						{#each symposium.abstracts as abstract}
 							<article class="text-left space-y-2 mb-12">
 								<h3 class="h3">{abstract.title}</h3>
-								<h5 class="h5">{abstract.authors}</h5>
-								<h6 class="h6">{abstract.affiliation}</h6>
-								<p>
+								<h5 class="h5 mx-2 text-surface-600-300-token">{abstract.authors}</h5>
+								<h6 class="h6 mx-2 text-surface-600-300-token">{abstract.affiliation}</h6>
+								<p class=" mx-4 text-token leading-loose">
 									{abstract.abstract}
 								</p>
 							</article>

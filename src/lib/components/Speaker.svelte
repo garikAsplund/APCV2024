@@ -50,14 +50,14 @@
 <div class="mt-36 mb-6 space-y-36">
 	<article class="text-left">
 		<h3 class="h3 mb-2 scroll-mt-[100px]" id="Abstract {speaker.slot}">Abstract</h3>
-		<p class="text-surface-500-400-token">
+		<p class="text-surface-500-400-token leading-loose">
 			{speaker.abstract}
 		</p>
 	</article>
 
 	<article class="text-left">
 		<h3 class="h3 mb-2 scroll-mt-[100px]" id="Bio {speaker.slot}">Bio</h3>
-		<p class="text-surface-500-400-token">
+		<p class="text-surface-500-400-token leading-relaxed">
 			{speaker.bio}
 		</p>
 	</article>

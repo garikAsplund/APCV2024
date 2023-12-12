@@ -3,6 +3,7 @@ export interface Symposiums {
     title: string;
     organizers: string[];
     speakers: string[];
+    abstract: string;
     abstracts: Abstracts[];
 }
 

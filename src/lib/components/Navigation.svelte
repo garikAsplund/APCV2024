@@ -12,7 +12,13 @@
 
 <nav class="list-nav w-full flex justify-center md:p-2 lg:px-6 lg:text-xl">
 	<ul class="w-full flex flex-col md:flex-row md:justify-around">
-		{#each ['Registration', 'Program', 'Presenters', 'Venue', 'Contact'] as item}
+		{#each [
+			'Registration',
+			'Program', 
+			'Presenters', 
+			'Venue', 
+			'Contact'
+			] as item}
 			<li class="md:inline-flex flex justify-start w-full">
 				<a
 					class="btn btn-lg w-full text-xl md:text-lg hover:bg-primary-600/20 border-surface-800-100-token"

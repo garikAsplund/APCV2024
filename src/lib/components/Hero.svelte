@@ -68,7 +68,7 @@
 						<li>Any additional information or requests</li>
 					</ul>
 				</div>
-				<button class="btn hover:variant-outline-primary" use:popup={popupSymposia}
+				<button class="btn variant-outline-secondary hover:variant-outline-primary" use:popup={popupSymposia}
 					><p class="text-xl dark">
 						Call for symposia <code class="code text-lg">December 15</code>
 					</p></button
@@ -96,7 +96,8 @@
 					</p></button
 				>
 			</div>
-			<p>More information soon</p>
+			<!-- <p>More information soon</p> -->
+			<!-- <button class="btn btn-lg variant-outline-primary hover:variant-outline-tertiary text-2xl">Register now!</button> -->
 		</div>
 		<span style="opacity: {1 - Math.max(0, $scroll / 400)}" class=" -translate-y-6">
 			<svg

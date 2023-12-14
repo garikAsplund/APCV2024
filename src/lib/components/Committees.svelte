@@ -23,7 +23,7 @@
 			{#each content as member}
 				<p class="text-surface-600-300-token text-xl">
 					{#if member.website}
-						<a href={member.website} target="_blank">{member.name}</a>
+						<a href={member.website} target="_blank" class="hover:underline">{member.name}</a>
 					{:else}
 						{member.name}
 					{/if}

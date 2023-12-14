@@ -7,17 +7,17 @@
 	const popupSymposia: PopupSettings = {
 		event: 'click',
 		target: 'popupSymposia',
-		placement: 'top',
+		// placement: 'bottom',
 		middleware: {
-			// flip: {
-			// 	mainAxis: true,
-			// },
+		// 	// flip: {
+		// 	// 	mainAxis: true,
+		// 	// },
 			autoPlacement: {
 				allowedPlacements: ['bottom']
 			}
-			// shift: {
-			// 	mainAxis: true,
-			// },
+		// 	// shift: {
+		// 	// 	mainAxis: true,
+		// 	// },
 		}
 	};
 

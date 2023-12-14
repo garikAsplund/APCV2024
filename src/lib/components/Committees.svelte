@@ -1,37 +1,15 @@
 <script lang="ts">
 	const committee = {
-		Chair: ['Christopher L. Asplund'],
-		Members: ['Camilo Libedinsky', 'Shih-Cheng Yen', 'Mengmi Zhang', 'Charles Or', 'Hong Xu'],
-		// 'Abstract Review Committee': [
-		// 	'Akiyoshi Kitaoka (Ritsumeikan Univ)',
-		// 	'Atsushi Wada (CiNet, NICT)',
-		// 	'Chia-huei Tseng (Tohoku Univ)',
-		// 	'Chieko Koike (Ritsumeikan Univ)',
-		// 	'Hidetoshi Kanaya (Ritsumeikan Univ)',
-		// 	'Hiromasa Takemura (CiNet, NICT)',
-		// 	'Hiroshi Ashida (Kyoto Univ)',
-		// 	'Hiroshi Ban (CiNet, NICT)',
-		// 	'Hiroshi Tamura (CiNet, Osaka Univ)',
-		// 	'Ichiro Fujita (CiNet, Osaka Univ)',
-		// 	'Ichiro Kuriki (Tohoku Univ)',
-		// 	'Izumi Ohzawa (CiNet, Osaka Univ)',
-		// 	'Jun Saiki (Kyoto Univ)',
-		// 	'Kaoru Amano (CiNet, NICT)',
-		// 	'Katsunori Kitano (Ritsumeikan Univ)',
-		// 	'Kota Sasaki (CiNet, Osaka Univ)',
-		// 	'Kowa Koida (Toyohashi Univ of Tech)',
-		// 	'Masataka Sawayama (NTT)',
-		// 	'Mikio Inagaki (CiNet, Osaka Univ)',
-		// 	'Naokazu Goda (NIPS)',
-		// 	'Satoshi Shioiri (Tohoku Univ)',
-		// 	"Shin'ya Nishida (NTT)",
-		// 	'Takahiro Kawabe (NTT)',
-		// 	'Takahisa Sanada (Kansai Medical Univ)',
-		// 	'Tetsuya Yagi (Osaka Univ)',
-		// 	'Tomoyuki Naito (Osaka Univ)',
-		// 	'Yuji Wada (Ritsumeikan Univ)',
-		// 	'Yuki Hayashida (Osaka Univ)'
-		// ]
+		Chair: [
+			{ name: 'Christopher L. Asplund', website: 'https://sites.google.com/site/asplundcl/home' }
+		],
+		Members: [
+			{ name: 'Camilo Libedinsky', website: '' },
+			{ name: 'Shih-Cheng Yen', website: '' },
+			{ name: 'Mengmi Zhang', website: '' },
+			{ name: 'Charles Or', website: '' },
+			{ name: 'Hong Xu', website: '' }
+		]
 	};
 </script>
 
@@ -43,7 +21,13 @@
 		<div class="m-6">
 			<h3 class="h3 mb-3">{title}</h3>
 			{#each content as member}
-				<p class="text-surface-600-300-token text-xl">{member}</p>
+				<p class="text-surface-600-300-token text-xl">
+					{#if member.website}
+						<a href={member.website} target="_blank">{member.name}</a>
+					{:else}
+						{member.name}
+					{/if}
+				</p>
 			{/each}
 		</div>
 	{/each}

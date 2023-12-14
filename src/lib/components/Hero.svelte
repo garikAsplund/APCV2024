@@ -2,21 +2,43 @@
 	import { scroll } from '$lib/stores';
 	import { popup } from '@skeletonlabs/skeleton';
 	import type { PopupSettings } from '@skeletonlabs/skeleton';
-    import { imageNumber } from '$lib/stores';
+	import { imageNumber } from '$lib/stores';
 
 	const popupSymposia: PopupSettings = {
 		event: 'click',
 		target: 'popupSymposia',
-		placement: 'top'
+		placement: 'top',
+		middleware: {
+			// flip: {
+			// 	mainAxis: true,
+			// },
+			autoPlacement: {
+				allowedPlacements: ['bottom']
+			}
+			// shift: {
+			// 	mainAxis: true,
+			// },
+		}
 	};
 
 	const popupAbstracts: PopupSettings = {
 		event: 'click',
 		target: 'popupAbstracts',
-		placement: 'top'
+		// placement: 'bottom',
+		middleware: {
+			// flip: {
+			// 	mainAxis: true,
+			// },
+			autoPlacement: {
+				allowedPlacements: ['bottom']
+			}
+			// shift: {
+			// 	mainAxis: true,
+			// },
+		}
 	};
 
-	$imageNumber === 0 ? $imageNumber = Math.floor(Math.random() * 4) + 1 : $imageNumber;
+	$imageNumber === 0 ? ($imageNumber = Math.floor(Math.random() * 4) + 1) : $imageNumber;
 
 	let innerWidth: number;
 </script>
@@ -28,7 +50,7 @@
 		? `/sgEye${$imageNumber}Large.webp`
 		: `/sgEye${$imageNumber}Medium.webp`})"
 >
-<div
+	<div
 		class="space-y-10 w-screen text-secondary-50 backdrop-blur-xl bg-slate-500/20 text-center flex flex-col items-center mt-24"
 	>
 		<h2
@@ -42,11 +64,12 @@
 			<p class="dark">
 				<code class="code md:text-xl text-lg">National University of Singapore</code>
 			</p>
-			<div class="flex flex-col md:text-lg lg:text-xl space-y-1 ">
+			<div class="flex flex-col md:text-lg lg:text-xl space-y-1">
 				<div
-					class="card p-6 md:w-3/4 lg:w-7/12 xl:w-1/2 space-y-3 text-left text-primary-900-50-token"
+					class="card z-10 p-6 md:w-3/4 lg:w-7/12 xl:w-1/2 space-y-3 text-left text-primary-900-50-token"
 					data-popup="popupSymposia"
 				>
+					<div class="arrow bg-surface-100-800-token" />
 					<p>
 						We welcome original research work on all aspects of vision, multisensory perception,
 						decision and action, and related topics.
@@ -58,7 +81,7 @@
 					<p>
 						Please send proposals to <code class="code text-lg"> apcv2024@gmail.com</code> along with:
 					</p>
-					<ul class="text-base mx-24">
+					<ul class="text-base md:mx-24">
 						<li>Title of the symposium</li>
 						<li>Organizers and communication addresses</li>
 						<li>Symposium abstract — 200-300 words</li>
@@ -68,15 +91,18 @@
 						<li>Any additional information or requests</li>
 					</ul>
 				</div>
-				<button class="btn variant-outline-secondary hover:variant-outline-primary" use:popup={popupSymposia}
+				<button
+					class="btn variant-outline-secondary hover:variant-outline-primary"
+					use:popup={popupSymposia}
 					><p class="text-xl dark">
 						Call for symposia <code class="code text-lg">December 15</code>
 					</p></button
 				>
 				<div
-					class="card p-6 md:w-3/4 lg:w-7/12 xl:w-1/2 space-y-3 text-left -translate-y-4 text-primary-900-50-token"
+					class="card z-10 p-6 md:w-3/4 lg:w-7/12 xl:w-1/2 space-y-3 text-left text-primary-900-50-token"
 					data-popup="popupAbstracts"
 				>
+					<div class="arrow bg-surface-100-800-token" />
 					<p>
 						We welcome original research work on all aspects of vision. We invite contributions as
 						talks or posters.

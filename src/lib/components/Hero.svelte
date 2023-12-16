@@ -87,7 +87,6 @@
 						<li>Symposium abstract — 200-300 words</li>
 						<li>Speakers and titles — CV, reference lists</li>
 						<li>Program details — Individual talk abstracts</li>
-						<li>Financial supports, if needed</li>
 						<li>Any additional information or requests</li>
 					</ul>
 				</div>

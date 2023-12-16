@@ -1,9 +1,7 @@
 <script lang="ts">
 	const committee = {
-		Chair: [
-			{ name: 'Christopher L. Asplund', website: 'https://sites.google.com/site/asplundcl/home' }
-		],
 		Members: [
+			{ name: 'Christopher L. Asplund (Chair)', website: 'https://sites.google.com/site/asplundcl/home' },
 			{ name: 'Camilo Libedinsky', website: '' },
 			{ name: 'Shih-Cheng Yen', website: '' },
 			{ name: 'Mengmi Zhang', website: '' },
@@ -19,7 +17,7 @@
 	<hr class="h-0.5 bg-surface-800-100-token" />
 	{#each Object.entries(committee) as [title, content]}
 		<div class="m-6">
-			<h3 class="h3 mb-3">{title}</h3>
+			<!-- <h3 class="h3 mb-3">{title}</h3> -->
 			{#each content as member}
 				<p class="text-surface-600-300-token text-xl">
 					{#if member.website}

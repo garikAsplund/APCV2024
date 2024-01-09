@@ -25,8 +25,8 @@
 		>
 	</svelte:fragment>
 	<svelte:fragment slot="default">
-		<div class="hidden md:flex md:justify-around md:items-center">
-			<Navigation />
+		<div class="hidden md:flex md:justify-end md:items-center">
+			<!-- <Navigation /> -->
 			<LightSwitch />
 		</div>
 	</svelte:fragment>
@@ -35,7 +35,7 @@
 			<div class="md:hidden mx-4">
 				<LightSwitch />
 			</div>
-			<button
+			<!-- <button
 				class="md:hidden btn btn-sm mr-4 hover:rotate-90"
 				aria-label="Expandable menu"
 				on:click={() => drawerStore.open(drawerSettings)}
@@ -47,7 +47,7 @@
 						<rect y="60" width="100" height="20" />
 					</svg>
 				</span>
-			</button>
+			</button> -->
 		</div>
 	</svelte:fragment>
 	

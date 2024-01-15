@@ -94,7 +94,7 @@
 					class="btn variant-outline-secondary hover:variant-outline-primary"
 					use:popup={popupSymposia}
 					><p class="text-xl dark">
-						Call for symposia <code class="code text-lg">December 15</code>
+						Call for symposia <code class="code text-lg">January 17</code>
 					</p></button
 				>
 				<div
@@ -117,7 +117,7 @@
 				</div>
 				<button class="btn hover:variant-outline-primary" use:popup={popupAbstracts}
 					><p class="text-xl dark">
-						Call for abstracts <code class="code text-lg">January 15</code>
+						Call for abstracts <code class="code text-lg">February 6</code>
 					</p></button
 				>
 			</div>

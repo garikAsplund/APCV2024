@@ -79,7 +79,7 @@
 						is not limited but 20-30 minute talks with 5 minute discussions is preferred.
 					</p>
 					<p>
-						Please send proposals to <code class="code text-lg"> apcv2024@gmail.com</code> along with:
+						Please send proposals to <code class="code text-lg">apcv2024@gmail.com</code> along with:
 					</p>
 					<ul class="text-base md:mx-24">
 						<li>Title of the symposium</li>
@@ -89,12 +89,15 @@
 						<li>Program details — Individual talk abstracts</li>
 						<li>Any additional information or requests</li>
 					</ul>
+					<p>
+						Final date for symposium proposals is <code class="code text-lg">February 29</code>.
+					</p>
 				</div>
 				<button
 					class="btn variant-outline-secondary hover:variant-outline-primary"
 					use:popup={popupSymposia}
 					><p class="text-xl dark">
-						Call for symposia <code class="code text-lg">January 17</code>
+						Call for symposia <code class="code text-lg">Open now</code>
 					</p></button
 				>
 				<div
@@ -114,12 +117,20 @@
 						>.
 					</p>
 					<p>Before submitting an abstract, participants must complete conference registration.</p>
+					<p>
+						Final date for abstract submission is <code class="code text-lg">March 31</code>.
+					</p>
 				</div>
 				<button class="btn hover:variant-outline-primary" use:popup={popupAbstracts}
 					><p class="text-xl dark">
-						Call for abstracts <code class="code text-lg">February 6</code>
+						Call for abstracts opens <code class="code text-lg">February 6</code>
 					</p></button
 				>
+				<div>
+				<p class="mt-4">
+					Conference registration opens <code class="code text-lg">February 6</code>
+				</p>
+			</div>
 			</div>
 			<!-- <p>More information soon</p> -->
 			<!-- <button class="btn btn-lg variant-outline-primary hover:variant-outline-tertiary text-2xl">Register now!</button> -->

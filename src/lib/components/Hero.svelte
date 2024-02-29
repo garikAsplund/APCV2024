@@ -1,42 +1,46 @@
 <script lang="ts">
 	import { scroll } from '$lib/stores';
-	import { popup } from '@skeletonlabs/skeleton';
-	import type { PopupSettings } from '@skeletonlabs/skeleton';
+	// import { popup } from '@skeletonlabs/skeleton';
+	// import type { PopupSettings } from '@skeletonlabs/skeleton';
 	import { imageNumber } from '$lib/stores';
 
-	const popupSymposia: PopupSettings = {
-		event: 'click',
-		target: 'popupSymposia',
-		// placement: 'bottom',
-		middleware: {
-		// 	// flip: {
-		// 	// 	mainAxis: true,
-		// 	// },
-			autoPlacement: {
-				allowedPlacements: ['bottom']
-			}
-		// 	// shift: {
-		// 	// 	mainAxis: true,
-		// 	// },
-		}
-	};
+	// const popupSymposia: PopupSettings = {
+	// 	event: 'click',
+	// 	target: 'popupSymposia',
+	// 	// placement: 'bottom',
+	// 	middleware: {
+	// 		// 	// flip: {
+	// 		// 	// 	mainAxis: true,
+	// 		// 	// },
+	// 		autoPlacement: {
+	// 			allowedPlacements: ['bottom']
+	// 		}
+	// 		// 	// shift: {
+	// 		// 	// 	mainAxis: true,
+	// 		// 	// },
+	// 	}
+	// };
 
-	const popupAbstracts: PopupSettings = {
-		event: 'click',
-		target: 'popupAbstracts',
-		// placement: 'bottom',
-		middleware: {
-			// flip: {
-			// 	mainAxis: true,
-			// },
-			autoPlacement: {
-				allowedPlacements: ['bottom']
-			}
-			// shift: {
-			// 	mainAxis: true,
-			// },
-		}
-	};
+	// const popupAbstracts: PopupSettings = {
+	// 	event: 'click',
+	// 	target: 'popupAbstracts',
+	// 	// placement: 'bottom',
+	// 	middleware: {
+	// 		// flip: {
+	// 		// 	mainAxis: true,
+	// 		// },
+	// 		autoPlacement: {
+	// 			allowedPlacements: ['bottom']
+	// 		}
+	// 		// shift: {
+	// 		// 	mainAxis: true,
+	// 		// },
+	// 	}
+	// };
+
+	function scrollToElement(element: string) {
+		document.getElementById(element)?.scrollIntoView({ block: 'center', behavior: 'smooth' });
+	}
 
 	$imageNumber === 0 ? ($imageNumber = Math.floor(Math.random() * 4) + 1) : $imageNumber;
 
@@ -65,7 +69,7 @@
 				<code class="code md:text-xl text-lg">National University of Singapore</code>
 			</p>
 			<div class="flex flex-col md:text-lg lg:text-xl space-y-1">
-				<div
+				<!-- <div
 					class="card z-10 p-6 md:w-3/4 lg:w-7/12 xl:w-1/2 space-y-3 text-left text-primary-900-50-token"
 					data-popup="popupSymposia"
 				>
@@ -92,15 +96,17 @@
 					<p>
 						Final date for symposium proposals is <code class="code text-lg">February 29</code>.
 					</p>
-				</div>
-				<button
+				</div> -->
+				<!-- <button
 					class="btn variant-outline-secondary hover:variant-outline-primary"
-					use:popup={popupSymposia}
-					><p class="text-xl dark">
-						Call for symposia <code class="code text-lg">Open now</code>
-					</p></button
-				>
-				<div
+					use:popup={popupSymposia}> -->
+					<a href={'#'} on:click|preventDefault={() => scrollToElement('symposia')}>
+					<p class="text-xl dark">
+						Call for symposia <code class="code text-lg">open now</code>
+					</p>
+				</a>
+					<!-- </button> -->
+				<!-- <div
 					class="card z-10 p-6 md:w-3/4 lg:w-7/12 xl:w-1/2 space-y-3 text-left text-primary-900-50-token"
 					data-popup="popupAbstracts"
 				>
@@ -120,17 +126,21 @@
 					<p>
 						Final date for abstract submission is <code class="code text-lg">March 31</code>.
 					</p>
-				</div>
-				<button class="btn hover:variant-outline-primary" use:popup={popupAbstracts}
-					><p class="text-xl dark">
-						Call for abstracts opens <code class="code text-lg">February 6</code>
-					</p></button
-				>
-				<div>
-				<p class="mt-4">
-					Conference registration opens <code class="code text-lg">February 6</code>
-				</p>
-			</div>
+				</div> -->
+				<!-- <button class="btn hover:variant-outline-primary" use:popup={popupAbstracts}> -->
+					<div>
+					<p class="mt-4 text-xl dark">
+						Call for abstracts <code class="code text-lg">coming soon</code>
+					</p>
+					</div>
+					<!-- </button
+				> -->
+					<div>
+						<p class="mt-4">
+							Conference registration <code class="code text-lg">coming soon</code>
+						</p>
+					</div>
+				<!-- </button> -->
 			</div>
 			<!-- <p>More information soon</p> -->
 			<!-- <button class="btn btn-lg variant-outline-primary hover:variant-outline-tertiary text-2xl">Register now!</button> -->

@@ -1,9 +1,10 @@
 <script lang="ts">
 	let talk: string;
+	let isFormValid: boolean = false;
 </script>
 
 <div class="container h-full mx-auto flex justify-center">
-	<div class="space-y-10 text-center flex flex-col items-center mt-12">
+	<div class="space-y-10 flex flex-col items-center mt-12 text-left">
 		<h2
 			class="md:text-6xl lg:text-8xl decoration-0 text-3xl text-secondary-100-token leading-loose tracking-wider"
 		>
@@ -27,7 +28,7 @@
 				/>
 			</label>
 
-			<div class="scale-125">
+			<div class="scale-125 text-center">
 				{#each ['talk', 'poster'] as talkType}
 					<button
 						class="chip {talk === talkType ? 'variant-filled' : 'variant-soft'}"
@@ -54,7 +55,7 @@
 				<input class="input" type="file" />
 			</label>
 		</div>
-		<button class="btn variant-filled-primary">Submit</button>
+		<button class="btn {isFormValid ? 'variant-filled-success': 'variant-filled-error'}">Submit</button>
 
 	</div>
 </div>

@@ -55,7 +55,6 @@
 				<input class="input" type="file" />
 			</label>
 		</div>
-		<button class="btn {isFormValid ? 'variant-filled-success': 'variant-filled-error'}">Submit</button>
-
+		<button class="btn {isFormValid ? 'variant-filled-success': 'variant-filled-error'}" disabled='{!isFormValid}'>Submit</button>
 	</div>
 </div>

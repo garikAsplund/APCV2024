@@ -27,29 +27,34 @@
 				/>
 			</label>
 
-			{#each ['talk', 'poster'] as talkType}
-			<button
-				class="chip {talk === talkType ? 'variant-filled' : 'variant-soft'}"
-				on:click={() => { talk = talkType; }}
-				on:keypress
-			>
-				{#if talk === talkType}<span><i class="fa-solid fa-check" /></span>{/if}
-				<span>{talkType}</span>
-			</button>
-			{/each}
-
+			<div class="scale-125">
+				{#each ['talk', 'poster'] as talkType}
+					<button
+						class="chip {talk === talkType ? 'variant-filled' : 'variant-soft'}"
+						on:click={() => {
+							talk = talkType;
+						}}
+						on:keypress
+					>
+						{#if talk === talkType}<span><i class="fa-solid fa-check" /></span>{/if}
+						<span>{talkType}</span>
+					</button>
+				{/each}
+			</div>
 			<label class="label">
 				<span>Title</span>
 				<input class="input" title="Title" type="text" placeholder="Title" />
 			</label>
 			<label class="label">
-				<span>Title</span>
-				<input class="input" title="Title" type="text" placeholder="Title" />
+				<span>Affiliation</span>
+				<input class="input" title="Title" type="text" placeholder="Affiliation" />
 			</label>
 			<label class="label">
 				<span>Abstract</span>
 				<input class="input" type="file" />
 			</label>
 		</div>
+		<button class="btn variant-filled-primary">Submit</button>
+
 	</div>
 </div>

@@ -136,7 +136,7 @@
 					<!-- </button
 				> -->
 					<div>
-						<p class="mt-4">
+						<p class="mt-4 text-xl dark">
 							Conference registration <code class="code text-lg">coming soon</code>
 						</p>
 					</div>

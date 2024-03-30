@@ -11,7 +11,7 @@
 			Abstract submission form
 		</h2>
 
-		<div class="space-y-6">
+		<form method="POST" class="space-y-6">
 			<label class="label">
 				<span>Name</span>
 				<input class="input" title="First name" type="text" placeholder="First" />
@@ -28,7 +28,7 @@
 				/>
 			</label>
 
-			<div class="scale-125 text-center">
+			<div class="scale-125 text-center space-x-5">
 				{#each ['talk', 'poster'] as talkType}
 					<button
 						class="chip {talk === talkType ? 'variant-filled' : 'variant-soft'}"
@@ -54,7 +54,13 @@
 				<span>Abstract</span>
 				<input class="input" type="file" />
 			</label>
-		</div>
-		<button class="btn {isFormValid ? 'variant-filled-success': 'variant-filled-error'}" disabled='{!isFormValid}'>Submit</button>
+			<div class="text-center">
+				<button
+					type="submit"
+					class="btn {isFormValid ? 'variant-filled-success' : 'variant-filled-error'}"
+					disabled={!isFormValid}>Submit</button
+				>
+			</div>
+		</form>
 	</div>
 </div>

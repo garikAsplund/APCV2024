@@ -6,7 +6,7 @@
 				<!-- <h4 class="h4 text-secondary-800-100-token" data-toc-ignore>Before May 1</h4> -->
 				<hr class="opacity-50" />
 				<div class="flex flex-col justify-center p-5 space-y-10">
-					<h2 class="h2">S$275</h2>
+					<h2 class="h2">S$200</h2>
 					<!-- <p class="text-secondary-800-100-token">Student: USD 200</p> -->
 				</div>
 			</div>

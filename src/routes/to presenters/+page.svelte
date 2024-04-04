@@ -21,8 +21,7 @@
 			<h2 class="h2">Poster presentation</h2>
 			<div class="ml-4 space-y-4 text-surface-600-300-token">
 				<p>
-					Posters <b>should not exceed</b> A1 in size (59.4 x 84.1 cm or 23.4 x 33.1 inches) in portrait
-					orientation. Each poster presenter is allocated one side of one panel.
+					Each poster presenter is allocated one side of one panel. Poster sizes will be announced shortly.
 				</p>
 			</div>
 		</div>

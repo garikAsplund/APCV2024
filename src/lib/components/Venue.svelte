@@ -23,7 +23,7 @@
 				href="https://uci.nus.edu.sg/oca/mobilityservices/getting-around-nus/"
 				target="_blank">NUS Internal Shuttle Bus (ISB)</a
 			>
-			D2 to LT27 or walk to your destination.
+			D2 to LT27 or walk to your destination in about 5-10 minutes. 
 			<br />
 		</p>
 		<h4 class="h4 text-surface-300-600">From the airport</h4>
@@ -75,7 +75,7 @@
 <div class=" mb-6 space-y-36 ml-4">
 	<article class="text-left text-lg">
 		<p class="text-surface-600-300-token leading-loose">
-			Lectures will be held at the Faculty of Science region of campus.
+			Talks and poster sessions will be held in the Faculty of Science and School of Medicine.
 			<br />
 			LT27 as seen from Lower Kent Ridge Road:
 		</p>
@@ -86,7 +86,7 @@
 		/>
 		<div class="flex w-full bg-scroll h-96 scrollbar-hide mb-3 -z-10">
 			<iframe
-				src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3988.7967880425176!2d103.77855106811764!3d1.296571253435158!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1a50cdc1c30f%3A0xadc090419092a7e1!2sLT29%20Lecture%20Theatre!5e0!3m2!1sen!2sus!4v1712199499597!5m2!1sen!2sus"
+				src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6579.5327889352475!2d103.77745238654909!3d1.2956608320922984!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1a51363c2731%3A0xc4627bf2b73714bf!2sMD6%20-%20Centre%20for%20Translational%20Medicine!5e0!3m2!1sen!2sus!4v1712206289338!5m2!1sen!2sus"
 				class="w-full saturate-100 contrast-125"
 				style="border:0;"
 				allowfullscreen=""

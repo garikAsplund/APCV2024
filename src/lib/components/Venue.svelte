@@ -54,7 +54,7 @@
 		</p>
 		<div class="flex w-full bg-scroll h-96 scrollbar-hide mb-36 mt-12">
 			<iframe
-				src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d127638.8997376693!2d103.80161823217301!3d1.3471019281288241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x31da17d693d0cde3%3A0xd6d6dd5e414e4503!2sSingapore%20Changi%20Airport%20(SIN)%2C%2060%20Airport%20Blvd.%2C%20Singapore%20819643!3m2!1d1.3544924!2d103.9886015!4m5!1s0x31da1a56784202d9%3A0x488d08d6c1f88d6b!2sNational%20University%20of%20Singapore%2C%2021%20Lower%20Kent%20Ridge%20Rd%2C%20Singapore%20119077!3m2!1d1.2966426!2d103.7763939!5e0!3m2!1sen!2sus!4v1712204899376!5m2!1sen!2sus"
+				src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d127638.8997376693!2d103.80161823217301!3d1.3471019281288241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x31da17d693d0cde3%3A0xd6d6dd5e414e4503!2sSingapore%20Changi%20Airport%20(SIN)%2C%2060%20Airport%20Blvd.%2C%20Singapore%20819643!3m2!1d1.3544924!2d103.9886015!4m5!1s0x31da1a56784202d9%3A0x488d08d6c1f88d6b!2sNational%20University%20of%20Singapore%2C%2021%20Lower%20Kent%20Ridge%20Rd%2C%20Singapore%20119077!3m2!1d1.2966426!2d103.7763939!5e0!3m2!1sen!2sus!4v1712205013370!5m2!1sen!2sus"
 				class="w-full saturate-100 contrast-125 -z-10"
 				style="border:0;"
 				allowfullscreen=""

@@ -8,14 +8,16 @@
 	function drawerClose(): void {
 		drawerStore.close();
 	}
+
+	console.log("page data path: ", $page.data.path);
 </script>
 
 <nav class="list-nav w-full flex justify-center md:p-2 lg:px-6 lg:text-xl">
 	<ul class="w-full flex flex-col md:flex-row md:justify-around">
 		{#each [
 			'Registration',
-			'Program', 
-			'Presenters', 
+			// 'Program', 
+			'To Presenters', 
 			'Venue', 
 			'Contact'
 			] as item}
@@ -24,7 +26,7 @@
 					class="btn btn-lg w-full text-xl md:text-lg hover:bg-primary-600/20 border-surface-800-100-token"
 					href="/{item.toLowerCase()}"
 					on:click={drawerClose}
-					class:border-b-2={$page.data.path === item}
+					class:border-b-2={$page.data.path === item || ($page.data.path === "To presenters" && item === "To Presenters")}
 				>
 					{item}
 				</a>

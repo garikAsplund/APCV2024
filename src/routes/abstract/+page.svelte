@@ -6,7 +6,7 @@
 <div class="container h-full mx-auto flex justify-center">
 	<div class="space-y-10 flex flex-col items-center mt-12 text-left">
 		<h2
-			class="md:text-6xl lg:text-8xl decoration-0 text-3xl text-secondary-100-token leading-loose tracking-wider"
+			class="md:text-4xl lg:text-5xl decoration-0 text-3xl text-secondary-100-token leading-loose tracking-wider"
 		>
 			Abstract submission form
 		</h2>

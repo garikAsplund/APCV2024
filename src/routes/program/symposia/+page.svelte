@@ -6,4 +6,4 @@
     Symposia information will be posted when available.
 </div>
 
-<!-- <Symposia /> -->
+<Symposia />

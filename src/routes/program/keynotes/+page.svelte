@@ -6,4 +6,4 @@
     Keynote speaker information will be posted when available.
 </div>
 
-<!-- <Keynotes /> -->
+<Keynotes />

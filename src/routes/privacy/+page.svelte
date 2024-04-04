@@ -3,7 +3,7 @@
 		<h2
 			class=" decoration-0 text-3xl md:text-4xl lg:text-5xl text-secondary-100-token leading-loose tracking-wider"
 		>
-			Privacy Policy
+			Privacy policy
 		</h2>
 
 		<div class="space-y-6 text-left w-2/3 lg:w-3/4">

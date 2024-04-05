@@ -100,12 +100,12 @@
 				<!-- <button
 					class="btn variant-outline-secondary hover:variant-outline-primary"
 					use:popup={popupSymposia}> -->
-					<a href={'#'} on:click|preventDefault={() => scrollToElement('symposia')}>
+				<a href={'#'} on:click|preventDefault={() => scrollToElement('symposia')}>
 					<p class="text-xl dark">
 						Call for symposia <code class="code text-lg">open now</code>
 					</p>
 				</a>
-					<!-- </button> -->
+				<!-- </button> -->
 				<!-- <div
 					class="card z-10 p-6 md:w-3/4 lg:w-7/12 xl:w-1/2 space-y-3 text-left text-primary-900-50-token"
 					data-popup="popupAbstracts"
@@ -128,18 +128,20 @@
 					</p>
 				</div> -->
 				<!-- <button class="btn hover:variant-outline-primary" use:popup={popupAbstracts}> -->
-					<div>
+				<div>
 					<p class="mt-4 text-xl dark">
-						Call for abstracts <code class="code text-lg">coming soon</code>
+						<a href={'#'} on:click|preventDefault={() => scrollToElement('abstracts')}>
+						Call for abstracts <code class="code text-lg">open now</code>
+						</a>
 					</p>
-					</div>
-					<!-- </button
+				</div>
+				<!-- </button
 				> -->
-					<div>
-						<p class="mt-4 text-xl dark">
-							Conference registration <code class="code text-lg">coming soon</code>
-						</p>
-					</div>
+				<div>
+					<p class="mt-4 text-xl dark">
+						Conference registration <code class="code text-lg">coming soon</code>
+					</p>
+				</div>
 				<!-- </button> -->
 			</div>
 			<!-- <p>More information soon</p> -->

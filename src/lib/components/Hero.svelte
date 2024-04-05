@@ -131,7 +131,7 @@
 				<div>
 					<p class="mt-4 text-xl dark">
 						<a href={'#'} on:click|preventDefault={() => scrollToElement('abstracts')}>
-						Call for abstracts <code class="code text-lg">open now</code>
+						Call for abstracts <code class="code text-lg">open now</code> until 3 May
 						</a>
 					</p>
 				</div>

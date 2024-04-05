@@ -19,18 +19,18 @@
 		Abstract submission for APCV 2024 is now open! We apologize for the delay, and we will review
 		submissions as quickly as possible.
 	</p>
-	<br>
+	<p>The abstract submission deadline is 3 May.</p>
+
+	<br />
 	<div class="justify-center text-center">
-	<a
-		href="https://easychair.org/conferences/?conf=apcv2024"
-		target="_blank"
-		class="justify-center text-lg code dark">Click here to submit an abstract</a
-	></div>
+		<a
+			href="https://easychair.org/conferences/?conf=apcv2024"
+			target="_blank"
+			class="justify-center text-lg code dark">Click here to submit an abstract</a
+		>
+	</div>
 </div>
-<div
-	class=" w-10/12 text-lg md:text-xl md:w-2/3 lg:w-7/12 xl:w-5/12 space-y-4 py-36"
-	id="symposia"
->
+<div class=" w-10/12 text-lg md:text-xl md:w-2/3 lg:w-7/12 xl:w-5/12 space-y-4 py-36" id="symposia">
 	<h3 class="h3 text-center">Call for symposia</h3>
 	<hr class="h-0.5 bg-surface-800-100-token" />
 	<p>

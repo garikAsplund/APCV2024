@@ -16,6 +16,7 @@
 			</p>
             <h2 class="h2">Cookies</h2>
             <p class="ml-4 text-surface-600-300-token">At this time our site does not use cookies.</p>
+            <p class="ml-4 text-surface-600-300-token">Abstract submission is done through Easy Chair. Their privacy policy can be found <a href="https://easychair.org/privacy" target="_blank" class="underline hover:no-underline">here</a>.</p>
 		</div>
 	</div>
 </div>

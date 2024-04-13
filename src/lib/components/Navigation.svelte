@@ -15,11 +15,12 @@
 <nav class="list-nav w-full flex justify-center md:p-2 lg:px-6 lg:text-xl">
 	<ul class="w-full flex flex-col md:flex-row md:justify-around">
 		{#each [
+			'Program',
 			'Registration',
-			// 'Program', 
+			'Abstract Submission', 
 			'To Presenters', 
-			'Venue', 
-			'Contact'
+			'Location', 
+			// 'Contact'
 			] as item}
 			<li class="md:inline-flex flex justify-start w-full">
 				<a

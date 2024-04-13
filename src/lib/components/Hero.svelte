@@ -55,7 +55,7 @@
 		: `/sgEye${$imageNumber}Medium.webp`})"
 >
 	<div
-		class="space-y-10 w-screen text-secondary-50 backdrop-blur-xl bg-slate-500/20 text-center flex flex-col items-center mt-24"
+		class="space-y-10 w-screen text-secondary-50 backdrop-blur-xl bg-slate-700/50 text-center flex flex-col items-center mt-24"
 	>
 		<h2
 			class="h2 mt-12 md:text-6xl lg:text-8xl overline decoration-0 text-3xl text-secondary-100 leading-loose tracking-tighter"
@@ -64,7 +64,8 @@
 		</h2>
 		<h3 class="h3">The 16th Asia Pacific Conference on Vision</h3>
 		<div class="space-y-3 md:space-y-6">
-			<p class="font-bold md:text-4xl text-2xl">July 10-12</p>
+			<p class="font-bold md:text-4xl text-2xl">10-12 July</p>
+			<p class="dark"><code class="code md:text-xl text-lg">Yale-NUS College</code></p>
 			<p class="dark">
 				<code class="code md:text-xl text-lg">National University of Singapore</code>
 			</p>
@@ -100,11 +101,7 @@
 				<!-- <button
 					class="btn variant-outline-secondary hover:variant-outline-primary"
 					use:popup={popupSymposia}> -->
-				<a href={'#'} on:click|preventDefault={() => scrollToElement('symposia')}>
-					<p class="text-xl dark">
-						Call for symposia <code class="code text-lg">open now</code>
-					</p>
-				</a>
+
 				<!-- </button> -->
 				<!-- <div
 					class="card z-10 p-6 md:w-3/4 lg:w-7/12 xl:w-1/2 space-y-3 text-left text-primary-900-50-token"
@@ -130,17 +127,29 @@
 				<!-- <button class="btn hover:variant-outline-primary" use:popup={popupAbstracts}> -->
 				<div>
 					<p class="mt-4 text-xl dark">
+						Conference registration <code class="code text-lg">open now</code> through 31 May (early)
+						and 30 June (normal)
+					</p>
+				</div>
+				<div>
+					<p class="mt-4 text-xl dark">
 						<a href={'#'} on:click|preventDefault={() => scrollToElement('abstracts')}>
-						Call for abstracts <code class="code text-lg">open now</code> until 3 May
+							Call for abstracts <code class="code text-lg">open now</code> until 3 May
+						</a>
+					</p>
+				</div>
+				<div>
+					<p class="mt-4 text-xl dark">
+						<a href={'#'} on:click|preventDefault={() => scrollToElement('symposia')}>
+							Call for symposia <code class="code text-lg">closed</code>
 						</a>
 					</p>
 				</div>
 				<!-- </button
 				> -->
+
 				<div>
-					<p class="mt-4 text-xl dark">
-						Conference registration <code class="code text-lg">coming soon</code>
-					</p>
+					<p class="mt-4 text-xl dark">apcv2024@gmail.com</p>
 				</div>
 				<!-- </button> -->
 			</div>

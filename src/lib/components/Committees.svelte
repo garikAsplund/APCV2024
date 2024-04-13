@@ -1,17 +1,46 @@
 <script lang="ts">
 	const committee = {
 		Members: [
-			{ name: 'Christopher L. Asplund (Chair)', website: 'https://sites.google.com/site/asplundcl/home' },
-			{ name: 'Camilo Libedinsky', website: '' },
-			{ name: 'Shih-Cheng Yen', website: '' },
-			{ name: 'Mengmi Zhang', website: '' },
-			{ name: 'Charles Or', website: '' },
-			{ name: 'Hong Xu', website: '' }
+			{
+				name: 'Christopher L. Asplund (Chair)',
+				school: 'Yale-NUS College, National University of Singapore',
+				website: 'https://sites.google.com/site/asplundcl/home'
+			},
+			{
+				name: 'Hong Xu',
+				school: 'School of Social Sciences, Nanyang Technological University',
+				website: ''
+			},
+			{
+				name: 'Shih-Cheng Yen',
+				school: 'College of Design and Engineering, National University of Singapore',
+				website: ''
+			},
+			{
+				name: 'Mengmi Zhang',
+				school: 'School of Computer Science and Engineering, Nanyang Technological University',
+				website: ''
+			},
+			{
+				name: 'Colin Palmer',
+				school: 'Department of Psychology, National University of Singapore',
+				website: ''
+			},
+			{
+				name: 'Charles Or',
+				school: 'School of Social Sciences, Nanyang Technological University',
+				website: ''
+			},
+			{
+				name: 'Camilo Libedinsky',
+				school: 'Department of Psychology, National University of Singapore',
+				website: ''
+			}
 		]
 	};
 </script>
 
-<div class="w-full sm:w-2/3 md:w-1/2 lg:w-2/5 xl:w-1/3 flex flex-col justify-start">
+<div class="w-fit flex flex-col justify-start">
 	<h2 class="h2 text-center mb-4">Organizing committee</h2>
 
 	<hr class="h-0.5 bg-surface-800-100-token" />
@@ -21,9 +50,11 @@
 			{#each content as member}
 				<p class="text-surface-600-300-token text-xl">
 					{#if member.website}
-						<a href={member.website} target="_blank" class="hover:underline">{member.name}</a>
+						<a href={member.website} target="_blank" class="hover:underline"
+							>{member.name} <span class="text-sm"> | {member.school}</span></a
+						>
 					{:else}
-						{member.name}
+						{member.name} <span class="text-sm">| {member.school}</span>
 					{/if}
 				</p>
 			{/each}

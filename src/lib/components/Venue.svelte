@@ -1,18 +1,38 @@
-<script>
+<script lang="ts">
 	import { modeCurrent } from '@skeletonlabs/skeleton';
 
 	let hotels = [
-		{ name: 'Park Avenue Rochester', website: 'https://parkavenuegroup.com/property/singapore-rochester-parkavenue/', address: '31 Rochester Drive Park', info: '$$$ 30 minute walk or 15 minutes on bus 196'},
-		{ name: 'Fragrance Hotel', website: 'https://www.fragrancehotel.com/our-hotels/fragrance-oceanview.html', address: '432 Pasir Panjang Road', info: '$$ 30 minute walk or 15 minutes on bus 183'},
-		{ name: 'ibis budget Singapore West Coast', website: 'https://all.accor.com/hotel/B6I3/index.en.shtml', address: '418 Pasir Panjang Road', info: '$$ 30 minute walk or 15 minutes on bus 183'},
-		{ name: 'Travelodge Harbourfront', website: 'https://www.travelodgehotels.asia/travelodge-harbourfront/', address: '50 Telok Blangah Road', info: '$$$ 45 minutes on public transit or 15 minutes by car'},
+		{
+			name: 'Park Avenue Rochester',
+			website: 'https://parkavenuegroup.com/property/singapore-rochester-parkavenue/',
+			address: '31 Rochester Drive Park',
+			info: '$$$ 30 minute walk or 15 minutes on bus 196'
+		},
+		{
+			name: 'Fragrance Hotel',
+			website: 'https://www.fragrancehotel.com/our-hotels/fragrance-oceanview.html',
+			address: '432 Pasir Panjang Road',
+			info: '$$ 30 minute walk or 15 minutes on bus 183'
+		},
+		{
+			name: 'ibis budget Singapore West Coast',
+			website: 'https://all.accor.com/hotel/B6I3/index.en.shtml',
+			address: '418 Pasir Panjang Road',
+			info: '$$ 30 minute walk or 15 minutes on bus 183'
+		},
+		{
+			name: 'Travelodge Harbourfront',
+			website: 'https://www.travelodgehotels.asia/travelodge-harbourfront/',
+			address: '50 Telok Blangah Road',
+			info: '$$$ 45 minutes on public transit or 15 minutes by car'
+		}
 		// { name: '', website: '', address: ''},
 		// { name: '', website: '', address: ''},
 	];
 </script>
 
 <header class="flex w-full justify-between items-baseline mt-12 mb-8">
-	<h2 class="h2 scroll-mt-24" id="Getting to NUS">Conference venue</h2>
+	<h2 class="h2 scroll-mt-24" id="Getting to NUS" >Conference venue</h2>
 </header>
 
 <div class="mb-6 space-y-36 ml-4">
@@ -50,7 +70,7 @@
 </div>
 
 <header class="flex w-full justify-between items-baseline mt-12 mb-8">
-	<h2 class="h2 scroll-mt-24" id="Getting to NUS">Getting here</h2>
+	<h2 class="h2 scroll-mt-24" id="Getting here">Getting here</h2>
 </header>
 
 <div class="mb-6 space-y-36 ml-4">
@@ -87,7 +107,7 @@
 				target="_blank">Yale-NUS bus stop</a
 			> on Clementi Road.
 		</p>
-		<h4 class="h4 text-surface-300-600">From the airport</h4>
+		<h4 class="h4 text-surface-300-600" data-toc-ignore>From the airport</h4>
 		<p class="text-surface-600-300-token leading-loose">
 			If you are coming from Changi Airport, take the Green Line to Buona Vista
 			<span class="nobold"
@@ -161,7 +181,7 @@
 <hr class="opacity-50" /> -->
 
 <header class="flex w-full justify-between items-baseline mt-36 h-24">
-	<h2 class="h2 scroll-mt-24" id="Lecture halls">The city</h2>
+	<h2 class="h2 scroll-mt-24" id="The city">The city</h2>
 </header>
 
 <div class=" mb-6 space-y-36 ml-4">
@@ -198,7 +218,7 @@
 <hr class="opacity-50" />
 
 <header class="flex w-full justify-between items-baseline mt-36 h-24">
-	<h2 class="h2 scroll-mt-24" id="Lecture halls">Where to stay</h2>
+	<h2 class="h2 scroll-mt-24" id="Where to stay">Where to stay</h2>
 </header>
 
 <div class=" mb-6 space-y-36 ml-4">
@@ -220,4 +240,4 @@
 		</ul>
 	</article>
 </div>
-<hr class="opacity-50" />
+<hr class="opacity-50 mb-24" />

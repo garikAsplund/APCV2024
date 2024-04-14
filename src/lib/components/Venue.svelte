@@ -14,10 +14,7 @@
 				alt="Yale-NUS campus"
 			/>
 		{:else}
-			<img
-				src="../yale-nus.jpeg"
-				alt="Yale-NUS campus"
-			/>{/if}
+			<img src="../yale-nus.jpeg" alt="Yale-NUS campus" />{/if}
 		<p>
 			<a href="https://www.yale-nus.edu.sg/" class="underline hover:no-underline" target="_blank">
 				Yale-NUS College</a
@@ -76,10 +73,10 @@
 		</p>
 		<p>
 			Or you can take public transit (bus 33, 151, 183, or 196) to the <a
-			class="underline hover:no-underline"
-			href="https://businterchange.net/sgbus/stops/busstop.php?stop=17099"
-			target="_blank">Yale-NUS bus
-			stop</a> on Clementi Road.
+				class="underline hover:no-underline"
+				href="https://businterchange.net/sgbus/stops/busstop.php?stop=17099"
+				target="_blank">Yale-NUS bus stop</a
+			> on Clementi Road.
 		</p>
 		<h4 class="h4 text-surface-300-600">From the airport</h4>
 		<p class="text-surface-600-300-token leading-loose">
@@ -109,7 +106,7 @@
 		</p>
 		<div class="flex w-full bg-scroll h-96 scrollbar-hide mb-36 mt-12 -z-10">
 			<iframe
-				src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d127638.8997376693!2d103.80161823217301!3d1.3471019281288241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x31da17d693d0cde3%3A0xd6d6dd5e414e4503!2sSingapore%20Changi%20Airport%20(SIN)%2C%2060%20Airport%20Blvd.%2C%20Singapore%20819643!3m2!1d1.3544924!2d103.9886015!4m5!1s0x31da1a56784202d9%3A0x488d08d6c1f88d6b!2sNational%20University%20of%20Singapore%2C%2021%20Lower%20Kent%20Ridge%20Rd%2C%20Singapore%20119077!3m2!1d1.2966426!2d103.7763939!5e0!3m2!1sen!2sus!4v1712205013370!5m2!1sen!2sus"
+				src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d127640.11952398751!2d103.80554313224224!3d1.3236127540338958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x31da17d693d0cde3%3A0xd6d6dd5e414e4503!2sSingapore%20Changi%20Airport%2C%2060%20Airport%20Blvd.%2C%20Singapore%20819643!3m2!1d1.3544924!2d103.9886015!4m5!1s0x31da1bcc1e50d8ff%3A0x1807cfeadf8b230f!2sSouth%20Buona%20Vista%20Road%2C%20Kent%20Ridge%20MRT%20Station%20(CC24)%2C%20Singapore!3m2!1d1.2933881!2d103.7842699!5e0!3m2!1sen!2sus!4v1713115606446!5m2!1sen!2sus"
 				class="w-full saturate-100 contrast-125 {$modeCurrent ? '' : 'invert hue-rotate-180'}"
 				style="border:0;"
 				allowfullscreen=""

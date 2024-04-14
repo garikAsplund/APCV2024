@@ -32,7 +32,7 @@
 </script>
 
 <header class="flex w-full justify-between items-baseline mt-12 mb-8">
-	<h2 class="h2 scroll-mt-24" id="Getting to NUS" >Conference venue</h2>
+	<h2 class="h2 scroll-mt-24" id="Getting to NUS">Conference venue</h2>
 </header>
 
 <div class="mb-6 space-y-36 ml-4">
@@ -108,6 +108,10 @@
 			> on Clementi Road.
 		</p>
 		<h4 class="h4 text-surface-300-600" data-toc-ignore>From the airport</h4>
+		<img
+			src="https://images.unsplash.com/photo-1581234786309-3b720c895e92?q=80&w=3404&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+			alt="Jewel Changi Airport"
+		/>
 		<p class="text-surface-600-300-token leading-loose">
 			If you are coming from Changi Airport, take the Green Line to Buona Vista
 			<span class="nobold"
@@ -228,7 +232,7 @@
 			should not be taken as a recommendation or endorsement. All are in safe areas, with fairly
 			easy access to the conference venue itself. <br />
 		</p>
-		<ul class="mx-6">
+		<ul class="mx-6 pb-6">
 			{#each hotels as hotel}
 				<li>
 					<a href={hotel.website} target="_blank" class="underline hover:no-underline"
@@ -238,6 +242,18 @@
 				</li>
 			{/each}
 		</ul>
+		<div class="flex w-full bg-scroll h-96 scrollbar-hide mb-36 mt-12 -z-10">
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31910.466370439884!2d103.78226697279621!3d1.2892468749043782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shotels%20near%20NUS!5e0!3m2!1sen!2sus!4v1713129899282!5m2!1sen!2sus"
+				class="w-full saturate-100 contrast-125 {$modeCurrent ? '' : 'invert hue-rotate-180'}"
+				style="border:0;"
+				allowfullscreen=""
+				loading="lazy"
+				title="Transit from Changi to NUS"
+				referrerpolicy="no-referrer-when-downgrade"
+			>
+			</iframe>
+		</div>
 	</article>
 </div>
 <hr class="opacity-50 mb-24" />

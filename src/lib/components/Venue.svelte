@@ -135,7 +135,7 @@
 			>.
 			<br />
 			Alternatively, a taxi or a ride-hailing service will get you to NUS in about 30 minutes and costs
-			between S$25-S$45.
+			S$25-S$45.
 		</p>
 		<div class="flex w-full bg-scroll h-96 scrollbar-hide mb-36 mt-12 -z-10">
 			<iframe

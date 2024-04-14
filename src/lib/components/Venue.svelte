@@ -15,7 +15,7 @@
 			/>
 		{:else}
 			<img
-				src="http://www.forum-architects.com/images/learning/yale/01.jpg"
+				src="../yale-nus.jpeg"
 				alt="Yale-NUS campus"
 			/>{/if}
 		<p>

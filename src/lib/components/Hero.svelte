@@ -127,21 +127,23 @@
 				<!-- <button class="btn hover:variant-outline-primary" use:popup={popupAbstracts}> -->
 				<div>
 					<p class="mt-4 text-xl dark">
-						Conference registration <code class="code text-lg">open now</code> through 31 May (early)
-						and 30 June (normal)
+						Conference registration <code class="code text-lg">open soon</code> 
+						<!-- through 31 May (early)
+						and 30 June (normal) -->
 					</p>
 				</div>
 				<div>
-					<p class="mt-4 text-xl dark">
-						<a href={'#'} on:click|preventDefault={() => scrollToElement('abstracts')}>
-							Call for abstracts <code class="code text-lg">open now</code> until 3 May
+					<p class="mt-4 text-xl dark"
+					>
+						<a href='/abstract submission' >
+							<span class="underline hover:no-underline">Call for abstracts</span> <code class=" code text-lg">open now</code> until <b>3 May</b>
 						</a>
 					</p>
 				</div>
 				<div>
 					<p class="mt-4 text-xl dark">
 						<a href={'#'} on:click|preventDefault={() => scrollToElement('symposia')}>
-							Call for symposia <code class="code text-lg">closed</code>
+							<span class="underline hover:no-underline">Call for symposia</span> <code class="code text-lg">closed</code>
 						</a>
 					</p>
 				</div>
@@ -149,7 +151,7 @@
 				> -->
 
 				<div>
-					<p class="mt-4 text-xl dark">apcv2024@gmail.com</p>
+					<p class="mt-4 text-xl dark"><code class="code text-lg">apcv2024@gmail.com</code></p>
 				</div>
 				<!-- </button> -->
 			</div>

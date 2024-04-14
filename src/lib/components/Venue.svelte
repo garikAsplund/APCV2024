@@ -1,30 +1,85 @@
+<script>
+	import { modeCurrent } from '@skeletonlabs/skeleton';
+</script>
+
 <header class="flex w-full justify-between items-baseline mt-12 mb-8">
-	<h2 class="h2 scroll-mt-24" id="Getting to NUS">Getting to NUS</h2>
+	<h2 class="h2 scroll-mt-24" id="Getting to NUS">Conference venue</h2>
 </header>
 
 <div class="mb-6 space-y-36 ml-4">
-	<article class="text-left space-y-6 text-lg">
-		<p class="text-surface-600-300-token leading-loose">
-			NUS is easily accessible by public transport.
-			<br />
+	<article class="text-left space-y-6 text-lg text-surface-600-300-token leading-loose">
+		{#if $modeCurrent === true}
+			<img
+				src="https://pcparch.com/media/pages/news/yale-nus-college-wins-aia-award/ce2f6a2f26-1711376808/yale-nus-college-campus-residential-academic-buildings-2880x-q80.jpg"
+				alt="Yale-NUS campus"
+			/>
+		{:else}
+			<img
+				src="http://www.forum-architects.com/images/learning/yale/01.jpg"
+				alt="Yale-NUS campus"
+			/>{/if}
+		<p>
+			<a href="https://www.yale-nus.edu.sg/" class="underline hover:no-underline" target="_blank">
+				Yale-NUS College</a
+			> is a residential liberal arts college that was founded by the National University of Singapore
+			and Yale University in 2011. Its beautiful facilities include a performance hall, lecture spaces,
+			a black box theatre, a library, and a multipurpose hall--all built around a green space and pond.
+		</p>
+		<p>
+			The conference will enjoy the use of these spaces, and the College is also a convenient
+			launching point for exploring other parts of Singapore.
+		</p>
+		{#if $modeCurrent === true}
+			<img
+				src="https://www.yale-nus.edu.sg/wp-content/uploads/2021/11/About_Key-Facts_Desktop-Banner.jpg"
+				alt="Yale-NUS campus"
+			/>
+		{:else}
+			<img
+				src="https://www.yale-nus.edu.sg/wp-content/uploads/2016/07/Banner-Campus-1024x441.jpg"
+				alt="Yale-NUS campus"
+			/>
+		{/if}
+	</article>
+</div>
+
+<header class="flex w-full justify-between items-baseline mt-12 mb-8">
+	<h2 class="h2 scroll-mt-24" id="Getting to NUS">Getting here</h2>
+</header>
+
+<div class="mb-6 space-y-36 ml-4">
+	<article class="text-left space-y-6 text-lg text-surface-600-300-token leading-loose">
+		<p>
+			The National University of Singapore is located eight kilometers west of the city centre. It
+			has good public transportation links and internal shuttle buses.
+		</p>
+		<p>
 			The nearest MRT station is
-			<a class="code text-base" href="https://maps.app.goo.gl/MHYMQzXLaDDa4oyk9" target="_blank"
-				>Kent Ridge</a
+			<a
+				class="underline hover:no-underline"
+				href="https://maps.app.goo.gl/MHYMQzXLaDDa4oyk9"
+				target="_blank">Kent Ridge</a
 			>
 			<span
 				style="display:inline-block;background-color:#fa9e0d;text-align:center;line-height:18px;border-radius: 9px 9px 9px 9px;color:#000000"
 				><span class="nowrap">&nbsp;</span><b>CC24</b><span class="nowrap">&nbsp;</span></span
 			>
-			on the Circle Line .
-			<br />
-			From there, you can take the
-			<a
+			on the Circle Line.
+		</p>
+		<p>
+			Yale-NUS College is located in UTown, in the northeast corner of NUS’ Kent Ridge campus. To
+			get from Kent Ridge MRT to UTown, take the D2 or BTC bus provided by the <a
 				class="underline hover:no-underline"
 				href="https://uci.nus.edu.sg/oca/mobilityservices/getting-around-nus/"
 				target="_blank">NUS Internal Shuttle Bus (ISB)</a
-			>
-			D2 to LT27 or walk to your destination in about 5-10 minutes. 
-			<br />
+			>. There are covered paths from the bus stop to Yale-NUS College.
+		</p>
+		<p>
+			Or you can take public transit (bus 33, 151, 183, or 196) to the <a
+			class="underline hover:no-underline"
+			href="https://businterchange.net/sgbus/stops/busstop.php?stop=17099"
+			target="_blank">Yale-NUS bus
+			stop</a> on Clementi Road.
 		</p>
 		<h4 class="h4 text-surface-300-600">From the airport</h4>
 		<p class="text-surface-600-300-token leading-loose">
@@ -55,7 +110,7 @@
 		<div class="flex w-full bg-scroll h-96 scrollbar-hide mb-36 mt-12 -z-10">
 			<iframe
 				src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d127638.8997376693!2d103.80161823217301!3d1.3471019281288241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x31da17d693d0cde3%3A0xd6d6dd5e414e4503!2sSingapore%20Changi%20Airport%20(SIN)%2C%2060%20Airport%20Blvd.%2C%20Singapore%20819643!3m2!1d1.3544924!2d103.9886015!4m5!1s0x31da1a56784202d9%3A0x488d08d6c1f88d6b!2sNational%20University%20of%20Singapore%2C%2021%20Lower%20Kent%20Ridge%20Rd%2C%20Singapore%20119077!3m2!1d1.2966426!2d103.7763939!5e0!3m2!1sen!2sus!4v1712205013370!5m2!1sen!2sus"
-				class="w-full saturate-100 contrast-125"
+				class="w-full saturate-100 contrast-125 {$modeCurrent ? '' : 'invert hue-rotate-180'}"
 				style="border:0;"
 				allowfullscreen=""
 				loading="lazy"
@@ -67,7 +122,7 @@
 	</article>
 </div>
 <hr class="opacity-50" />
-
+<!-- 
 <header class="flex w-full justify-between items-baseline mt-36 h-24">
 	<h2 class="h2 scroll-mt-24" id="Lecture halls">Lecture halls</h2>
 </header>
@@ -97,4 +152,56 @@
 		</div>
 	</article>
 </div>
-<hr class="opacity-50" />
+<hr class="opacity-50" /> -->
+
+<header class="flex w-full justify-between items-baseline mt-36 h-24">
+	<h2 class="h2 scroll-mt-24" id="Lecture halls">The city</h2>
+</header>
+
+<div class=" mb-6 space-y-36 ml-4">
+	<article class="text-left space-y-6 text-lg text-surface-600-300-token leading-loose">
+		<!-- {#if $modeCurrent === true}
+			<img src="" alt="" />
+		{:else}
+			<img
+				src="https://www.yale-nus.edu.sg/wp-content/uploads/2016/07/Banner-Campus-1024x441.jpg"
+				alt="Singapore"
+			/>
+		{/if} -->
+		<p>
+			Singapore is a vibrant city-state located just north of the equator at the tip of the Malay
+			peninsula. The island is only 734 square kilometers, yet contains some five million people.
+		</p>
+		<p>
+			Most Singaporeans are ethnically Chinese, Indian, and Malay, and these different backgrounds
+			combine with global influences to produce a culture of diverse food, architecture, religion,
+			art, and institutions. Many cultural elements reflect their origins, but they also have unique
+			combinations and expressions in Singapore.
+		</p>
+		<p>
+			Despite being a bustling and efficient metropolis, Singapore is also a "city in a garden".
+			Tended greenery abounds, as do wilder areas in both the island's center and its coasts.
+		</p>
+		<img
+			class="mb-24"
+			src="https://images.unsplash.com/photo-1576669489170-fa28e7b823db?q=80&w=3562&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+			alt="A city in a garden"
+		/>
+	</article>
+</div>
+<!-- <hr class="opacity-50" />
+
+<header class="flex w-full justify-between items-baseline mt-36 h-24">
+	<h2 class="h2 scroll-mt-24" id="Lecture halls">Where to stay</h2>
+</header>
+
+<div class=" mb-6 space-y-36 ml-4">
+	<article class="text-left text-lg">
+		<p class="text-surface-600-300-token leading-loose">
+			APCV 2024 does not block book hotel rooms. Below are some nearby hotels, though this list
+			should not be taken as a recommendation or endorsement. All are in safe areas, with fairly
+			easy access to the conference venue itself. <br />
+		</p>
+	</article>
+</div>
+<hr class="opacity-50" /> -->

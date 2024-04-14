@@ -32,7 +32,7 @@
 	<p>The APCV 2024 organizing committee</p>
 </div>
 
-<div
+<!-- <div
 	class=" w-10/12 text-lg md:text-xl md:w-2/3 lg:w-7/12 xl:w-5/12 space-y-4 py-36"
 	id="abstracts"
 >
@@ -52,7 +52,7 @@
 			class="justify-center text-lg code dark">Click here to submit an abstract</a
 		>
 	</div>
-</div>
+</div> -->
 <div class=" w-10/12 text-lg md:text-xl md:w-2/3 lg:w-7/12 xl:w-5/12 space-y-4 py-36" id="symposia">
 	<h3 class="h3 text-center">Call for symposia</h3>
 	<hr class="h-0.5 bg-surface-800-100-token" />

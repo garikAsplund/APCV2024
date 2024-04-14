@@ -11,7 +11,7 @@
 			</h2>
 
 			<div class="space-y-6 text-xl">
-				<p><code class="code md:text-xl text-lg">Check back soon for more details</code></p>
+				<p class=" md:text-xl text-lg">Check back soon for more details.</p>
 			</div>
 		</div>
 	</div>

@@ -1,5 +1,7 @@
-
-	<p class="text-left">Registration fees finance the rent of space, poster panels, AV support, furnishings, coffee catering, and buffet lunches. The conference banquet is a separate charge.</p>
+<p class="text-left">
+	Registration fees finance the rent of space, poster panels, AV support, furnishings, coffee
+	catering, and buffet lunches. The conference banquet is a separate charge.
+</p>
 <div class="flex justify-center">
 	<div class="w-full text-token grid grid-cols-1 md:grid-cols-2 gap-12">
 		<div class="card w-full overflow-hidden">
@@ -9,7 +11,7 @@
 				<hr class="opacity-50" />
 				<div class="flex flex-col justify-center p-5 space-y-10">
 					<h2 class="h2">S$350</h2>
-					<p class="text-secondary-800-100-token h3">Student: S$150</p>
+					<p class="text-secondary-800-100-token h2">Student*: S$150</p>
 				</div>
 			</div>
 		</div>
@@ -20,12 +22,16 @@
 				<hr class="opacity-50" />
 				<div class="flex flex-col justify-center p-5 space-y-10">
 					<h2 class="h2">S$400</h2>
-					<p class="text-secondary-800-100-token h3">Student: S$200</p>
+					<p class="text-secondary-800-100-token h2">Student*: S$200</p>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
+<p class="text-base">
+	*Had  graduate or undergraduate student status during the 2023-2024 academic year.
+</p>
 
 <div class="flex justify-center flex-col space-y-12">
 	<div class="flex w-full text-token justify-center">
@@ -41,7 +47,9 @@
 			</div>
 		</div>
 	</div>
-	<p class="text-surface-600-300-token">If you are interested in additional banquet tickets, please contact apcv2024@gmail.com</p>
+	<p class="text-surface-600-300-token pb-24">
+		If you are interested in additional banquet tickets, please contact <code class="code text-lg">apcv2024@gmail.com</code>
+	</p>
 </div>
 
 <style>

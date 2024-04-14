@@ -18,13 +18,14 @@
 					Abstracts for talks (12 minutes + 3 minutes for questions) or posters require only a
 					simple submission, consisting of:
 				</p>
-				<ul class="mx-6">
+				<ul class="mx-6 text-base">
 					<li>Author details</li>
 					<li>Abstract title</li>
-					<li>Abstract text (up to 300 words)</li>
+					<li>Abstract text | <span class="text-sm">up to 300 words</span></li>
 					<li>Keywords to help with program construction</li>
 					<li>Your preference for giving a talk or presenting a poster</li>
 				</ul>
+				<br>
 				<div class="justify-center text-center">
 					<a
 						href="https://easychair.org/conferences/?conf=apcv2024"

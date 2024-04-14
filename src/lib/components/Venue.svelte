@@ -1,5 +1,14 @@
 <script>
 	import { modeCurrent } from '@skeletonlabs/skeleton';
+
+	let hotels = [
+		{ name: 'Park Avenue Rochester', website: 'https://parkavenuegroup.com/property/singapore-rochester-parkavenue/', address: '31 Rochester Drive Park', info: '$$$ 30 minute walk or 15 minutes on bus 196'},
+		{ name: 'Fragrance Hotel', website: 'https://www.fragrancehotel.com/our-hotels/fragrance-oceanview.html', address: '432 Pasir Panjang Road', info: '$$ 30 minute walk or 15 minutes on bus 183'},
+		{ name: 'ibis budget Singapore West Coast', website: 'https://all.accor.com/hotel/B6I3/index.en.shtml', address: '418 Pasir Panjang Road', info: '$$ 30 minute walk or 15 minutes on bus 183'},
+		{ name: 'Travelodge Harbourfront', website: 'https://www.travelodgehotels.asia/travelodge-harbourfront/', address: '50 Telok Blangah Road', info: '$$$ 45 minutes on public transit or 15 minutes by car'},
+		// { name: '', website: '', address: ''},
+		// { name: '', website: '', address: ''},
+	];
 </script>
 
 <header class="flex w-full justify-between items-baseline mt-12 mb-8">
@@ -186,19 +195,29 @@
 		/>
 	</article>
 </div>
-<!-- <hr class="opacity-50" />
+<hr class="opacity-50" />
 
 <header class="flex w-full justify-between items-baseline mt-36 h-24">
 	<h2 class="h2 scroll-mt-24" id="Lecture halls">Where to stay</h2>
 </header>
 
 <div class=" mb-6 space-y-36 ml-4">
-	<article class="text-left text-lg">
+	<article class="text-left text-lg space-y-6">
 		<p class="text-surface-600-300-token leading-loose">
 			APCV 2024 does not block book hotel rooms. Below are some nearby hotels, though this list
 			should not be taken as a recommendation or endorsement. All are in safe areas, with fairly
 			easy access to the conference venue itself. <br />
 		</p>
+		<ul class="mx-6">
+			{#each hotels as hotel}
+				<li>
+					<a href={hotel.website} target="_blank" class="underline hover:no-underline"
+						>{hotel.name}</a
+					>
+					| <span class="text-base">{hotel.info}</span>
+				</li>
+			{/each}
+		</ul>
 	</article>
 </div>
-<hr class="opacity-50" /> -->
+<hr class="opacity-50" />

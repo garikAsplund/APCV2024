@@ -1,8 +1,8 @@
+<p class="text-left">Registration will open soon. Payments, however, will not begin to be collected until May. NUS is currently setting up a new payment system that promises to be easy to use, supportive of multiple payment forms, and more cost-effective.</p>
 <p class="text-left">
 	Registration fees finance the rent of space, poster panels, AV support, furnishings, coffee
 	catering, and buffet lunches. The conference banquet is a separate charge.
 </p>
-<p class="text-left">Registration will open soon. Payments, however, will not begin to be collected until May. NUS is currently setting up a new payment system that promises to be easy to use, supportive of multiple payment forms, and more cost-effective.</p>
 <div class="flex justify-center">
 	<div class="w-full text-token grid grid-cols-1 md:grid-cols-2 gap-12">
 		<div class="card w-full overflow-hidden">

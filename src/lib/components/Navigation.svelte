@@ -27,7 +27,7 @@
 					class="btn btn-lg w-full text-xl md:text-lg hover:bg-primary-600/20 border-surface-800-100-token"
 					href="/{item.toLowerCase()}"
 					on:click={drawerClose}
-					class:border-b-2={$page.data.path === item || ($page.data.path === "To presenters" && item === "To Presenters") || ($page.data.path === "Abstract submission" && item === "Abstract Submission")}
+					class:border-b-2={$page.data.path.includes(item) || ($page.data.path === "To presenters" && item === "To Presenters") || ($page.data.path === "Abstract submission" && item === "Abstract Submission")}
 				>
 					{item}
 				</a>

@@ -3,10 +3,10 @@
 
 	let hotels = [
 		{
-			name: 'Park Avenue Rochester',
-			website: 'https://parkavenuegroup.com/property/singapore-rochester-parkavenue/',
-			address: '31 Rochester Drive Park',
-			info: '$$$ 30 minute walk or 15 minutes on bus 196'
+			name: 'Prince George’s Park Residence (PGPR)',
+			website: 'https://uci.nus.edu.sg/ceu/student-hostel/pgpr/',
+			address: '',
+			info: '$ On campus hostel with standard rooms, common corridor, no A/C'
 		},
 		{
 			name: 'Fragrance Hotel',
@@ -21,12 +21,18 @@
 			info: '$$ 30 minute walk or 15 minutes on bus 183'
 		},
 		{
+			name: 'Park Avenue Rochester',
+			website: 'https://parkavenuegroup.com/property/singapore-rochester-parkavenue/',
+			address: '31 Rochester Drive Park',
+			info: '$$$ 30 minute walk or 15 minutes on bus 196'
+		},
+		{
 			name: 'Travelodge Harbourfront',
 			website: 'https://www.travelodgehotels.asia/travelodge-harbourfront/',
 			address: '50 Telok Blangah Road',
 			info: '$$$ 45 minutes on public transit or 15 minutes by car'
 		}
-		// { name: '', website: '', address: ''},
+
 		// { name: '', website: '', address: ''},
 	];
 </script>

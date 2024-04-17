@@ -26,7 +26,7 @@
 <div class="space-y-48">
 	<div class="flex flex-col-reverse lg:flex-row lg:justify-between">
 		<a href={speaker.link} target="_blank"
-			><div class="p-4 space-y-4 flex flex-col text-left">
+			><div class="py-4 space-y-4 flex flex-col text-left">
 				<div class="flex flex-col">
 					<h2 class="h2">{speaker.name}</h2>
 				</div>

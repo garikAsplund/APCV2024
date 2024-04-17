@@ -24,4 +24,5 @@ export interface SpeakerType {
     bio: string;
     moderator: string;
     photo: string;
+    link: string;
 }

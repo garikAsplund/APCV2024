@@ -2,12 +2,12 @@
 	import { modeCurrent } from '@skeletonlabs/skeleton';
 
 	let hotels = [
-		{
-			name: 'Prince George’s Park Residence (PGPR)',
-			website: 'https://uci.nus.edu.sg/ceu/student-hostel/pgpr/',
-			address: '',
-			info: '$ On campus hostel with standard rooms, common corridor, no A/C'
-		},
+		// {
+		// 	name: 'Prince George’s Park Residence (PGPR)',
+		// 	website: 'https://uci.nus.edu.sg/ceu/student-hostel/pgpr/',
+		// 	address: '',
+		// 	info: '$ On campus hostel with standard rooms, common corridor, no A/C'
+		// },
 		{
 			name: 'Fragrance Hotel',
 			website: 'https://www.fragrancehotel.com/our-hotels/fragrance-oceanview.html',
@@ -117,6 +117,7 @@
 		<img
 			src="https://images.unsplash.com/photo-1581234786309-3b720c895e92?q=80&w=3404&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 			alt="Jewel Changi Airport"
+			title="Jewel Changi Airport"
 		/>
 		<p class="text-surface-600-300-token leading-loose">
 			If you are coming from Changi Airport, take the Green Line to Buona Vista
@@ -233,6 +234,41 @@
 
 <div class=" mb-6 space-y-36 ml-4">
 	<article class="text-left text-lg space-y-6">
+		<!-- {
+			name: 'Prince George’s Park Residence (PGPR)',
+			website: 'https://uci.nus.edu.sg/ceu/student-hostel/pgpr/',
+			address: '',
+			info: '$ On campus hostel with standard rooms, common corridor, no A/C'
+		}, -->
+		<h4 class="h4 text-surface-300-600" data-toc-ignore>University housing</h4>
+		<p class="text-surface-600-300-token leading-loose">
+			There is limited housing available on campus at a reasonable rate. Please indicate if you wish
+			to book a room through conference registration. S$45 per night for students, S$64 per night
+			for non-students
+		</p>
+		<p class="text-surface-600-300-token leading-loose">
+			Rooms are furnished with a single bed, a ceiling fan, a writing desk and chair, a bookshelf, a
+			wardrobe and a mobile pedestal. Shower and toilet facilities as well as kitchenettes are
+			located along the common corridors.
+		</p>
+		<ul class="mx-6 pb-6">
+			<li>
+				<a
+					href="https://uci.nus.edu.sg/ceu/student-hostel/pgpr/"
+					target="_blank"
+					class="underline hover:no-underline">Prince George’s Park Residence</a
+				>
+				|
+				<span class="text-base"
+					>$ Standard rooms: single room, common corridor, non air-conditioned</span
+				>
+			</li>
+		</ul>
+		<img
+			src="https://uci.nus.edu.sg/ceu/wp-content/uploads/sites/4/2023/03/PGPR-AC-Standard-Room-reduced-size-scaled.jpg"
+			alt="PGPR room"
+		/>
+		<h4 class="h4 text-surface-300-600" data-toc-ignore>Hotels</h4>
 		<p class="text-surface-600-300-token leading-loose">
 			APCV 2024 does not block book hotel rooms. Below are some nearby hotels, though this list
 			should not be taken as a recommendation or endorsement. All are in safe areas, with fairly

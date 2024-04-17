@@ -10,6 +10,7 @@
 		bio: string;
 		moderator: string;
 		photo: string;
+		link: string;
 	}
 
 	export let speaker: Speaker;
@@ -24,7 +25,7 @@
 
 <div class="space-y-48">
 	<div class="flex flex-col-reverse lg:flex-row lg:justify-between">
-		<div class="p-4 space-y-4 flex flex-col text-left">
+		<a href={speaker.link} target="_blank"><div class="p-4 space-y-4 flex flex-col text-left">
 			<div class="flex flex-col">
 				<h2 class="h2">{speaker.name}</h2>
 			</div>
@@ -34,7 +35,7 @@
 					{speaker.affiliation}
 				</h5>
 			</div>
-		</div>
+		</div></a>
 		<picture class="">
 			<img
 				src={speaker.photo}
@@ -56,7 +57,7 @@
 	</article> -->
 
 	<article class="text-left">
-		<h3 class="h3 mb-2 scroll-mt-[100px]" id="Bio {speaker.slot}">Bio</h3>
+		<!-- <h3 class="h3 mb-2 scroll-mt-[100px]" id="Bio {speaker.slot}">Bio</h3> -->
 		<p class="text-surface-500-400-token leading-relaxed">
 			{speaker.bio}
 		</p>

@@ -260,7 +260,7 @@
 				>
 				|
 				<span class="text-base"
-					>$ Standard rooms: single room, common corridor, non air-conditioned</span
+					>$ 45 minute walk or 15 minutes on bus D2</span
 				>
 			</li>
 		</ul>

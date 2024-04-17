@@ -244,7 +244,7 @@
 		<p class="text-surface-600-300-token leading-loose">
 			There is limited housing available on campus at a reasonable rate. Please indicate if you wish
 			to book a room through conference registration. S$45 per night for students, S$64 per night
-			for non-students
+			for non-students.
 		</p>
 		<p class="text-surface-600-300-token leading-loose">
 			Rooms are furnished with a single bed, a ceiling fan, a writing desk and chair, a bookshelf, a

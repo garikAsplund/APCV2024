@@ -1,10 +1,10 @@
 <script lang="ts">
-
 	interface Speaker {
 		slot: number;
 		time: string;
 		name: string;
 		affiliation: string;
+		school: string;
 		title: string;
 		abstract: string;
 		bio: string;
@@ -25,17 +25,22 @@
 
 <div class="space-y-48">
 	<div class="flex flex-col-reverse lg:flex-row lg:justify-between">
-		<a href={speaker.link} target="_blank"><div class="p-4 space-y-4 flex flex-col text-left">
-			<div class="flex flex-col">
-				<h2 class="h2">{speaker.name}</h2>
-			</div>
-			<div>
-				<!-- <h1 class="h3">{speaker.name}</h1> -->
-				<h5 class="h5 text-surface-600-300-token opacity-80"  data-toc-ignore>
-					{speaker.affiliation}
-				</h5>
-			</div>
-		</div></a>
+		<a href={speaker.link} target="_blank"
+			><div class="p-4 space-y-4 flex flex-col text-left">
+				<div class="flex flex-col">
+					<h2 class="h2">{speaker.name}</h2>
+				</div>
+				<div>
+					<!-- <h1 class="h3">{speaker.name}</h1> -->
+					<h5 class="h5 text-surface-600-300-token opacity-80" data-toc-ignore>
+						{speaker.school}
+					</h5>
+					<h5 class="h6 text-surface-600-300-token opacity-50" data-toc-ignore>
+						{speaker.affiliation}
+					</h5>
+				</div>
+			</div></a
+		>
 		<picture class="">
 			<img
 				src={speaker.photo}
@@ -58,7 +63,7 @@
 
 	<article class="text-left">
 		<!-- <h3 class="h3 mb-2 scroll-mt-[100px]" id="Bio {speaker.slot}">Bio</h3> -->
-		<p class="text-surface-500-400-token leading-relaxed">
+		<p class="text-surface-500-400-token">
 			{speaker.bio}
 		</p>
 	</article>

@@ -19,6 +19,7 @@ export interface SpeakerType {
     time: string;
     name: string;
     affiliation: string;
+    school: string;
     title: string;
     abstract: string;
     bio: string;

@@ -52,8 +52,8 @@
 	<!-- Page Route Content -->
 	<slot />
 	<svelte:fragment slot="pageFooter">
-		{#if !$page.data.path.includes('Program')}
+		<!-- {#if !$page.data.path.includes('Program')} -->
 			<Footer />
-		{/if}
+		<!-- {/if} -->
 	</svelte:fragment>
 </AppShell>

@@ -1,6 +1,5 @@
 <script lang="ts">
-	import Keynotes from "$lib/components/Keynotes.svelte";
-
+	import Keynotes from '$lib/components/Keynotes.svelte';
 </script>
 
 <div class="container mx-auto flex lg:space-x-8">
@@ -15,6 +14,7 @@
 			<div class="space-y-6 text-xl mx-6">
 				<!-- <p class=" md:text-xl text-lg">Check back soon for more details.</p> -->
 				<Keynotes />
+				<p class="pb-24 md:text-xl text-lg">More program details will be released soon.</p>
 			</div>
 		</div>
 	</div>

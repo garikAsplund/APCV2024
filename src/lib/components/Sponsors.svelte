@@ -6,7 +6,7 @@
 
 <div class="w-2/3 text-center space-y-12 md:space-y-0">
 	<div>
-		<h2 class="h2 mb-4">Thank you to our sponsors</h2>
+		<h2 class="h2 mb-4">Thank you to our hosting institutions</h2>
 		<hr class="h-0.5 bg-surface-800-100-token" />
 	</div>
 	<div class="flex flex-col md:flex-row md:justify-around items-center">

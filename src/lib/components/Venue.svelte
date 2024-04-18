@@ -107,11 +107,12 @@
 			>. There are covered paths from the bus stop to Yale-NUS College.
 		</p>
 		<p>
-			Or you can take public transit (bus 33, 151, 183, or 196) to the <a
+			Alternatively, you can reach Yale-NUS College from other parts of Singapore by bus. The final
+			stop is the <a
 				class="underline hover:no-underline"
 				href="https://businterchange.net/sgbus/stops/busstop.php?stop=17099"
 				target="_blank">Yale-NUS bus stop</a
-			> on Clementi Road.
+			> bus stop on Clementi Road, serviced by buses 33, 151, 183, or 196.
 		</p>
 		<h4 class="h4 text-surface-300-600" data-toc-ignore>From the airport</h4>
 		<img
@@ -220,7 +221,7 @@
 			Tended greenery abounds, as do wilder areas in both the island's center and its coasts.
 		</p>
 		<img
-			class="mb-24"
+			class="mb-24 {$modeCurrent ? '' : ' saturate-75 brightness-75'}"
 			src="https://images.unsplash.com/photo-1576669489170-fa28e7b823db?q=80&w=3562&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 			alt="A city in a garden"
 		/>
@@ -242,9 +243,10 @@
 		}, -->
 		<h4 class="h4 text-surface-300-600" data-toc-ignore>University housing</h4>
 		<p class="text-surface-600-300-token leading-loose">
-			There is limited housing available on campus at a reasonable rate. Please indicate if you wish
-			to book a room through conference registration. S$45 per night for students, S$64 per night
-			for non-students.
+			There is limited university housing available at a reasonable rate. A single room is S$45 per
+			night for students and S$64 per night for others. Check-in is after 2pm on 9 July and check-out
+			is before 12pm on 13 July. Please indicate whether you are interested in this housing during
+			conference registration, by 13 May at the latest.
 		</p>
 		<p class="text-surface-600-300-token leading-loose">
 			Rooms are furnished with a single bed, a ceiling fan, a writing desk and chair, a bookshelf, a
@@ -259,13 +261,16 @@
 					class="underline hover:no-underline">Prince George’s Park Residence</a
 				>
 				|
-				<span class="text-base"
-					>$ 45 minute walk or 15 minutes on bus D2</span
-				>
+				<span class="text-base">$ 45 minute walk or 15 minutes on <a
+					class="underline hover:no-underline"
+					href="https://uci.nus.edu.sg/oca/mobilityservices/getting-around-nus/"
+					target="_blank">bus D2</a
+				>.</span>
 			</li>
 		</ul>
 		<img
 			src="https://uci.nus.edu.sg/ceu/wp-content/uploads/sites/4/2023/03/PGPR-AC-Standard-Room-reduced-size-scaled.jpg"
+			class={$modeCurrent ? '' : ' saturate-75 brightness-75'}
 			alt="PGPR room"
 		/>
 		<h4 class="h4 text-surface-300-600" data-toc-ignore>Hotels</h4>

@@ -126,11 +126,13 @@
 				</div> -->
 				<!-- <button class="btn hover:variant-outline-primary" use:popup={popupAbstracts}> -->
 				<div>
+					<a href='https://easychair.org/conferences/?conf=apcv2024' target="_blank">
 					<p class="mt-4 text-xl dark">
-						Conference registration <code class="code text-lg">open soon</code> 
+						<span class="underline hover:no-underline">Conference registration</span> <code class="code text-lg">open now</code> 
 						<!-- through 31 May (early)
 						and 30 June (normal) -->
 					</p>
+					</a>
 				</div>
 				<div>
 					<p class="mt-4 text-xl dark"

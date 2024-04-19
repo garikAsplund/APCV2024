@@ -309,7 +309,7 @@
 				</li>
 			{/each}
 		</ul>
-		<div class="flex w-full bg-scroll h-96 scrollbar-hide mb-36 mt-12 -z-10">
+		<div class="flex w-full bg-scroll h-96 scrollbar-hide mb-36 mt-12 -z-10 ">
 			<iframe
 				src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31910.466370439884!2d103.78226697279621!3d1.2892468749043782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shotels%20near%20NUS!5e0!3m2!1sen!2sus!4v1713129899282!5m2!1sen!2sus"
 				class="w-full saturate-100 contrast-125 {$modeCurrent ? '' : 'invert hue-rotate-180'}"

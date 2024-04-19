@@ -4,7 +4,7 @@
 	import YaleNUS from './YaleNUS.svelte';
 </script>
 
-<div class="w-2/3 text-center space-y-12 md:space-y-0">
+<div class="w-2/3 text-center space-y-12 md:space-y-0 py-36">
 	<div>
 		<h2 class="h2 mb-4">Thank you to our hosting institutions</h2>
 		<hr class="h-0.5 bg-surface-800-100-token" />

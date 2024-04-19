@@ -53,7 +53,7 @@
 		>
 	</div>
 </div> -->
-<div class=" w-10/12 text-lg md:text-xl md:w-2/3 lg:w-7/12 xl:w-5/12 space-y-4 py-36" id="symposia">
+<!-- <div class=" w-10/12 text-lg md:text-xl md:w-2/3 lg:w-7/12 xl:w-5/12 space-y-4 py-36" id="symposia">
 	<h3 class="h3 text-center">Call for symposia</h3>
 	<hr class="h-0.5 bg-surface-800-100-token" />
 	<p>
@@ -75,5 +75,5 @@
 		<li>Program details — Individual talk abstracts</li>
 		<li>Any additional information or requests</li>
 	</ul>
-</div>
+</div> -->
 <div></div>

@@ -40,7 +40,7 @@
 	};
 </script>
 
-<div class="w-fit flex flex-col justify-start">
+<div class="w-fit flex flex-col justify-start py-36">
 	<h2 class="h2 text-center mb-4">Organizing committee</h2>
 
 	<hr class="h-0.5 bg-surface-800-100-token" />

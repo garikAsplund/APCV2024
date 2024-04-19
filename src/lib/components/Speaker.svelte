@@ -63,7 +63,7 @@
 
 	<article class="text-left">
 		<!-- <h3 class="h3 mb-2 scroll-mt-[100px]" id="Bio {speaker.slot}">Bio</h3> -->
-		<p class="text-surface-500-400-token">
+		<p class="text-surface-500-400-token lg:leading">
 			{speaker.bio}
 		</p>
 	</article>

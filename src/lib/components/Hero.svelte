@@ -63,7 +63,7 @@
 			APCV 2024 SG
 		</h2>
 		<h3 class="h3">The 16th Asia Pacific Conference on Vision</h3>
-		<div class="space-y-3 md:space-y-6">
+		<div class="space-y-3 md:space-y-6 mx-4">
 			<p class="font-bold md:text-4xl text-2xl">10-12 July</p>
 			<p class="dark"><code class="code md:text-xl text-lg">Yale-NUS College</code></p>
 			<p class="dark">
@@ -126,29 +126,39 @@
 				</div> -->
 				<!-- <button class="btn hover:variant-outline-primary" use:popup={popupAbstracts}> -->
 				<div>
-					<a href='https://easychair.org/conferences/?conf=apcv2024' target="_blank">
-					<p class="mt-4 text-xl dark">
-						<span class="underline hover:no-underline">Conference registration</span> <code class="code text-lg">open now</code> 
-						<!-- through 31 May (early)
+					<a href="https://easychair.org/conferences/?conf=apcv2024" target="_blank">
+						<p class="mt-4 text-xl dark">
+							<span class="underline hover:no-underline">Conference registration</span>
+							<code class="code text-lg">open now</code>
+							<!-- through 31 May (early)
 						and 30 June (normal) -->
-					</p>
+						</p>
 					</a>
+					<p class="text-base mt-4 opacity-80">
+						Early registration until 31 May | University housing available until 13 May
+					</p>
 				</div>
 				<div>
-					<p class="mt-4 text-xl dark"
-					>
-						<a href='/abstract submission' >
-							<span class="underline hover:no-underline">Call for abstracts</span> <code class=" code text-lg">open now</code> until <b>3 May</b>
+					<p class="mt-4 text-xl dark">
+						<a href="/abstract submission">
+							<span class="underline hover:no-underline">Call for abstracts</span>
+							<code class=" code text-lg">open now</code>
+							until <b>3 May</b>
 						</a>
 					</p>
+
+					<p class="text-base mt-4 opacity-80">
+						Abstracts will be accepted later, but we would appreciate submissions by 3 May to
+						facilitate planning and scheduling.
+					</p>
 				</div>
-				<div>
+				<!-- <div>
 					<p class="mt-4 text-xl dark">
 						<a href={'#'} on:click|preventDefault={() => scrollToElement('symposia')}>
 							<span class="underline hover:no-underline">Call for symposia</span> <code class="code text-lg">closed</code>
 						</a>
 					</p>
-				</div>
+				</div> -->
 				<!-- </button
 				> -->
 

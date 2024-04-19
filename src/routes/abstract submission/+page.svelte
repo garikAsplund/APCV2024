@@ -1,5 +1,7 @@
 <div class="container h-full mx-auto flex justify-center">
-	<div class="space-y-10 text-center flex flex-col items-center mt-12 w-full sm:w-5/6 md:w-2/3 lg:w-3/4">
+	<div
+		class="space-y-10 text-center flex flex-col items-center mt-12 w-full sm:w-5/6 md:w-4/5 lg:w-3/4 mx-4"
+	>
 		<h2
 			class=" md:text-4xl lg:text-5xl decoration-0 text-3xl text-secondary-100-token leading-loose tracking-wider"
 		>
@@ -13,7 +15,7 @@
 			<div class="ml-4 space-y-4 text-surface-600-300-token">
 				<p>Abstract submission for APCV 2024 is now open!</p>
 				<p>We apologize for the delay, and we will review submissions as quickly as possible.</p>
-				<p>The abstract submission deadline is <b>3 May 2024 in the last timezone on Earth.</b></p>
+				<p>The abstract submission deadline is <b>3 May 2024 in the last timezone on Earth.</b> Abstracts will be accepted later, but we would appreciate submissions by 3 May to facilitate planning and scheduling.</p>
 				<p>
 					Abstracts for talks (12 minutes + 3 minutes for questions) or posters require only a
 					simple submission, consisting of:

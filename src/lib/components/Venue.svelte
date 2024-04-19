@@ -1,7 +1,33 @@
 <script lang="ts">
 	import { modeCurrent } from '@skeletonlabs/skeleton';
+	import PhotoSwipe from '$lib/components/PhotoSwipe.svelte';
+	// import type { GalleryItem } from '$lib/components/PhotoSwipe.svelte';
+	const images = [
+		{
+			largeURL:
+				'https://www.yale-nus.edu.sg/college-life/wp-content/uploads/sites/28/2022/01/TCT-new-pic-3-scaled.jpg',
+			thumbnailURL:
+				'https://www.yale-nus.edu.sg/college-life/wp-content/uploads/sites/28/2022/01/TCT-new-pic-3-scaled.jpg',
+			width: '100%',
+			height: 'auto'
+		}
+		// {
+		// 	largeURL: 'https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg',
+		// 	thumbnailURL: 'https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg',
+		// 	width: 1669,
+		// 	height: 2500
+		// },
+		// {
+		// 	largeURL: 'https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg',
+		// 	thumbnailURL: 'https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg',
+		// 	width: 2500,
+		// 	height: 1666
+		// }
+	];
 
-	let hotels = [
+	// import campusImageDark from '$lib/images/yale-nus.jpeg';
+
+	const hotels = [
 		// {
 		// 	name: 'Prince George’s Park Residence (PGPR)',
 		// 	website: 'https://uci.nus.edu.sg/ceu/student-hostel/pgpr/',
@@ -44,33 +70,25 @@
 <div class="mb-6 space-y-36 ml-4">
 	<article class="text-left space-y-6 text-lg text-surface-600-300-token leading-loose">
 		{#if $modeCurrent === true}
-			<img
-				src="https://pcparch.com/media/pages/news/yale-nus-college-wins-aia-award/ce2f6a2f26-1711376808/yale-nus-college-campus-residential-academic-buildings-2880x-q80.jpg"
-				alt="Yale-NUS campus"
-			/>
+			<enhanced:img src="$lib/images/yale-nus-day.jpeg" alt="Yale-NUS campus during daytime" />
 		{:else}
-			<img src="../yale-nus.jpeg" alt="Yale-NUS campus" />{/if}
+			<enhanced:img src="$lib/images/yale-nus.jpeg" alt="Yale-NUS campus at night" />{/if}
 		<p>
 			<a href="https://www.yale-nus.edu.sg/" class="underline hover:no-underline" target="_blank">
 				Yale-NUS College</a
 			> is a residential liberal arts college that was founded by the National University of Singapore
 			and Yale University in 2011. Its beautiful facilities include a performance hall, lecture spaces,
-			a black box theatre, a library, and a multipurpose hall--all built around a green space and pond.
+			a black box theatre, a library, and a multipurpose hall—all built around a green space and pond.
 		</p>
+		<!-- <PhotoSwipe {images} galleryID="my-test-gallery" /> -->
 		<p>
 			The conference will enjoy the use of these spaces, and the College is also a convenient
 			launching point for exploring other parts of Singapore.
 		</p>
 		{#if $modeCurrent === true}
-			<img
-				src="https://www.yale-nus.edu.sg/wp-content/uploads/2021/11/About_Key-Facts_Desktop-Banner.jpg"
-				alt="Yale-NUS campus"
-			/>
+			<enhanced:img src="$lib/images/yale-nus-banner.jpeg" alt="Yale-NUS campus" />
 		{:else}
-			<img
-				src="https://www.yale-nus.edu.sg/wp-content/uploads/2016/07/Banner-Campus-1024x441.jpg"
-				alt="Yale-NUS campus"
-			/>
+			<enhanced:img src="$lib/images/yale-nus-night.jpeg" alt="Yale-NUS campus" />
 		{/if}
 	</article>
 </div>
@@ -115,8 +133,8 @@
 			> bus stop on Clementi Road, serviced by buses 33, 151, 183, or 196.
 		</p>
 		<h4 class="h4 text-surface-300-600" data-toc-ignore>From the airport</h4>
-		<img
-			src="https://images.unsplash.com/photo-1581234786309-3b720c895e92?q=80&w=3404&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+		<enhanced:img
+			src="$lib/images/jewel.jpeg"
 			alt="Jewel Changi Airport"
 			title="Jewel Changi Airport"
 		/>
@@ -244,9 +262,9 @@
 		<h4 class="h4 text-surface-300-600" data-toc-ignore>University housing</h4>
 		<p class="text-surface-600-300-token leading-loose">
 			There is limited university housing available at a reasonable rate. A single room is S$45 per
-			night for students and S$64 per night for others. Check-in is after 2pm on 9 July and check-out
-			is before 12pm on 13 July. Please indicate whether you are interested in this housing during
-			conference registration, by 13 May at the latest.
+			night for students and S$64 per night for others. Check-in is after 2pm on 9 July and
+			check-out is before 12pm on 13 July. Please indicate whether you are interested in this
+			housing during conference registration, by 13 May at the latest.
 		</p>
 		<p class="text-surface-600-300-token leading-loose">
 			Rooms are furnished with a single bed, a ceiling fan, a writing desk and chair, a bookshelf, a
@@ -261,15 +279,17 @@
 					class="underline hover:no-underline">Prince George’s Park Residence</a
 				>
 				|
-				<span class="text-base">$ 45 minute walk or 15 minutes on <a
-					class="underline hover:no-underline"
-					href="https://uci.nus.edu.sg/oca/mobilityservices/getting-around-nus/"
-					target="_blank">bus D2</a
-				>.</span>
+				<span class="text-base"
+					>$ 45 minute walk or 15 minutes on <a
+						class="underline hover:no-underline"
+						href="https://uci.nus.edu.sg/oca/mobilityservices/getting-around-nus/"
+						target="_blank">bus D2</a
+					>.</span
+				>
 			</li>
 		</ul>
-		<img
-			src="https://uci.nus.edu.sg/ceu/wp-content/uploads/sites/4/2023/03/PGPR-AC-Standard-Room-reduced-size-scaled.jpg"
+		<enhanced:img
+			src="$lib/images/pgpr.jpeg"
 			class={$modeCurrent ? '' : ' saturate-75 brightness-75'}
 			alt="PGPR room"
 		/>

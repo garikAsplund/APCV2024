@@ -9,7 +9,7 @@
 		drawerStore.close();
 	}
 
-	console.log("page data path: ", $page.data.path);
+	// console.log("page data path: ", $page.data.path);
 </script>
 
 <nav class="list-nav w-full flex justify-center md:p-2 lg:px-6 lg:text-xl">

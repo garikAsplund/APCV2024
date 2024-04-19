@@ -3,7 +3,7 @@
 		Members: [
 			{
 				name: 'Christopher L. Asplund (Chair)',
-				school: 'Yale-NUS College, National University of Singapore',
+				school: 'Yale-NUS College & N.1 Institute for Health, National University of Singapore',
 				website: 'https://sites.google.com/site/asplundcl/home'
 			},
 			{
@@ -13,13 +13,13 @@
 			},
 			{
 				name: 'Shih-Cheng Yen',
-				school: 'College of Design and Engineering, National University of Singapore',
+				school: 'College of Design and Engineering & N.1 Institute for Health, National University of Singapore',
 				website: ''
 			},
 			{
 				name: 'Mengmi Zhang',
-				school: 'School of Computer Science and Engineering, Nanyang Technological University',
-				website: ''
+				school: 'School of Computer Science and Engineering, Nanyang Technological University & Agency for Science, Technology, and Research (A*STAR)',
+				website: 'https://dr.ntu.edu.sg/cris/rp/rp02397'
 			},
 			{
 				name: 'Colin Palmer',
@@ -33,7 +33,7 @@
 			},
 			{
 				name: 'Camilo Libedinsky',
-				school: 'Department of Psychology, National University of Singapore',
+				school: 'Department of Psychology & N.1 Institute for Health, National University of Singapore',
 				website: ''
 			}
 		]

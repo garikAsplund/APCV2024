@@ -5,6 +5,8 @@
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
 	import { time, title } from '$lib/stores';
 	import type { SpeakerType } from '$lib/types';
+	import shin from '$lib/images/shin.jpeg?enhanced';
+	import jeremy from '$lib/images/jeremy.jpeg?enhanced';
 
 	let isInView: boolean;
 
@@ -32,7 +34,7 @@
 				'The internal visual world is thought to be encoded in hierarchical representations of the brain. However, previous attempts to visualize perceptual contents based on machine-learning analysis of fMRI patterns have been limited to reconstructions with low level image bases or to matchings to exemplars. While categorical decoding of imagery contents has been demonstrated, the reconstruction of internally generated images has been challenging. I introduce our recent study showing that visual cortical activity can be decoded (translated) into the hierarchical features of a pre-trained deep neural network (DNN) for the same input image, providing a way to make use of the information from hierarchical visual features. Next I present a novel image reconstruction method, in which the pixel values of an image are optimized to make its DNN features similar to those decoded from human brain activity at multiple layers. Our method was able to reliably produce reconstructions that resembled the viewed natural images. While our model was solely trained with natural images, it successfully generalized to artificial shapes, indicating that our model was not simply matching to exemplars. The same analysis applied to mental imagery demonstrated rudimentary reconstructions of the subjective content. Our method can effectively combine hierarchical neural representations to reconstruct perceptual and subjective images, providing a new window into the internal contents of the brain.',
 			bio: 'Wolfe received an AB in Psychology in 1977 from Princeton and his PhD in Psychology in 1981 from MIT under the supervision of Richard Held. His research focuses on visual search and visual attention with a particular interest in socially important search tasks in areas such as medical image perception (e.g. cancer screening), security (e.g. baggage screening), and intelligence. He taught Intro. Psychology and other courses for 25 years, mostly at MIT. Wolfe is an elected member of the American Academy of Arts and Sciences and a Fellow of AAAS, APA (Div 1, 3, & 6), and APS. He has been President of the Federation of Associations in Behavioral and Brain Sciences (FABBS), President of the Eastern Psychological Association, Chair of the Board of the Psychonomic Society and a member of the Board of the Vision Sciences Society. He was the founding Editor-in-Chief of Cognitive Research: Principles and Implications (CRPI) and was Editor of Attention, Perception, and Psychophysics. Wolfe also serves on the North American Board of the Union for Reform Judaism. He is married to Julie Sandell; Provost of Suffolk University in Boston (Information accurate in March, 2022). They have three sons: Ben, Philip, and Simon. Wolfe’s office contains more stuffed animals than one would expect in the office of a grown man.',
 			moderator: "Shin'ya Nishida (Kyoto University, NTT)",
-			photo: 'https://search.bwh.harvard.edu/new/pics_ppl/thumbs120/jeremy2022.jpeg',
+			photo: jeremy,
 			link: 'https://search.bwh.harvard.edu/new/lab_members.html'
 		},
 		{
@@ -47,8 +49,7 @@
   I will talk about the future strategy of outer retinal transplantation.`,
 			bio: 'The Shimojo Psychophysics Laboratory is one of the few laboratories on the campus of the Caltech which exclusively concentrates on the study of perception, cognition, and action in humans. The lab employs psychophysical paradigms and a variety of recording techniques such as eye-tracking, functional magnetic resonance imaging (fMRI), electroencephalogram (EEG), as well as, brain stimulation techniques such as transcranial magnetic stimulation (TMS), transcranial direct current stimulation (tDCS), and recently ultrasound neuromodulation (UNM). They try to bridge the gap between cognitive and neurosciences. They would like to understand how the brain adapts real-world constraints to resolve perceptual ambiguity and to reach ecologically valid, unique solutions. In addition to their continuing interest in surface representation, motion perception, attention, and action, they also focus on crossmodal integration (including VR environments), visual preference/attractiveness decision, social brain, flow and choke in the game-playing brains and individual differences related to "neural, dynamic fingerprint" of the brain.',
 			moderator: 'Ichiro Fujita (Osaka University)',
-			photo:
-				'https://divisions-prod.s3.amazonaws.com/bbe20/People/Shinsuke%20%28Shin%29%20Shimojo/images/shimojo-2.df3989a7.fill-310x412-c100.jpg',
+			photo: shin,
 			link: 'https://neuroscience.caltech.edu/people/shinsuke-shin-shimojo'
 		}
 		// {

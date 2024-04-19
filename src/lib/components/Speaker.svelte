@@ -41,15 +41,15 @@
 				</div>
 			</div></a
 		>
-		<picture class="">
-			<img
+		<!-- <picture class=""> -->
+			<enhanced:img
 				src={speaker.photo}
 				class="overflow-hidden object-top object-cover"
-				width="200"
-				height="auto"
+				style:width="200px"
+				style:height="auto"
 				alt={`Keynote speaker ${speaker.name}`}
 			/>
-		</picture>
+		<!-- </picture> -->
 	</div>
 </div>
 

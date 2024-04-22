@@ -18,9 +18,18 @@
 	<ul class="mx-8 space-y-1 text-base">
 		<li>Visual psychophysics</li>
 		<li>Visual neuroscience</li>
+		<li>Perception and attention</li>
+		<li>Eye movements</li>
 		<li>Visual cognition</li>
-		<li>Computer vision</li>
+		<li>Social perception</li>
+		<li>Face and object perception</li>
+		<li>Computational vision</li>
+		<li>Artificial / computer vision</li>
+		<li>Art and visual science</li>
 		<li>Multisensory integration</li>
+		<li>Reading and word recognition</li>
+		<li>Visual memory</li>
+		<li>Visual development</li>
 		<li>Decisions and action</li>
 	</ul>
 	<p>

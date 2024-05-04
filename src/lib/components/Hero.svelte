@@ -143,13 +143,12 @@
 						<a href="/abstract submission">
 							<span class="underline hover:no-underline">Call for abstracts</span>
 							<code class=" code text-lg">open now</code>
-							until <b>3 May</b>
 						</a>
 					</p>
 
 					<p class="text-base mt-4 opacity-80">
-						Abstracts will be accepted later, but we would appreciate submissions by 3 May to
-						facilitate planning and scheduling.
+						The committee is currently reviewing the abstracts received by the 3 May deadline.<br /><br/>
+						As promised, we are still accepting abstract submissions through 24 May.
 					</p>
 				</div>
 				<!-- <div>

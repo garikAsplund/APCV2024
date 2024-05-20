@@ -9,6 +9,8 @@
 	import jeremy from '$lib/images/jeremy.jpeg?enhanced';
 	import wei from '$lib/images/wei.jpeg?enhanced';
 	import ning from '$lib/images/ning.jpeg?enhanced';
+	import li from '$lib/images/li.jpeg?enhanced';
+	import stephanie from '$lib/images/stephanie.jpeg?enhanced';
 
 	let isInView: boolean;
 
@@ -84,6 +86,37 @@
 			moderator: 'Ichiro Fujita (Osaka University)',
 			photo: ning,
 			link: 'https://www.neurosciencephd.columbia.edu/content/ning-qian-phd'
+		},
+		{
+			slot: 5,
+			time: 'Tuesday, 17:15 PM - 18:15 PM',
+			name: 'Li Zhaoping',
+			affiliation: 'Professor, Head of Sensory and Sensorimotor Systems',
+			school: 'Max Planck Institute for Biological Cybernetics',
+			title: 'Pluripotent stem cell derived photoreceptor transplantation',
+			abstract: `Photoreceptor transplantation is a possible treatment to restore visual function to photoreceptor only degenerated retinas such as retinitis pigmentosa. We have been reported that the sensory retinal sheet transplantation, which supplies photoreceptors and secondary retinal neurons, can reintroduce visual function in mice with end-stage retinal degeneration. For the photoreceptor transplantation, previously many groups used photoreceptor suspension. However, it was revealed in 2017 that in those suspension transplantation GFP positive cells were host cells that have material transfer from grafted cells. In fact, transplanted retinal sheets survive for a longer period than suspended cells. Furthermore, only retinal sheets could become mature in the subretinal space and obtain tissue structure with outer segments of photoreceptors after transplantation. To confirm the functional recovery by the grafted sheets, we developed new disease mice models and functional tests analysis. With those, synaptic contact between graft photoreceptors and host bipolar cells was confirmed by immunohistochemistry, electrical physiology, and behavior tests. MEA recording showed that grafted cells could elicit light responses in the host ganglion cells.
+  Now we are investigating how to increase the number of synapses and efficacy of transplantation. However, immunohistochemical characterization of synapse in the degenerated retina or of grafted retina is often challenging, as traits are not as clear as in the wild type retina. Therefore, using postnatal wild type mouse retina as a training data, we developed a new method to objectively count synapses. Using this method, we evaluated the synapses of iPSC-retina after transplantation to rd1 mice. The number of synapses increased on 30 days after transplantation, while we could not found any synapse formation in in vtro retinal organoids. The synapse numbers were more in the light/dark cycle environment than completely dark one.
+  I will talk about the future strategy of outer retinal transplantation.`,
+			bio: `Dr. Li obtained her B.S. in Physics in 1984 from Fudan University, Shanghai, and Ph.D. in Physics in 1989 from California Institute of Technology. She was a postdoctoral researcher in Fermi National Laboratory in Batavia, Illinois USA, Institute for Advanced Study in Princeton New Jersey, USA, and Rockefeller University in New York USA. She has been a faculty member in Computer Science in Hong Kong University of Science and Technology, and was a visiting scientist at various academic institutions. In 1998, she and her colleagues co-founded the Gatsby Computational Neuroscience Unit in University College London. From Oct. 2018, she is a professor in University of Tuebingen and the head of the Department of Sensory and Sensorimotor Systems at the Max Planck Institute for Biological Cybernetics in Tuebingen, Germany. Her research experience throughout the years ranges from areas in high energy physics to neurophysiology and marine biology, with most experience in understanding the brain functions in <a href="https://www.lizhaoping.org/zhaoping/papers.html" target="_blank" class="underline hover:no-underline">vision</a>, <a href="https://www.lizhaoping.org/zhaoping/olfaction.html" target="_blank" class="underline hover:no-underline">olfaction</a>, and in <a href="https://www.lizhaoping.org/zhaoping/dynamics.html" target="_blank" class="underline hover:no-underline">nonlinear neural dynamics</a>. In late 90s and early 2000s, she proposed a theory (which is being extensively tested) that the primary visual cortex in the primate brain creates a <a href="https://www.lizhaoping.org/zhaoping/V1Saliency.html" target="_blank" class="underline hover:no-underline">saliency map</a> to automatically attract visual attention to salient visual locations. This theory, and the supporting experimental evidence, have led her to propose <a href="https://www.lizhaoping.org/zhaoping/NewPathPaperEtc_2019.html" target="_blank" class="underline hover:no-underline">a new framework for understanding vision</a>. She is also the author of <a href="https://www.lizhaoping.org/zhaoping/VisionBook.html" target="_blank" class="underline hover:no-underline">Understanding Vision: theory, models, and data</a>, Oxford University Press, 2014.`,
+			moderator: 'Ichiro Fujita (Osaka University)',
+			photo: li,
+			link: 'https://www.lizhaoping.org/zhaoping/index.html'
+		},
+		{
+			slot: 6,
+			time: 'Tuesday, 17:15 PM - 18:15 PM',
+			name: 'Stephanie Goodhew',
+			affiliation: 'Associate Professor',
+			school: 'The Australian National University',
+			title: 'Pluripotent stem cell derived photoreceptor transplantation',
+			abstract: `Photoreceptor transplantation is a possible treatment to restore visual function to photoreceptor only degenerated retinas such as retinitis pigmentosa. We have been reported that the sensory retinal sheet transplantation, which supplies photoreceptors and secondary retinal neurons, can reintroduce visual function in mice with end-stage retinal degeneration. For the photoreceptor transplantation, previously many groups used photoreceptor suspension. However, it was revealed in 2017 that in those suspension transplantation GFP positive cells were host cells that have material transfer from grafted cells. In fact, transplanted retinal sheets survive for a longer period than suspended cells. Furthermore, only retinal sheets could become mature in the subretinal space and obtain tissue structure with outer segments of photoreceptors after transplantation. To confirm the functional recovery by the grafted sheets, we developed new disease mice models and functional tests analysis. With those, synaptic contact between graft photoreceptors and host bipolar cells was confirmed by immunohistochemistry, electrical physiology, and behavior tests. MEA recording showed that grafted cells could elicit light responses in the host ganglion cells.
+  Now we are investigating how to increase the number of synapses and efficacy of transplantation. However, immunohistochemical characterization of synapse in the degenerated retina or of grafted retina is often challenging, as traits are not as clear as in the wild type retina. Therefore, using postnatal wild type mouse retina as a training data, we developed a new method to objectively count synapses. Using this method, we evaluated the synapses of iPSC-retina after transplantation to rd1 mice. The number of synapses increased on 30 days after transplantation, while we could not found any synapse formation in in vtro retinal organoids. The synapse numbers were more in the light/dark cycle environment than completely dark one.
+  I will talk about the future strategy of outer retinal transplantation.`,
+			bio: `Dr. Goodhew is currently an Associate Professor at The Australian National University (ANU).  She completed her PhD at the University of Queensland and then a postdoctoral fellowship at the University of Toronto. She then moved to ANU, where she was previously an ARC Future Fellow, Senior Lecturer, and Australian Research Council (ARC) Discovery Early Career Researcher.
+<br/><br/>To err is human: we all make mistakes in everyday life. Sometimes such everyday cognitive slips and lapses have relatively trivial consequences, such as the inconvenience of missing a forgotten-about appointment. But other times, such cognitive failures can have profound consequences, such as failing to notice a safety-critical sign by the side of the road resulting in a car crash. While everyone succumbs to cognitive failures, there are clear and meaningful individual differences in the frequency with which they are experienced. One measure that has a long and illustrious history of measuring these differences is the Cognitive Failures Questionnaire (CFQ). CFQ scores are related to a host of important real-world outcomes, such as a person’s risk of being responsible for a car crash or work accident. Dr. Goodhew has an ongoing program of research investigating the mechanisms underlying cognitive failures, and assessing the convergences and divergences between people’s subjective experiences of cognitive failures and their objective performance on important cognitive tasks.`,
+			moderator: 'Ichiro Fujita (Osaka University)',
+			photo: stephanie,
+			link: 'https://psychology.anu.edu.au/people/academics/prof-stephanie-goodhew'
 		}
 	];
 </script>

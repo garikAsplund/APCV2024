@@ -35,7 +35,7 @@
 					The poster sessions will take place in Yale-NUS College's Multipurpose Hall. Posterboard
 					dimensions are as follows:
 				</p>
-				<ul class="mx-4">
+				<ul class="mx-6 text-base">
 					<li>Total height: 211 cm</li>
 					<li>Width: 119 cm</li>
 					<li>Display height: 167 cm</li>

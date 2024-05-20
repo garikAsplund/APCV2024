@@ -8,7 +8,7 @@
 			Information to presenters
 		</h2>
 
-		<div class="space-y-6 text-xl text-left ">
+		<div class="space-y-6 text-xl text-left">
 			<!-- <p><code class="code md:text-xl text-lg">Check back soon for more details</code></p> -->
 			<!-- <hr class="h-0.5 bg-surface-800-100-token" /> -->
 			<!-- Split the oral into “talks” and “symposium presentations”. 
@@ -20,20 +20,33 @@
 				<p>All lecture halls have both HDMI and VGA connectors.</p>
 				<h3 class="h3">Talks</h3>
 				<p class="mx-4">
-					Please prepare your talk to last for up to 12 minutes and allow 3 minutes for
-					discussion.
-				<p>
+					Please prepare your talk to last for up to 12 minutes and allow 3 minutes for discussion.
+				</p>
+				<p></p>
 				<h3 class="h3">Symposium presentations</h3>
 				<p class="mx-4">
-					Please prepare your slides to last for up to 25 minutes and allow 5 minutes for
-					questions.
+					Please prepare your slides to last for up to 25 minutes and allow 5 minutes for questions.
 				</p>
 			</div>
 			<!-- <hr class="h-0.5 bg-surface-800-100-token" /> -->
 			<h2 class="h2">Poster presentations</h2>
 			<div class="ml-4 space-y-4 text-surface-600-300-token">
 				<p>
-					Each poster presenter is allocated one side of one panel. Poster sizes will be announced shortly.
+					The poster sessions will take place in Yale-NUS College's Multipurpose Hall. Posterboard
+					dimensions are as follows:
+				</p>
+				<ul class="mx-4">
+					<li>Total height: 211 cm</li>
+					<li>Width: 119 cm</li>
+					<li>Display height: 167 cm</li>
+				</ul>
+				<p>
+					As such, the best poster size/orientation is vertical A0 (width: 84.1 cm, height: 118.9
+					cm).
+				</p>
+				<p>
+					More details about the poster sessions themselves will be provided soon. If you have any
+					questions or requests, please write us at apcv2024@gmail.com.
 				</p>
 			</div>
 		</div>

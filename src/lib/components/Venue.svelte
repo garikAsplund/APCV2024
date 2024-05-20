@@ -261,13 +261,15 @@
 		}, -->
 		<h4 class="h4 text-surface-300-600" data-toc-ignore>University housing</h4>
 		<p class="text-surface-600-300-token leading-loose">
-			There is limited university housing available at a reasonable rate. A single room is S$45 per
-			night for students and S$64 per night for others. Check-in is after 2pm on 9 July and
-			check-out is before 12pm on 13 July. Please indicate whether you are interested in this
-			housing during conference registration, by 13 May at the latest.
+			There is limited university housing available at a reasonable rate. A single room is S$57 per
+			night for students and S$80 per night for others. Check-in is after 2 p.m. on 9 July and
+			check-out is before 12 p.m. on 13 July. Although we cannot guarantee housing after the 13 May
+			deadline, you can still indicate if you are interested in this option during conference
+			registration. We will then check with the University to see whether any rooms are still
+			available.
 		</p>
 		<p class="text-surface-600-300-token leading-loose">
-			Rooms are furnished with a single bed, a ceiling fan, a writing desk and chair, a bookshelf, a
+			Rooms are air-conditioned and furnished with a single bed, a ceiling fan, a writing desk and chair, a bookshelf, a
 			wardrobe and a mobile pedestal. Shower and toilet facilities as well as kitchenettes are
 			located along the common corridors.
 		</p>
@@ -309,7 +311,7 @@
 				</li>
 			{/each}
 		</ul>
-		<div class="flex w-full bg-scroll h-96 scrollbar-hide mb-36 mt-12 -z-10 ">
+		<div class="flex w-full bg-scroll h-96 scrollbar-hide mb-36 mt-12 -z-10">
 			<iframe
 				src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31910.466370439884!2d103.78226697279621!3d1.2892468749043782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shotels%20near%20NUS!5e0!3m2!1sen!2sus!4v1713129899282!5m2!1sen!2sus"
 				class="w-full saturate-100 contrast-125 {$modeCurrent ? '' : 'invert hue-rotate-180'}"

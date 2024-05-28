@@ -13,10 +13,9 @@
 			<!-- <hr class="h-0.5 bg-surface-800-100-token" /> -->
 			<!-- <h2 class="h2">Oral presentation</h2> -->
 			<div class="ml-4 space-y-4 text-surface-600-300-token">
-				<p>Abstract submission for APCV 2024 is now open!</p>
-				<p>We apologize for the delay, and we will review submissions as quickly as possible.</p>
-				<p>The committee is currently reviewing the abstracts received by the 3 May deadline. As promised, we are still accepting abstract submissions through 24 May (in the last timezone on Earth).</p>
-				<p>
+				<p>Abstract submission has now closed. Thank you for your submissions.</p>
+				<p>All remaining decisions will be sent out by 30 May.</p>
+				<!-- <p>
 					Abstracts for talks (12 minutes + 3 minutes for questions) or posters require only a
 					simple submission, consisting of:
 				</p>
@@ -27,14 +26,15 @@
 					<li>Keywords to help with program construction</li>
 					<li>Your preference for giving a talk or presenting a poster</li>
 				</ul>
-				<br>
+				<br />
 				<div class="justify-center text-center">
 					<a
 						href="https://easychair.org/conferences/?conf=apcv2024"
 						target="_blank"
-						class="justify-center text-xl underline hover:no-underline">Click here to submit your abstract!</a
+						class="justify-center text-xl underline hover:no-underline"
+						>Click here to submit your abstract!</a
 					>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</div>

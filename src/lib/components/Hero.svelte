@@ -135,20 +135,19 @@
 						</p>
 					</a>
 					<p class="text-base mt-4 opacity-80">
-						Early registration until 31 May | University housing available until 13 May
+						Early registration until 31 May | Standard registration until 30 June
 					</p>
 				</div>
 				<div>
 					<p class="mt-4 text-xl dark">
 						<a href="/abstract submission">
 							<span class="underline hover:no-underline">Call for abstracts</span>
-							<code class=" code text-lg">open now</code>
+							<code class=" code text-lg">closed</code>
 						</a>
 					</p>
 
 					<p class="text-base mt-4 opacity-80">
-						The committee is currently reviewing the abstracts received by the 3 May deadline.<br /><br/>
-						As promised, we are still accepting abstract submissions through 24 May.
+						Thank you for your submissions. All remaining decisions will be sent out by 30 May.
 					</p>
 				</div>
 				<!-- <div>

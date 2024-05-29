@@ -138,7 +138,7 @@
 			alt="Jewel Changi Airport"
 			title="Jewel Changi Airport"
 		/>
-		<p class="text-surface-600-300-token leading-loose">
+		<p>
 			If you are coming from Changi Airport, take the Green Line to Buona Vista
 			<span class="nobold"
 				><span style="display:inline-block"
@@ -158,10 +158,11 @@
 			<span
 				style="display:inline-block;background-color:#fa9e0d;text-align:center;line-height:18px;border-radius: 9px 9px 9px 9px;color:#000000"
 				><span class="nowrap">&nbsp;</span><b>CC24</b><span class="nowrap">&nbsp;</span></span
-			>.
-			<br />
+			>. The first train usually departs at 05:31 and the last train at 23:18.
+			</p>
+			<p>
 			Alternatively, a taxi or a ride-hailing service will get you to NUS in about 30 minutes and costs
-			S$25-S$45.
+			S$25-S$45. These services are readily available 24 hours a day.
 		</p>
 		<div class="flex w-full bg-scroll h-96 scrollbar-hide mb-36 mt-12 -z-10">
 			<iframe

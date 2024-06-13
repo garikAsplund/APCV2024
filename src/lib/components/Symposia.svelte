@@ -6,192 +6,121 @@
 
 	const symposia: Symposiums[] = [
 		{
-			number: '1-1',
-			title: 'Physiological, psychological, and computational foundations of scene understanding',
+			number: '1',
+			title: 'Mechanisms of face perception',
 			organizers: [
-				'Yukako Yamane  (Osaka University, Okinawa Institute of Science and Technology)',
-				'Ko Sakai  (University of Tsukuba)'
+				'Colin Palmer'
 			],
 			speakers: [
-				'Charles Ed Connor  (Johns Hopkins University)',
-				'Mark Lescroart  (University of Nevada, Reno)',
-				'Ernst Niebur  (Johns Hopkins University)',
-				'Steven W. Zucker  (Yale University)'
+				'Qian Wang',
+				'Jessica Taubert',
+				'Dongwon Oh',
+				'Yong Zhi Foo',
+				'Colin Palmer and Gwenisha Liaw',
 			],
-			abstract: 'Vision science has revealed the nature of human vision and the visual functions in cognition in various ways, although ‘how humans understand an entire scene?’ is still a challenging problem. How does the visual system segregate images into meaningful parts and then assemble those parts into informative representations of the outside world? How do those representations support our immediate, intuitive knowledge about where we are, what things are present, and how those things relate to each other and to the overall scene? About what just happened in the scene, and what might happen next and how we should react for? Recent rapid advancement of machine learning algorithms enabled the identification, description, and even generation of a scene, however, they are still incapable of providing clues for understanding a scene as we humans do. We invite world-leading scientists to discuss the physiological, psychological, and computational foundations of scene understanding.',
-			abstracts: [
-				{
-					title: 'Some profound research',
-					authors: 'Gingi and Wasabi',
-					affiliation: 'CatU and Meow Meow',
-					abstract: 'Hubel and Wiesel, Nobel Laureates in 1981, were the first to discover that columns exist in the visual cortex representing left and right eye inputs (ocular dominance columns), and they also found that there is a critical period for visual development that occurs within the first year of life. More recently, however, it has become clear that some plasticity remains into adulthood. Recent work shows that this plasticity extends to monocular contrast sensitivity as well as ocular dominance (OD) in adults, which could potentially lead to direct therapeutic benefit. Neuroplastic changes can occur as the result of perceptual training, non-invasive brain stimulation or short-term visual deprivation. Short-term visual deprivation in adults improves sensitivity of the deprived eye and reduces sensitivity of the non-deprived eye, allowing the two eyes inputs to be rebalanced at the level of binocular integration. In this talk, I will review the evidence for adult cortical plasticity using a variety of approaches.'
-				},
-				{
-					title: 'Itsa meeee',
-					authors: 'Gingi and Wasabi',
-					affiliation: 'CatU',
-					abstract: 'When the human brain is stimulated at a rapid periodic frequency rate, it synchronizes its activity to this frequency, leading to periodic responses recorded in the EEG (Adrian & Matthews, 1934). In vision, periodic stimulation has been used essentially to investigate low-level processes and attentional effects in the primary visual cortex, under the term “Steady-State Visual Evoked Potentials” (ssVEPs; Regan, 1966; Norcia et al., 2015 for review). This approach has now been extended and refined to understand higher-level visual functions, in particular the categorization of complex visual forms such as human faces, objects and words. This talk will summarize studies carried out over the last few years illustrating the unique strengths of this fast periodic visual stimulation approach: (1) the objective (i.e., exactly at the experimentally-defined frequency rate) definition of neural activity related to visual recognition; (2) the very high signal-to-noise ratio allowing to rapidly measure visual recognition processes in difficult to test populations (e.g., infants and children, patients); (3) the independence from explicit behavioral responses; and (4) the first identification of objective markers of visual integration (“binding”). Contrary to widespread assumption, this approach also provides precise information in the time-domain, and has started to fully characterize the spatio-temporal course of visual recognition in a rapidly changing natural scene.'
-				},
-				{
-					title: 'Itsa meeee',
-					authors: 'Gingi and Wasabi',
-					affiliation: 'CatU',
-					abstract: 'The inferotemporal cortex (IT) of the monkey brain is the final stage of the ventral visual pathway, which is thought to be responsible for visual object recognition. Because our visual recognition is categorical in nature, object categories may be represented in IT and earlier stages. However, by carefully determining the stimulus selectivity of individual cells in the monkey IT, we previously found that single IT cells’ selectivity was determined by moderately complex features, defined by physical parameters. A remaining possibility is that object categories are represented by the response pattern of a population of IT cells. By recording responses of many IT cells to a fixed set of 1084 object images, we examined this possibility. Responses of only one or two cells were tested at a time, but by repeating the recording for several months in two monkeys, we obtained responses of 674 cells to the stimulus set. By seeing the response table from the stimulus side, we can analyze the response pattern evoked by each of the stimuli over the 674 cells. We found that two stimuli belonging to the same category tended to evoke similar response patterns whereas those belonging to distant categories evoked different response patterns. When the 1084 objects were plotted according to the dissimilarity of response patterns, objects of the same category clustered. Even the hierarchical structure of object categories appeared there. Thus, although the stimulus selectivity of individual IT cells is determined in the domain of moderately complex features, which is still physical, by having multiple cells with selectivity for various features, responses of a population of IT cells represent object categories, which is semantic.'
-				},
-				{
-					title: 'Itsa meeee',
-					authors: 'Gingi and Wasabi',
-					affiliation: 'CatU',
-					abstract: 'heeeeeey'
-				},
-				{
-					title: 'Itsa meeee',
-					authors: 'Gingi and Wasabi',
-					affiliation: 'CatU',
-					abstract: 'heeeeeey'
-				}
-			]
+			abstract: `The human face has special significance as a visual cue, helping
+us to track the emotional reactions and attentional focus of others,
+shaping social trait impressions (e.g., attractiveness and
+trustworthiness), and helping us to identify those people familiar
+to us. While face processing has received much attention in
+vision science, the mechanisms that shape the everyday
+experience of faces are still only partially understood. What are
+the core dimensions of facial information represented in the
+visual system? How is this information extracted from the visual
+signals relayed to the brain from the retina? How do implicit
+processes, such as physiological responses or evolutionary
+pressures, align with our perceptual experience of faces? This
+symposium showcases recent discoveries and novel approaches
+to understanding the visual processing of faces in the human
+brain. Talks range from the use of intracranial neural recordings
+to uncover cortical and subcortical responses underlying face
+perception, data-driven approaches to defining the social
+dimensions observers perceive in faces, characterisation of the
+link between face features, perception and physiology using
+psychophysics and computational models, and analysis of the
+biological and evolutionary factors that shape face impressions.
+Together this provides a snapshot of exciting developments
+occurring at a key interface between vision science and social
+behaviour.`,
+			abstracts: [],
 		},
 		{
-			number: '2-1',
-			title: 'Physiological, psychological, and computational foundations of scene understanding',
+			number: '2',
+			title: 'The impact of recent technologies on studies of multisensory integration',
 			organizers: [
-				'Yukako Yamane  (Osaka University, Okinawa Institute of Science and Technology)',
-				'Ko Sakai  (University of Tsukuba)'
+				'Hiroaki Kiyokawa',
+				'Juno Kim',
 			],
 			speakers: [
-				'Charles Ed Connor  (Johns Hopkins University)',
-				'Mark Lescroart  (University of Nevada, Reno)',
-				'Ernst Niebur  (Johns Hopkins University)',
-				'Steven W. Zucker  (Yale University)'
+				'Hideki Tamura',
+				'Michiteru Kitazaki',
+				'Stephen Palmisano',
 			],
-			abstract: 'Vision science has revealed the nature of human vision and the visual functions in cognition in various ways, although ‘how humans understand an entire scene?’ is still a challenging problem. How does the visual system segregate images into meaningful parts and then assemble those parts into informative representations of the outside world? How do those representations support our immediate, intuitive knowledge about where we are, what things are present, and how those things relate to each other and to the overall scene? About what just happened in the scene, and what might happen next and how we should react for? Recent rapid advancement of machine learning algorithms enabled the identification, description, and even generation of a scene, however, they are still incapable of providing clues for understanding a scene as we humans do. We invite world-leading scientists to discuss the physiological, psychological, and computational foundations of scene understanding.',
-			abstracts: [
-				{
-					title: 'Some profound research',
-					authors: 'Gingi and Wasabi',
-					affiliation: 'CatU and Meow Meow',
-					abstract: 'Hubel and Wiesel, Nobel Laureates in 1981, were the first to discover that columns exist in the visual cortex representing left and right eye inputs (ocular dominance columns), and they also found that there is a critical period for visual development that occurs within the first year of life. More recently, however, it has become clear that some plasticity remains into adulthood. Recent work shows that this plasticity extends to monocular contrast sensitivity as well as ocular dominance (OD) in adults, which could potentially lead to direct therapeutic benefit. Neuroplastic changes can occur as the result of perceptual training, non-invasive brain stimulation or short-term visual deprivation. Short-term visual deprivation in adults improves sensitivity of the deprived eye and reduces sensitivity of the non-deprived eye, allowing the two eyes inputs to be rebalanced at the level of binocular integration. In this talk, I will review the evidence for adult cortical plasticity using a variety of approaches.'
-				},
-				{
-					title: 'Itsa meeee',
-					authors: 'Gingi and Wasabi',
-					affiliation: 'CatU',
-					abstract: 'When the human brain is stimulated at a rapid periodic frequency rate, it synchronizes its activity to this frequency, leading to periodic responses recorded in the EEG (Adrian & Matthews, 1934). In vision, periodic stimulation has been used essentially to investigate low-level processes and attentional effects in the primary visual cortex, under the term “Steady-State Visual Evoked Potentials” (ssVEPs; Regan, 1966; Norcia et al., 2015 for review). This approach has now been extended and refined to understand higher-level visual functions, in particular the categorization of complex visual forms such as human faces, objects and words. This talk will summarize studies carried out over the last few years illustrating the unique strengths of this fast periodic visual stimulation approach: (1) the objective (i.e., exactly at the experimentally-defined frequency rate) definition of neural activity related to visual recognition; (2) the very high signal-to-noise ratio allowing to rapidly measure visual recognition processes in difficult to test populations (e.g., infants and children, patients); (3) the independence from explicit behavioral responses; and (4) the first identification of objective markers of visual integration (“binding”). Contrary to widespread assumption, this approach also provides precise information in the time-domain, and has started to fully characterize the spatio-temporal course of visual recognition in a rapidly changing natural scene.'
-				},
-				{
-					title: 'Itsa meeee',
-					authors: 'Gingi and Wasabi',
-					affiliation: 'CatU',
-					abstract: 'The inferotemporal cortex (IT) of the monkey brain is the final stage of the ventral visual pathway, which is thought to be responsible for visual object recognition. Because our visual recognition is categorical in nature, object categories may be represented in IT and earlier stages. However, by carefully determining the stimulus selectivity of individual cells in the monkey IT, we previously found that single IT cells’ selectivity was determined by moderately complex features, defined by physical parameters. A remaining possibility is that object categories are represented by the response pattern of a population of IT cells. By recording responses of many IT cells to a fixed set of 1084 object images, we examined this possibility. Responses of only one or two cells were tested at a time, but by repeating the recording for several months in two monkeys, we obtained responses of 674 cells to the stimulus set. By seeing the response table from the stimulus side, we can analyze the response pattern evoked by each of the stimuli over the 674 cells. We found that two stimuli belonging to the same category tended to evoke similar response patterns whereas those belonging to distant categories evoked different response patterns. When the 1084 objects were plotted according to the dissimilarity of response patterns, objects of the same category clustered. Even the hierarchical structure of object categories appeared there. Thus, although the stimulus selectivity of individual IT cells is determined in the domain of moderately complex features, which is still physical, by having multiple cells with selectivity for various features, responses of a population of IT cells represent object categories, which is semantic.'
-				},
-				{
-					title: 'Itsa meeee',
-					authors: 'Gingi and Wasabi',
-					affiliation: 'CatU',
-					abstract: 'heeeeeey'
-				},
-				{
-					title: 'Itsa meeee',
-					authors: 'Gingi and Wasabi',
-					affiliation: 'CatU',
-					abstract: 'heeeeeey'
-				}
-			]
+			abstract: `Multisensory integration is one of the key functions to obtain stable
+visual and non-visual perception in our daily life. However, it is still a
+challenging problem to comprehensively understand how our brain
+integrates different types of modal information. How does our visual
+system extract meaningful visual information from retinal images and
+integrate those with information from other sensory modalities? Recent
+technologies, such as virtual reality (VR) and/or augmented reality
+(AR), can provide scalable interactive and immersive environments to
+test the effects of external stimulation on our subjective experiences.
+What do those technologies bring to our research? We invite world-
+leading scientists in human perception and performance to discuss the
+psychological, physiological, and computational foundations of
+multisensory integration, and methodologies that provide insight into
+how non-visual sensory information enhances our visual experiences of
+the world.`,
+			abstracts: [],	
 		},
 		{
-			number: '2-2',
-			title: 'Physiological, psychological, and computational foundations of scene understanding',
+			number: '3',
+			title: 'Regularity and (un)certainty: extracting implicit sensory information in perception and action',
 			organizers: [
-				'Yukako Yamane  (Osaka University, Okinawa Institute of Science and Technology)',
-				'Ko Sakai  (University of Tsukuba)'
+				'Juno Kim',
+				'Hideki Tamura',
 			],
 			speakers: [
-				'Charles Ed Connor  (Johns Hopkins University)',
-				'Mark Lescroart  (University of Nevada, Reno)',
-				'Ernst Niebur  (Johns Hopkins University)',
-				'Steven W. Zucker  (Yale University)'
+				'Shao-Min Hung',
+				'Hsin-I Iris Liao',
+				'Philip Tseng',
+				'Nobuhiro Hagura',
+				'David Alais',
 			],
-			abstract: 'Vision science has revealed the nature of human vision and the visual functions in cognition in various ways, although ‘how humans understand an entire scene?’ is still a challenging problem. How does the visual system segregate images into meaningful parts and then assemble those parts into informative representations of the outside world? How do those representations support our immediate, intuitive knowledge about where we are, what things are present, and how those things relate to each other and to the overall scene? About what just happened in the scene, and what might happen next and how we should react for? Recent rapid advancement of machine learning algorithms enabled the identification, description, and even generation of a scene, however, they are still incapable of providing clues for understanding a scene as we humans do. We invite world-leading scientists to discuss the physiological, psychological, and computational foundations of scene understanding.',
-			abstracts: [
-				{
-					title: 'Some profound research',
-					authors: 'Gingi and Wasabi',
-					affiliation: 'CatU and Meow Meow',
-					abstract: 'Hubel and Wiesel, Nobel Laureates in 1981, were the first to discover that columns exist in the visual cortex representing left and right eye inputs (ocular dominance columns), and they also found that there is a critical period for visual development that occurs within the first year of life. More recently, however, it has become clear that some plasticity remains into adulthood. Recent work shows that this plasticity extends to monocular contrast sensitivity as well as ocular dominance (OD) in adults, which could potentially lead to direct therapeutic benefit. Neuroplastic changes can occur as the result of perceptual training, non-invasive brain stimulation or short-term visual deprivation. Short-term visual deprivation in adults improves sensitivity of the deprived eye and reduces sensitivity of the non-deprived eye, allowing the two eyes inputs to be rebalanced at the level of binocular integration. In this talk, I will review the evidence for adult cortical plasticity using a variety of approaches.'
-				},
-				{
-					title: 'Itsa meeee',
-					authors: 'Gingi and Wasabi',
-					affiliation: 'CatU',
-					abstract: 'When the human brain is stimulated at a rapid periodic frequency rate, it synchronizes its activity to this frequency, leading to periodic responses recorded in the EEG (Adrian & Matthews, 1934). In vision, periodic stimulation has been used essentially to investigate low-level processes and attentional effects in the primary visual cortex, under the term “Steady-State Visual Evoked Potentials” (ssVEPs; Regan, 1966; Norcia et al., 2015 for review). This approach has now been extended and refined to understand higher-level visual functions, in particular the categorization of complex visual forms such as human faces, objects and words. This talk will summarize studies carried out over the last few years illustrating the unique strengths of this fast periodic visual stimulation approach: (1) the objective (i.e., exactly at the experimentally-defined frequency rate) definition of neural activity related to visual recognition; (2) the very high signal-to-noise ratio allowing to rapidly measure visual recognition processes in difficult to test populations (e.g., infants and children, patients); (3) the independence from explicit behavioral responses; and (4) the first identification of objective markers of visual integration (“binding”). Contrary to widespread assumption, this approach also provides precise information in the time-domain, and has started to fully characterize the spatio-temporal course of visual recognition in a rapidly changing natural scene.'
-				},
-				{
-					title: 'Itsa meeee',
-					authors: 'Gingi and Wasabi',
-					affiliation: 'CatU',
-					abstract: 'The inferotemporal cortex (IT) of the monkey brain is the final stage of the ventral visual pathway, which is thought to be responsible for visual object recognition. Because our visual recognition is categorical in nature, object categories may be represented in IT and earlier stages. However, by carefully determining the stimulus selectivity of individual cells in the monkey IT, we previously found that single IT cells’ selectivity was determined by moderately complex features, defined by physical parameters. A remaining possibility is that object categories are represented by the response pattern of a population of IT cells. By recording responses of many IT cells to a fixed set of 1084 object images, we examined this possibility. Responses of only one or two cells were tested at a time, but by repeating the recording for several months in two monkeys, we obtained responses of 674 cells to the stimulus set. By seeing the response table from the stimulus side, we can analyze the response pattern evoked by each of the stimuli over the 674 cells. We found that two stimuli belonging to the same category tended to evoke similar response patterns whereas those belonging to distant categories evoked different response patterns. When the 1084 objects were plotted according to the dissimilarity of response patterns, objects of the same category clustered. Even the hierarchical structure of object categories appeared there. Thus, although the stimulus selectivity of individual IT cells is determined in the domain of moderately complex features, which is still physical, by having multiple cells with selectivity for various features, responses of a population of IT cells represent object categories, which is semantic.'
-				},
-				{
-					title: 'Itsa meeee',
-					authors: 'Gingi and Wasabi',
-					affiliation: 'CatU',
-					abstract: 'heeeeeey'
-				},
-				{
-					title: 'Itsa meeee',
-					authors: 'Gingi and Wasabi',
-					affiliation: 'CatU',
-					abstract: 'heeeeeey'
-				}
-			]
-		},
-		{
-			number: '3-1',
-			title: 'Physiological, psychological, and computational foundations of scene understanding',
-			organizers: [
-				'Yukako Yamane  (Osaka University, Okinawa Institute of Science and Technology)',
-				'Ko Sakai  (University of Tsukuba)'
-			],
-			speakers: [
-				'Charles Ed Connor  (Johns Hopkins University)',
-				'Mark Lescroart  (University of Nevada, Reno)',
-				'Ernst Niebur  (Johns Hopkins University)',
-				'Steven W. Zucker  (Yale University)'
-			],
-			abstract: 'Vision science has revealed the nature of human vision and the visual functions in cognition in various ways, although ‘how humans understand an entire scene?’ is still a challenging problem. How does the visual system segregate images into meaningful parts and then assemble those parts into informative representations of the outside world? How do those representations support our immediate, intuitive knowledge about where we are, what things are present, and how those things relate to each other and to the overall scene? About what just happened in the scene, and what might happen next and how we should react for? Recent rapid advancement of machine learning algorithms enabled the identification, description, and even generation of a scene, however, they are still incapable of providing clues for understanding a scene as we humans do. We invite world-leading scientists to discuss the physiological, psychological, and computational foundations of scene understanding.',
-			abstracts: [
-				{
-					title: 'Some profound research',
-					authors: 'Gingi and Wasabi',
-					affiliation: 'CatU and Meow Meow',
-					abstract: 'Hubel and Wiesel, Nobel Laureates in 1981, were the first to discover that columns exist in the visual cortex representing left and right eye inputs (ocular dominance columns), and they also found that there is a critical period for visual development that occurs within the first year of life. More recently, however, it has become clear that some plasticity remains into adulthood. Recent work shows that this plasticity extends to monocular contrast sensitivity as well as ocular dominance (OD) in adults, which could potentially lead to direct therapeutic benefit. Neuroplastic changes can occur as the result of perceptual training, non-invasive brain stimulation or short-term visual deprivation. Short-term visual deprivation in adults improves sensitivity of the deprived eye and reduces sensitivity of the non-deprived eye, allowing the two eyes inputs to be rebalanced at the level of binocular integration. In this talk, I will review the evidence for adult cortical plasticity using a variety of approaches.'
-				},
-				{
-					title: 'Itsa meeee',
-					authors: 'Gingi and Wasabi',
-					affiliation: 'CatU',
-					abstract: 'When the human brain is stimulated at a rapid periodic frequency rate, it synchronizes its activity to this frequency, leading to periodic responses recorded in the EEG (Adrian & Matthews, 1934). In vision, periodic stimulation has been used essentially to investigate low-level processes and attentional effects in the primary visual cortex, under the term “Steady-State Visual Evoked Potentials” (ssVEPs; Regan, 1966; Norcia et al., 2015 for review). This approach has now been extended and refined to understand higher-level visual functions, in particular the categorization of complex visual forms such as human faces, objects and words. This talk will summarize studies carried out over the last few years illustrating the unique strengths of this fast periodic visual stimulation approach: (1) the objective (i.e., exactly at the experimentally-defined frequency rate) definition of neural activity related to visual recognition; (2) the very high signal-to-noise ratio allowing to rapidly measure visual recognition processes in difficult to test populations (e.g., infants and children, patients); (3) the independence from explicit behavioral responses; and (4) the first identification of objective markers of visual integration (“binding”). Contrary to widespread assumption, this approach also provides precise information in the time-domain, and has started to fully characterize the spatio-temporal course of visual recognition in a rapidly changing natural scene.'
-				},
-				{
-					title: 'Itsa meeee',
-					authors: 'Gingi and Wasabi',
-					affiliation: 'CatU',
-					abstract: 'The inferotemporal cortex (IT) of the monkey brain is the final stage of the ventral visual pathway, which is thought to be responsible for visual object recognition. Because our visual recognition is categorical in nature, object categories may be represented in IT and earlier stages. However, by carefully determining the stimulus selectivity of individual cells in the monkey IT, we previously found that single IT cells’ selectivity was determined by moderately complex features, defined by physical parameters. A remaining possibility is that object categories are represented by the response pattern of a population of IT cells. By recording responses of many IT cells to a fixed set of 1084 object images, we examined this possibility. Responses of only one or two cells were tested at a time, but by repeating the recording for several months in two monkeys, we obtained responses of 674 cells to the stimulus set. By seeing the response table from the stimulus side, we can analyze the response pattern evoked by each of the stimuli over the 674 cells. We found that two stimuli belonging to the same category tended to evoke similar response patterns whereas those belonging to distant categories evoked different response patterns. When the 1084 objects were plotted according to the dissimilarity of response patterns, objects of the same category clustered. Even the hierarchical structure of object categories appeared there. Thus, although the stimulus selectivity of individual IT cells is determined in the domain of moderately complex features, which is still physical, by having multiple cells with selectivity for various features, responses of a population of IT cells represent object categories, which is semantic.'
-				},
-				{
-					title: 'Itsa meeee',
-					authors: 'Gingi and Wasabi',
-					affiliation: 'CatU',
-					abstract: 'heeeeeey'
-				},
-				{
-					title: 'Itsa meeee',
-					authors: 'Gingi and Wasabi',
-					affiliation: 'CatU',
-					abstract: 'heeeeeey'
-				}
-			]
+			abstract: `How do we track the relations among sensory items in the
+surroundings? With our sensory systems bombarded by
+immeasurable external information, it is hard to envision a
+willful, deliberate, and moment-by-moment sensory tracking
+mechanism. Instead, here we seek to illustrate how our behavior
+is affected by implicitly tracked regularity and the accompanying
+(un)certainty. We will provide evidence from a wide spectrum of
+studies, encompassing interactions among vision, audition, and
+motor systems. Shao-Min (Sean) Hung first establishes implicit
+regularity tracking in a cue-target paradigm. His findings suggest
+that regularity tracking between sensory items relies very little on
+explicit knowledge or visual awareness. However, how we derive
+meaningful results requires careful work. Philip Tseng’s work
+expands on this point and demonstrates how visual statistical
+learning can be influenced by task demand. These results
+advocate the importance of experimental design in searching for
+implicit extraction of sensory information. Similar tracking of
+perceptual statistics extends to the auditory domain, as evidenced
+by Hsin-I (Iris) Liao’s work. Her research shows how pupillary
+responses reflect perceptual alternations and unexpected
+uncertainty in response to auditory stimulations. Next, we ask
+how our behavior reacts to such regularities. Using a motor
+learning paradigm, Nobuhiro Hagura reveals that different visual
+uncertainty can tag different motor memories, showing that
+uncertainty provides contextual information to guide our
+movement. Finally, David Alais uses continuous measurement of
+perception during walking to reveal a modulation occurring at the
+step rate, with perceptual sensitivity optimal in the swing phase
+between steps. Together, our symposium aims to paint a
+multifaceted picture of perceptual regularity tracking, with the
+(un)certainty it generates. These findings reveal the ubiquitous
+nature of implicit sensory processing in multiple sensory
+domains, integrating perception and action.`,
+			abstracts: [],
 		}
 	];
 
@@ -206,13 +135,16 @@
 	});
 
 	let day: number = 1;
-	let innerHeight: number
+	let innerHeight: number;
 </script>
 
 <svelte:window bind:innerHeight />
+<header class="flex w-full justify-between items-baseline mt-12 mb-8">
+	<h2 class="h2 scroll-mt-5" id="Symposia">Symposia</h2>
+</header>
 
-<div class="w-full lg:w-3/4 px-4 h-full text-token grid grid-cols-1 gap-4">
-	<TabGroup>
+<div class="w-full gap-4">
+	<!-- <TabGroup>
 		<Tab bind:group={day} name="day1" value={1}>Day 1</Tab>
 		<Tab bind:group={day} name="day2" value={2}>Day 2</Tab>
 		<Tab bind:group={day} name="day3" value={3}>Day 3</Tab>
@@ -233,5 +165,8 @@
 				{/if}
 			</div>
 		</svelte:fragment>
-	</TabGroup>
+	</TabGroup> -->
+	{#each symposia as symposium}
+		<Symposium {symposium} />
+	{/each}
 </div>

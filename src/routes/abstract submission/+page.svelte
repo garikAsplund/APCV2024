@@ -14,7 +14,7 @@
 			<!-- <h2 class="h2">Oral presentation</h2> -->
 			<div class="ml-4 space-y-4 text-surface-600-300-token">
 				<p>Abstract submission has now closed. Thank you for your submissions.</p>
-				<p>All remaining decisions will be sent out by 30 May.</p>
+				<!-- <p>All remaining decisions will be sent out by 30 May.</p> -->
 				<!-- <p>
 					Abstracts for talks (12 minutes + 3 minutes for questions) or posters require only a
 					simple submission, consisting of:

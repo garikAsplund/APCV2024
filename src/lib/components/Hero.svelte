@@ -126,6 +126,16 @@
 				</div> -->
 				<!-- <button class="btn hover:variant-outline-primary" use:popup={popupAbstracts}> -->
 				<div>
+					<a href="/program">
+						<p class="mt-4 text-xl dark">
+							<span class="underline hover:no-underline">Preliminary program</span>
+							<code class="code text-lg">available now</code>
+							<!-- through 31 May (early)
+						and 30 June (normal) -->
+						</p>
+					</a>
+				</div>
+					<div>
 					<a href="https://easychair.org/conferences/?conf=apcv2024" target="_blank">
 						<p class="mt-4 text-xl dark">
 							<span class="underline hover:no-underline">Conference registration</span>
@@ -135,20 +145,20 @@
 						</p>
 					</a>
 					<p class="text-base mt-4 opacity-80">
-						Early registration until 31 May | Standard registration until 30 June
+						Standard registration until 30 June
 					</p>
 				</div>
 				<div>
 					<p class="mt-4 text-xl dark">
-						<a href="/abstract submission">
-							<span class="underline hover:no-underline">Call for abstracts</span>
+						<!-- <a href="/abstract submission"> -->
+							Call for abstracts
 							<code class=" code text-lg">closed</code>
-						</a>
+						<!-- </a> -->
 					</p>
 
-					<p class="text-base mt-4 opacity-80">
-						Thank you for your submissions. All remaining decisions will be sent out by 30 May.
-					</p>
+					<!-- <p class="text-base mt-4 opacity-80">
+						Thank you for your submissions.
+					</p> -->
 				</div>
 				<!-- <div>
 					<p class="mt-4 text-xl dark">

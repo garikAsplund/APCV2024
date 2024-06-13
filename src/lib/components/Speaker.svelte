@@ -28,7 +28,7 @@
 		<a href={speaker.link} target="_blank"
 			><div class="py-4 space-y-4 flex flex-col text-left">
 				<div class="flex flex-col">
-					<h2 class="h2">{speaker.name}</h2>
+					<h3 class="h3 scroll-mt-5" id={speaker.name}>{speaker.name}</h3>
 				</div>
 				<div>
 					<!-- <h1 class="h3">{speaker.name}</h1> -->

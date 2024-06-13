@@ -12,19 +12,19 @@
 	import li from '$lib/images/li.jpeg?enhanced';
 	import stephanie from '$lib/images/stephanie.jpeg?enhanced';
 
-	let isInView: boolean;
+	// let isInView: boolean;
 
-	const options: Options = {
-		rootMargin: '-50%',
-		unobserveOnEnter: true
-	};
+	// const options: Options = {
+	// 	rootMargin: '-50%',
+	// 	unobserveOnEnter: true
+	// };
 
-	const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
-		isInView = detail.inView;
-		$title = detail.node.id;
-		$time = detail.node.className;
-		console.log({ $time });
-	};
+	// const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
+	// 	isInView = detail.inView;
+	// 	$title = detail.node.id;
+	// 	$time = detail.node.className;
+	// 	console.log({ $time });
+	// };
 
 	const speakers: SpeakerType[] = [
 		{
@@ -121,22 +121,18 @@
 	];
 </script>
 
+<header class="flex w-full justify-between items-baseline mt-12 mb-8">
+	<h2 class="h2 scroll-mt-5" id="Keynotes">Keynote speakers</h2>
+</header>
 <div class="flex flex-row-reverse justify-center gap-24 mr-4">
 	<!-- <aside class="hidden lg:block w-48"> -->
 	<!-- Table of Contents -->
 	<!-- <TableOfContents class="sticky top-12">On the Page</TableOfContents> -->
 	<!-- </aside> -->
-	<div
-		class="w-full overflow-hidden lg:w-5/6 xl:w-4/6 text-token grid grid-cols-1"
-		use:tocCrawler={{ scrollTarget: '#page' }}
-	>
+
+	<div class="w-full overflow-hidden text-token grid grid-cols-1">
 		{#each speakers as speaker (speaker.slot)}
-			<div
-				id={speaker.slot.toString()}
-				class={speaker.time}
-				use:inview={options}
-				on:inview_change={handleChange}
-			>
+			<div id={speaker.slot.toString()}>
 				<Speaker {speaker} />
 			</div>
 		{/each}

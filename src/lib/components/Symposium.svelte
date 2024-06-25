@@ -6,7 +6,7 @@
 	export let symposium: Symposiums;
 </script>
 
-	<!-- <div class=" overflow-hidden text-left w-full">
+<!-- <div class=" overflow-hidden text-left w-full">
 				<div class="flex flex-col items-baseline space-y-3">
 					<h3 class="h3" id={symposium.number}>{symposium.title}</h3>
 					<div>
@@ -32,35 +32,33 @@
 	</div>
 	<hr class="opacity-50 pb-48" /> -->
 
-	<div class="space-y-48">
-		<div class="flex flex-col-reverse lg:flex-row lg:justify-between">
-			<div class="py-4 space-y-4 flex flex-col text-left">
-					<div class="flex flex-col">
-						<h3 class="h3 scroll-mt-5" id={symposium.title}>{symposium.title}</h3>
-					</div>
-					<div>
-						<!-- <h1 class="h3">{speaker.name}</h1> -->
-						{#each symposium.organizers as organizer}
-						<h5 class="h5 text-surface-600-300-token opacity-80" data-toc-ignore>
-							{organizer}
-						</h5>
-						{/each}
-						{#each symposium.speakers as speaker}
-						<h5 class="h6 text-surface-600-300-token opacity-50" data-toc-ignore>
-							{speaker}
-						</h5>
-						{/each}
-					</div>
-					<p class="text-surface-500-400-token lg:leading text-justify">{symposium.abstract}</p>
-
-				</div>
+<div class="space-y-48">
+	<div class="flex flex-col-reverse lg:flex-row lg:justify-between">
+		<div class="py-4 space-y-4 flex flex-col text-left">
+			<div class="flex flex-col">
+				<h3 class="h3 scroll-mt-5" id={symposium.title}>{symposium.title}</h3>
+			</div>
+			<div>
+				<!-- <h1 class="h3">{speaker.name}</h1> -->
+				{#each symposium.organizers as organizer}
+					<p class="h5 text-surface-600-300-token opacity-80" data-toc-ignore>
+						Organized by: <b>{organizer}</b>
+					</p>
+				{/each}
+				<p class="text-surface-500-400-token lg:leading text-justify my-4">{symposium.abstract}</p>
+				{#each symposium.speakers as speaker}
+					<p class="h6 text-surface-600-300-token opacity-80" data-toc-ignore>
+						<b>{speaker.speaker}</b>{@html speaker.authors}
+					</p>					
+					<p class=" text-surface-600-300-token opacity-70 ml-4 mb-2 italic" data-toc-ignore>{speaker.title}</p>
+				{/each}
+			</div>
 		</div>
 	</div>
-	<hr class="opacity-50 pb-48" />
+</div>
+<hr class="opacity-50 pb-48" />
 
-
-
-		<!-- <Accordion>
+<!-- <Accordion>
 			<AccordionItem>
 				<svelte:fragment slot="lead"
 					><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -87,7 +85,6 @@
 				</svelte:fragment>
 			</AccordionItem>
 		</Accordion> -->
-
 
 <!-- <div class="space-y-48">
 	<div class="flex flex-col-reverse lg:flex-row lg:justify-between">

@@ -12,11 +12,31 @@
 				'Colin Palmer'
 			],
 			speakers: [
-				'Qian Wang',
-				'Jessica Taubert',
-				'Dongwon Oh',
-				'Yong Zhi Foo',
-				'Colin Palmer and Gwenisha Liaw',
+				{
+					speaker: 'Qian Wang',
+					authors: ', Yingying Wang, Guanpeng Chen, Ruolin Yang and Fang Fang',
+					title: `Unveiling subcortical and cortical mechanisms of face perception via intracranial recordings in the human brain.`,
+				},
+				{
+					speaker: 'Jessica Taubert',
+					authors: ', Shruti Japee, Amanda K. Robinson, Houqiu Long, Tijl Grootswagers, Charles Zheng, Francisco Pereira and Chris Baker',
+					title: `Uncovering the multidimensional representation underlying human dissimilarity judgements of expressive faces.`,
+				},
+				{
+					speaker: '',
+					authors: 'Anqi Mao, Runnan Cao, Sai Sun, Shuo Wang and <b>Dongwon Oh</b>',
+					title: `Implicit encoding of social trait perceptions: Modeling eye-gaze patterns, pupillary responses, and neuronal activity.`,
+				},
+				{
+					speaker: 'Yong Zhi Foo',
+					authors: '',
+					title: `The evolutionary basis of preferences for male facial masculinity.`,
+				},
+				{
+					speaker: 'Colin Palmer',
+					authors: ' and Gwenisha Liaw',
+					title: `Eye glint as a perceptual cue in human vision.`,
+				},
 			],
 			abstract: `The human face has special significance as a visual cue, helping
 us to track the emotional reactions and attentional focus of others,
@@ -48,13 +68,24 @@ behaviour.`,
 			number: '2',
 			title: 'The impact of recent technologies on studies of multisensory integration',
 			organizers: [
-				'Hiroaki Kiyokawa',
-				'Juno Kim',
+				'Hiroaki Kiyokawa and Juno Kim',
 			],
 			speakers: [
-				'Hideki Tamura',
-				'Michiteru Kitazaki',
-				'Stephen Palmisano',
+				{
+					speaker: 'Hideki Tamura',
+					authors: '',
+					title: `Forward and backward steps in virtual reality affect facial expression recognition.`,
+				},
+				{
+					speaker: 'Michiteru Kitazaki',
+					authors: '',
+					title: `Multimodal information for virtual walking.`,
+				},
+				{
+					speaker: 'Stephen Palmisano',
+					authors: '',
+					title: `Can we measure sensory conflict during virtual reality? And if we can, then what can we do with this information?`,
+				},	
 			],
 			abstract: `Multisensory integration is one of the key functions to obtain stable
 visual and non-visual perception in our daily life. However, it is still a
@@ -77,15 +108,34 @@ the world.`,
 			number: '3',
 			title: 'Regularity and (un)certainty: extracting implicit sensory information in perception and action',
 			organizers: [
-				'Juno Kim',
-				'Hideki Tamura',
+				'Shao-Min Hung and Hsin-I Iris Liao',
 			],
 			speakers: [
-				'Shao-Min Hung',
-				'Hsin-I Iris Liao',
-				'Philip Tseng',
-				'Nobuhiro Hagura',
-				'David Alais',
+				{
+					speaker: 'Shao-Min Hung',
+					authors: ' and Akira Sarodo',
+					title: `Tracking probability in the absence of awareness.`,
+				},		
+				{
+					speaker: 'Hsin-I Iris Liao',
+					authors: '',
+					title: `Auditory information extraction revealed by pupil-linked arousal.`,
+				},	
+				{
+					speaker: 'Philip Tseng',
+					authors: '',
+					title: `Importance of task demand in measuring implicit learning.`,
+				},	
+				{
+					speaker: 'Nobuhiro Hagura',
+					authors: '',
+					title: `Decision uncertainty as a context for motor memory.`,
+				},	
+				{
+					speaker: 'David Alais and Matthew Davidson',
+					authors: '',
+					title: `Seeing the world one step at a time: perceptual modulations linked to the gait cycle.`,
+				},	
 			],
 			abstract: `How do we track the relations among sensory items in the
 surroundings? With our sensory systems bombarded by

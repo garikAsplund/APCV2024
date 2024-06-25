@@ -15,27 +15,27 @@
 				{
 					speaker: 'Qian Wang',
 					authors: ', Yingying Wang, Guanpeng Chen, Ruolin Yang and Fang Fang',
-					title: `Unveiling subcortical and cortical mechanisms of face perception via intracranial recordings in the human brain.`,
+					title: `Unveiling subcortical and cortical mechanisms of face perception via intracranial recordings in the human brain`,
 				},
 				{
 					speaker: 'Jessica Taubert',
 					authors: ', Shruti Japee, Amanda K. Robinson, Houqiu Long, Tijl Grootswagers, Charles Zheng, Francisco Pereira and Chris Baker',
-					title: `Uncovering the multidimensional representation underlying human dissimilarity judgements of expressive faces.`,
+					title: `Uncovering the multidimensional representation underlying human dissimilarity judgements of expressive faces`,
 				},
 				{
 					speaker: '',
 					authors: 'Anqi Mao, Runnan Cao, Sai Sun, Shuo Wang and <b>Dongwon Oh</b>',
-					title: `Implicit encoding of social trait perceptions: Modeling eye-gaze patterns, pupillary responses, and neuronal activity.`,
+					title: `Implicit encoding of social trait perceptions: Modeling eye-gaze patterns, pupillary responses, and neuronal activity`,
 				},
 				{
 					speaker: 'Yong Zhi Foo',
 					authors: '',
-					title: `The evolutionary basis of preferences for male facial masculinity.`,
+					title: `The evolutionary basis of preferences for male facial masculinit.`,
 				},
 				{
 					speaker: 'Colin Palmer',
 					authors: ' and Gwenisha Liaw',
-					title: `Eye glint as a perceptual cue in human vision.`,
+					title: `Eye glint as a perceptual cue in human vision`,
 				},
 			],
 			abstract: `The human face has special significance as a visual cue, helping
@@ -74,12 +74,12 @@ behaviour.`,
 				{
 					speaker: 'Hideki Tamura',
 					authors: '',
-					title: `Forward and backward steps in virtual reality affect facial expression recognition.`,
+					title: `Forward and backward steps in virtual reality affect facial expression recognition`,
 				},
 				{
 					speaker: 'Michiteru Kitazaki',
 					authors: '',
-					title: `Multimodal information for virtual walking.`,
+					title: `Multimodal information for virtual walking`,
 				},
 				{
 					speaker: 'Stephen Palmisano',
@@ -114,27 +114,27 @@ the world.`,
 				{
 					speaker: 'Shao-Min Hung',
 					authors: ' and Akira Sarodo',
-					title: `Tracking probability in the absence of awareness.`,
+					title: `Tracking probability in the absence of awareness`,
 				},		
 				{
 					speaker: 'Hsin-I Iris Liao',
 					authors: '',
-					title: `Auditory information extraction revealed by pupil-linked arousal.`,
+					title: `Auditory information extraction revealed by pupil-linked arousal`,
 				},	
 				{
 					speaker: 'Philip Tseng',
 					authors: '',
-					title: `Importance of task demand in measuring implicit learning.`,
+					title: `Importance of task demand in measuring implicit learning`,
 				},	
 				{
 					speaker: 'Nobuhiro Hagura',
 					authors: '',
-					title: `Decision uncertainty as a context for motor memory.`,
+					title: `Decision uncertainty as a context for motor memory`,
 				},	
 				{
 					speaker: 'David Alais and Matthew Davidson',
 					authors: '',
-					title: `Seeing the world one step at a time: perceptual modulations linked to the gait cycle.`,
+					title: `Seeing the world one step at a time: perceptual modulations linked to the gait cycle`,
 				},	
 			],
 			abstract: `How do we track the relations among sensory items in the

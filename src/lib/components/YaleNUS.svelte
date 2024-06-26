@@ -74,6 +74,7 @@
 						style="fill:token;fill-opacity:1;fill-rule:nonzero;stroke:none"
 						id="path839"
 						inkscape:connector-curvature="0"
+						class="fill-[#f8972a]"
 					/>
 				</g>
 				<g id="g841" transform="translate(109.6901,606.8076)">

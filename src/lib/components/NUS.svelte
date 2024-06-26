@@ -1,6 +1,6 @@
 <svg
 	xmlns="http://www.w3.org/2000/svg"
-	class="fill-token h-96 w-96"
+	class="fill-[#004B8D] dark:fill-white h-96 w-96"
 	width="1111"
 	height="675"
 	viewBox="0 0 1111 675"

@@ -8,7 +8,7 @@
 	xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
 	width="23.874765mm"
 	height="23.577055mm"
-	class="fill-token scale-150"
+	class="fill-[#004B8D] dark:fill-white scale-150"
 	viewBox="0 0 23.874765 23.577055"
 	version="1.1"
 	id="svg8"

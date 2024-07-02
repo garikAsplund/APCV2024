@@ -85,6 +85,7 @@
 			The conference will enjoy the use of these spaces, and the College is also a convenient
 			launching point for exploring other parts of Singapore.
 		</p>
+		<br/>
 		{#if $modeCurrent === true}
 			<enhanced:img src="$lib/images/yale-nus-banner.jpeg" alt="Yale-NUS campus" />
 		{:else}
@@ -133,6 +134,7 @@
 			> bus stop on Clementi Road, serviced by buses 33, 151, 183, or 196.
 		</p>
 		<h4 class="h4 text-surface-300-600" data-toc-ignore>From the airport</h4>
+		<br/>
 		<enhanced:img
 			src="$lib/images/jewel.jpeg"
 			alt="Jewel Changi Airport"

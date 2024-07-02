@@ -49,7 +49,7 @@
 					</p>
 				</div>
 				{#if speaker.name === 'Jeremy Wolfe'}
-				<p class="text-surface-600-300-token opacity-80">Jeremy is also giving a public lecture.<a href="https://www.yale-nus.edu.sg/events/the-gist-of-cancer-and-other-adventures-in-use-inspired-basic-research/" class="underline hover:no-underline">Learn more here.</a>
+				<p class="text-surface-600-300-token opacity-80">Jeremy is also giving a public lecture. <a href="https://www.yale-nus.edu.sg/events/the-gist-of-cancer-and-other-adventures-in-use-inspired-basic-research/" class="underline hover:no-underline">Learn more here.</a>
 </p>
 				{/if}
 			</div></a

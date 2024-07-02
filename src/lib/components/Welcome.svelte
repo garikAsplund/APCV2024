@@ -86,3 +86,16 @@
 	</ul>
 </div> -->
 <div></div>
+
+<!--
+	@component
+	A simple button component that can be clicked.
+
+	@example
+	```svelte
+	<Button label="Submit" />
+		<Button label="Cancel" />
+	</Button>
+	```
+-->
+

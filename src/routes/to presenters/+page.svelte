@@ -17,7 +17,7 @@
 
 			<h2 class="h2">Oral presentations</h2>
 			<div class="ml-4 space-y-4 text-surface-600-300-token">
-				<p>All lecture halls have both HDMI and VGA connectors.</p>
+				<p>All talk venues have HDMI and VGA connectors, USB-C adapters for them, clickers, and PC laptops.</p>
 				<h3 class="h3">Talks</h3>
 				<p class="mx-4">
 					Please prepare your talk to last for up to 12 minutes and allow 3 minutes for discussion.
@@ -45,8 +45,7 @@
 					cm).
 				</p>
 				<p>
-					More details about the poster sessions themselves will be provided soon. If you have any
-					questions or requests, please write us at apcv2024@gmail.com.
+					If you have any questions or requests, please write us at apcv2024@gmail.com.
 				</p>
 			</div>
 		</div>

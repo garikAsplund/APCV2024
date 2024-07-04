@@ -64,7 +64,7 @@
 </script>
 
 <header class="flex w-full justify-between items-baseline mt-12 mb-8">
-	<h2 class="h2 scroll-mt-24" id="Getting to NUS">Conference venue</h2>
+	<h2 class="h2 scroll-mt-5" id="Getting to NUS">Conference venue</h2>
 </header>
 
 <div class="mb-6 space-y-36 ml-4">
@@ -85,7 +85,7 @@
 			The conference will enjoy the use of these spaces, and the College is also a convenient
 			launching point for exploring other parts of Singapore.
 		</p>
-		<br/>
+		<br />
 		{#if $modeCurrent === true}
 			<enhanced:img src="$lib/images/yale-nus-banner.jpeg" alt="Yale-NUS campus" />
 		{:else}
@@ -95,7 +95,36 @@
 </div>
 
 <header class="flex w-full justify-between items-baseline mt-12 mb-8">
-	<h2 class="h2 scroll-mt-24" id="Getting here">Getting here</h2>
+	<h2 class="h2 scroll-mt-5" id="Food">Food</h2>
+</header>
+
+<div class="mb-6 space-y-36 ml-4">
+	<article class="text-left space-y-6 text-lg text-surface-600-300-token leading-loose">
+		<div>
+			<ul class="list-disc ml-4">
+				<li class="mt-2">
+					Catered buffet lunch as well as morning and afternoon coffee, tea, and snacks provided by
+					<a href="https://grain.com.sg/" class="underline hover:no-underline" target="_blank">Grain</a>.
+					Vegetarian and vegan options will be available, and Grain is Halal certified.
+				</li>
+				<li class="mt-2">
+					Closing Banquet at 
+					<a href="https://www.sirihouse.com/" class="underline hover:no-underline" target="_blank">Siri House</a>.
+					Buses will depart from the Oculus at 6:15-6:30 pm on 12 July. Buses will depart Siri House at 9:00 pm and 10:00 pm,
+					making stops at Holland Village MRT station, Buona Vista MRT station, Kent Ridge MRT station, and Prince George Park Residence.
+				</li>
+				<li class="mt-2">
+					There are also numerous food options around UTown. See 
+					<a href="https://uci.nus.edu.sg/oca/retail-dining/food-and-beverage-utown/" class="underline hover:no-underline" target="_blank">here</a>
+					for descriptions and hours.
+				</li>
+			</ul>
+		</div>
+	</article>
+</div>
+
+<header class="flex w-full justify-between items-baseline mt-12 mb-8">
+	<h2 class="h2 scroll-mt-5" id="Getting here">Getting here</h2>
 </header>
 
 <div class="mb-6 space-y-36 ml-4">
@@ -134,7 +163,7 @@
 			> bus stop on Clementi Road, serviced by buses 33, 151, 183, or 196.
 		</p>
 		<h4 class="h4 text-surface-300-600" data-toc-ignore>From the airport</h4>
-		<br/>
+		<br />
 		<enhanced:img
 			src="$lib/images/jewel.jpeg"
 			alt="Jewel Changi Airport"
@@ -161,10 +190,10 @@
 				style="display:inline-block;background-color:#fa9e0d;text-align:center;line-height:18px;border-radius: 9px 9px 9px 9px;color:#000000"
 				><span class="nowrap">&nbsp;</span><b>CC24</b><span class="nowrap">&nbsp;</span></span
 			>. The first train usually departs at 05:31 and the last train at 23:18.
-			</p>
-			<p>
-			Alternatively, a taxi or a ride-hailing service will get you to NUS in about 30 minutes and costs
-			S$25-S$45. These services are readily available 24 hours a day.
+		</p>
+		<p>
+			Alternatively, a taxi or a ride-hailing service will get you to NUS in about 30 minutes and
+			costs S$25-S$45. These services are readily available 24 hours a day.
 		</p>
 		<div class="flex w-full bg-scroll h-96 scrollbar-hide mb-36 mt-12 -z-10">
 			<iframe
@@ -214,7 +243,7 @@
 <hr class="opacity-50" /> -->
 
 <header class="flex w-full justify-between items-baseline mt-36 h-24">
-	<h2 class="h2 scroll-mt-24" id="The city">The city</h2>
+	<h2 class="h2 scroll-mt-5" id="The city">The city</h2>
 </header>
 
 <div class=" mb-6 space-y-36 ml-4">
@@ -251,7 +280,7 @@
 <hr class="opacity-50" />
 
 <header class="flex w-full justify-between items-baseline mt-36 h-24">
-	<h2 class="h2 scroll-mt-24" id="Where to stay">Where to stay</h2>
+	<h2 class="h2 scroll-mt-5" id="Where to stay">Where to stay</h2>
 </header>
 
 <div class=" mb-6 space-y-36 ml-4">
@@ -272,9 +301,9 @@
 			available.
 		</p>
 		<p class="text-surface-600-300-token leading-loose">
-			Rooms are air-conditioned and furnished with a single bed, a ceiling fan, a writing desk and chair, a bookshelf, a
-			wardrobe and a mobile pedestal. Shower and toilet facilities as well as kitchenettes are
-			located along the common corridors.
+			Rooms are air-conditioned and furnished with a single bed, a ceiling fan, a writing desk and
+			chair, a bookshelf, a wardrobe and a mobile pedestal. Shower and toilet facilities as well as
+			kitchenettes are located along the common corridors.
 		</p>
 		<ul class="mx-6 pb-6">
 			<li>

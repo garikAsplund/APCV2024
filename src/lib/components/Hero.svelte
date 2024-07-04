@@ -126,7 +126,7 @@
 				</div> -->
 				<!-- <button class="btn hover:variant-outline-primary" use:popup={popupAbstracts}> -->
 				<div>
-					<a href="https://easychair.org/smart-program/APCV2024/">
+					<a href="https://easychair.org/smart-program/APCV2024/" target="_blank">
 						<p class="mt-4 text-xl dark">
 							<span class="underline hover:no-underline">Online program</span>
 							<code class="code text-lg">available now</code>

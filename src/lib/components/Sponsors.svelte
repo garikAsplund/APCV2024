@@ -16,8 +16,8 @@
 		<a href="https://nus.edu.sg/" aria-label="Link to National University of Singapore"><NUS /></a>
 		<a href="https://n1labs.org/" aria-label="Link to N One Institute for Health"><N1 /></a>
 	</div>
-	<!-- <div>
-		<h2 class="h2 mb-4">Additional thanks to our academic sponsors</h2>
+	<div>
+		<h2 class="h2 mb-4 mt-36">Additional thanks to our academic sponsors</h2>
 		<hr class="h-0.5 bg-surface-800-100-token" />
 	</div>
 	<div class="flex flex-col md:flex-row md:justify-around items-center">
@@ -27,5 +27,5 @@
 "><NTU /></a
 		>
 		<a href="https://www.a-star.edu.sg/" aria-label="Link to A STAR"><ASTAR /></a>
-	</div> -->
+	</div>
 </div>

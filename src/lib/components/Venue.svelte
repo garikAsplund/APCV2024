@@ -104,18 +104,25 @@
 			<ul class="list-disc ml-4">
 				<li class="mt-2">
 					Catered buffet lunch as well as morning and afternoon coffee, tea, and snacks provided by
-					<a href="https://grain.com.sg/" class="underline hover:no-underline" target="_blank">Grain</a>.
-					Vegetarian and vegan options will be available, and Grain is Halal certified.
+					<a href="https://grain.com.sg/" class="underline hover:no-underline" target="_blank"
+						>Grain</a
+					>. Vegetarian and vegan options will be available, and Grain is Halal certified.
 				</li>
 				<li class="mt-2">
-					Closing Banquet at 
-					<a href="https://www.sirihouse.com/" class="underline hover:no-underline" target="_blank">Siri House</a>.
-					Buses will depart from the Oculus at 6:15-6:30 pm on 12 July. Buses will depart Siri House at 9:00 pm and 10:00 pm,
-					making stops at Holland Village MRT station, Buona Vista MRT station, Kent Ridge MRT station, and Prince George Park Residence.
+					Closing Banquet at
+					<a href="https://www.sirihouse.com/" class="underline hover:no-underline" target="_blank"
+						>Siri House</a
+					>. Buses will depart from the Oculus at 6:15-6:30 pm on 12 July. Buses will depart Siri
+					House at 9:00 pm and 10:00 pm, making stops at Holland Village MRT station, Buona Vista
+					MRT station, Kent Ridge MRT station, and Prince George Park Residence.
 				</li>
 				<li class="mt-2">
-					There are also numerous food options around UTown. See 
-					<a href="https://uci.nus.edu.sg/oca/retail-dining/food-and-beverage-utown/" class="underline hover:no-underline" target="_blank">here</a>
+					There are also numerous food options around UTown. See
+					<a
+						href="https://uci.nus.edu.sg/oca/retail-dining/food-and-beverage-utown/"
+						class="underline hover:no-underline"
+						target="_blank">here</a
+					>
 					for descriptions and hours.
 				</li>
 			</ul>
@@ -154,6 +161,17 @@
 				target="_blank">NUS Internal Shuttle Bus (ISB)</a
 			>. There are covered paths from the bus stop to Yale-NUS College.
 		</p>
+		<p>Video showing the route from the UTown bus stop to the Oculus in Yale-NUS College:</p>
+		<iframe
+			width="560"
+			height="315"
+			src="https://www.youtube.com/embed/_NUhzN97fj4?si=A8QckkdN24mf_6-l"
+			title="YouTube video player"
+			frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			referrerpolicy="strict-origin-when-cross-origin"
+			allowfullscreen
+		></iframe>
 		<p>
 			Alternatively, you can reach Yale-NUS College from other parts of Singapore by bus. The final
 			stop is the <a

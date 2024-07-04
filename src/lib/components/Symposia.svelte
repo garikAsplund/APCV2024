@@ -30,7 +30,7 @@
 				{
 					speaker: 'Yong Zhi Foo',
 					authors: '',
-					title: `The evolutionary basis of preferences for male facial masculinit.`,
+					title: `The evolutionary basis of preferences for male facial masculinity.`,
 				},
 				{
 					speaker: 'Colin Palmer',

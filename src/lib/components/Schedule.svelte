@@ -14,7 +14,7 @@
 			Full online program available <a href="https://easychair.org/smart-program/APCV2024/" target="_blank" class="underline hover:no-underline">here</a>. 
 		 </p>
 		 <p class="text-surface-600-300-token text-left leading-loose text-lg">
-			An A5 printout of this schedule will be given to you when you register at the conference. The other side of that printout contains information about getting to and around Yale-NUS College.
+			An A5 printout of this schedule will be given to you when you register at the conference. The other side of that printout contains information about getting to and around Yale-NUS College. It is available <a href="/location#Getting%20around" class="underline hover:no-underline">here</a>. 
 		 </p>
 		 <p class="text-surface-600-300-token text-left leading-loose text-lg">
 		 Schedule at a glance:

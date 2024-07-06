@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { modeCurrent } from '@skeletonlabs/skeleton';
-	import PhotoSwipe from '$lib/components/PhotoSwipe.svelte';
-	// import type { GalleryItem } from '$lib/components/PhotoSwipe.svelte';
+	import pdfUrl from '$lib/images/Getting Around Guide.pdf'
 	const images = [
 		{
 			largeURL:
@@ -64,7 +63,24 @@
 </script>
 
 <header class="flex w-full justify-between items-baseline mt-12 mb-8">
-	<h2 class="h2 scroll-mt-5" id="Getting to NUS">Conference venue</h2>
+	<h2 class="h2 scroll-mt-5" id="Getting around">Getting around</h2>
+</header>
+
+<div class="space-y-6 text-xl mx-6">
+	<article class="text-left space-y-6 text-lg text-surface-600-300-token leading-loose">
+
+	<p>
+		When you register at the conference, you will be given an A5 printout of the guide below. The
+		other side of that printout contains the schedule. It is available <a
+			href="/program#Schedule"
+			class="underline hover:no-underline">here</a
+		>.
+	</p>
+	<iframe src={pdfUrl} width="100%" height="666" title="PDF" />
+</div>
+
+<header class="flex w-full justify-between items-baseline mt-12 mb-8">
+	<h2 class="h2 scroll-mt-5" id="Conference venue">Conference venue</h2>
 </header>
 
 <div class="mb-6 space-y-36 ml-4">

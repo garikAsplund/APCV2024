@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { modeCurrent } from '@skeletonlabs/skeleton';
-	import pdfUrl from '$lib/images/Getting Around Guide.pdf'
+	import pdfUrl from '$lib/images/Getting Around Guide.pdf?url';
 	const images = [
 		{
 			largeURL:
@@ -68,15 +68,15 @@
 
 <div class="space-y-6 text-xl mx-6">
 	<article class="text-left space-y-6 text-lg text-surface-600-300-token leading-loose">
-
-	<p>
-		When you register at the conference, you will be given an A5 printout of the guide below. The
-		other side of that printout contains the schedule. It is available <a
-			href="/program#Schedule"
-			class="underline hover:no-underline">here</a
-		>.
-	</p>
-	<iframe src={pdfUrl} width="100%" height="666" title="PDF" />
+		<p>
+			When you register at the conference, you will be given an A5 printout of the guide below. The
+			other side of that printout contains the schedule. It is available <a
+				href="/program#Schedule"
+				class="underline hover:no-underline">here</a
+			>.
+		</p>
+		<iframe src={pdfUrl} width="100%" height="666" title="PDF" />
+	</article>
 </div>
 
 <header class="flex w-full justify-between items-baseline mt-12 mb-8">
@@ -177,7 +177,35 @@
 				target="_blank">NUS Internal Shuttle Bus (ISB)</a
 			>. There are covered paths from the bus stop to Yale-NUS College.
 		</p>
-		<p>Video showing the route from the UTown bus stop to the Oculus in Yale-NUS College:</p>
+		<p>
+			PDF slides (<a
+				class="underline hover:no-underline"
+				href="/UTown to Oculus.pdf"
+				target="_blank">dry weather</a
+			>,
+			<a
+				class="underline hover:no-underline"
+				href="/UTown to Oculus Wet Weather.pdf"
+				target="_blank">wet weather</a
+			>) and video of the route from Kent Ridge MRT station to the D2 bus stop towards UTown:
+		</p>
+		<iframe
+			width="560"
+			height="315"
+			src="https://www.youtube.com/embed/ihNmWT8b99c?si=00MhTQ79D5IRyUK8"
+			title="YouTube video player"
+			frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			referrerpolicy="strict-origin-when-cross-origin"
+			allowfullscreen
+		></iframe>
+		<p>
+			<a
+				class="underline hover:no-underline"
+				href="/Kent Ridge MRT to D2 Bus.pdf"
+				target="_blank">PDF slides</a
+			> and video of the route from the UTown bus stop to the Oculus in Yale-NUS College:
+		</p>
 		<iframe
 			width="560"
 			height="315"

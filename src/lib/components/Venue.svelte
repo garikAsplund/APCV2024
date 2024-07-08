@@ -177,17 +177,12 @@
 				target="_blank">NUS Internal Shuttle Bus (ISB)</a
 			>. There are covered paths from the bus stop to Yale-NUS College.
 		</p>
-		<p>
-			PDF slides (<a
+		<p><a
 				class="underline hover:no-underline"
-				href="/UTown to Oculus.pdf"
-				target="_blank">dry weather</a
-			>,
-			<a
-				class="underline hover:no-underline"
-				href="/UTown to Oculus Wet Weather.pdf"
-				target="_blank">wet weather</a
-			>) and video of the route from Kent Ridge MRT station to the D2 bus stop towards UTown:
+				href="/Kent Ridge MRT to D2 Bus.pdf"
+				target="_blank">PDF slides</a
+			> 
+			 and video of the route from Kent Ridge MRT station to the D2 bus stop towards UTown:
 		</p>
 		<iframe
 			width="560"
@@ -200,11 +195,16 @@
 			allowfullscreen
 		></iframe>
 		<p>
+			PDF slides (<a
+				class="underline hover:no-underline"
+				href="/UTown to Oculus.pdf"
+				target="_blank">dry weather</a
+			>,
 			<a
 				class="underline hover:no-underline"
-				href="/Kent Ridge MRT to D2 Bus.pdf"
-				target="_blank">PDF slides</a
-			> and video of the route from the UTown bus stop to the Oculus in Yale-NUS College:
+				href="/UTown to Oculus Wet Weather.pdf"
+				target="_blank">wet weather</a
+			>) and video of the route from the UTown bus stop to the Oculus in Yale-NUS College:
 		</p>
 		<iframe
 			width="560"

@@ -9,12 +9,6 @@
 		</h2>
 
 		<div class="space-y-6 text-xl text-left">
-			<!-- <p><code class="code md:text-xl text-lg">Check back soon for more details</code></p> -->
-			<!-- <hr class="h-0.5 bg-surface-800-100-token" /> -->
-			<!-- Split the oral into “talks” and “symposium presentations”. 
-			The talks are 12 minutes + 3 minutes for questions; 
-			the symposium presentations are 25 minutes + 5 minutes for questions. -->
-
 			<h2 class="h2">Oral presentations</h2>
 			<div class="ml-4 space-y-4 text-surface-600-300-token">
 				<p>All talk venues have HDMI and VGA connectors, USB-C adapters for them, clickers, and PC laptops.</p>
@@ -28,7 +22,6 @@
 					Please prepare your slides to last for up to 25 minutes and allow 5 minutes for questions.
 				</p>
 			</div>
-			<!-- <hr class="h-0.5 bg-surface-800-100-token" /> -->
 			<h2 class="h2">Poster presentations</h2>
 			<div class="ml-4 space-y-4 text-surface-600-300-token">
 				<p>

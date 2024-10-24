@@ -1,42 +1,6 @@
 <script lang="ts">
 	import { scroll } from '$lib/stores';
-	// import { popup } from '@skeletonlabs/skeleton';
-	// import type { PopupSettings } from '@skeletonlabs/skeleton';
 	import { imageNumber } from '$lib/stores';
-
-	// const popupSymposia: PopupSettings = {
-	// 	event: 'click',
-	// 	target: 'popupSymposia',
-	// 	// placement: 'bottom',
-	// 	middleware: {
-	// 		// 	// flip: {
-	// 		// 	// 	mainAxis: true,
-	// 		// 	// },
-	// 		autoPlacement: {
-	// 			allowedPlacements: ['bottom']
-	// 		}
-	// 		// 	// shift: {
-	// 		// 	// 	mainAxis: true,
-	// 		// 	// },
-	// 	}
-	// };
-
-	// const popupAbstracts: PopupSettings = {
-	// 	event: 'click',
-	// 	target: 'popupAbstracts',
-	// 	// placement: 'bottom',
-	// 	middleware: {
-	// 		// flip: {
-	// 		// 	mainAxis: true,
-	// 		// },
-	// 		autoPlacement: {
-	// 			allowedPlacements: ['bottom']
-	// 		}
-	// 		// shift: {
-	// 		// 	mainAxis: true,
-	// 		// },
-	// 	}
-	// };
 
 	function scrollToElement(element: string) {
 		document.getElementById(element)?.scrollIntoView({ block: 'center', behavior: 'smooth' });
@@ -70,61 +34,6 @@
 				<code class="code md:text-xl text-lg">National University of Singapore</code>
 			</p>
 			<div class="flex flex-col md:text-lg lg:text-xl space-y-1">
-				<!-- <div
-					class="card z-10 p-6 md:w-3/4 lg:w-7/12 xl:w-1/2 space-y-3 text-left text-primary-900-50-token"
-					data-popup="popupSymposia"
-				>
-					<div class="arrow bg-surface-100-800-token" />
-					<p>
-						We welcome original research work on all aspects of vision, multisensory perception,
-						decision and action, and related topics.
-					</p>
-					<p>
-						Symposia should be 90-120 minutes in length. Number of speakers and length of each talk
-						is not limited but 20-30 minute talks with 5 minute discussions is preferred.
-					</p>
-					<p>
-						Please send proposals to <code class="code text-lg">apcv2024@gmail.com</code> along with:
-					</p>
-					<ul class="text-base md:mx-24">
-						<li>Title of the symposium</li>
-						<li>Organizers and communication addresses</li>
-						<li>Symposium abstract — 200-300 words</li>
-						<li>Speakers and titles — CV, reference lists</li>
-						<li>Program details — Individual talk abstracts</li>
-						<li>Any additional information or requests</li>
-					</ul>
-					<p>
-						Final date for symposium proposals is <code class="code text-lg">February 29</code>.
-					</p>
-				</div> -->
-				<!-- <button
-					class="btn variant-outline-secondary hover:variant-outline-primary"
-					use:popup={popupSymposia}> -->
-
-				<!-- </button> -->
-				<!-- <div
-					class="card z-10 p-6 md:w-3/4 lg:w-7/12 xl:w-1/2 space-y-3 text-left text-primary-900-50-token"
-					data-popup="popupAbstracts"
-				>
-					<div class="arrow bg-surface-100-800-token" />
-					<p>
-						We welcome original research work on all aspects of vision. We invite contributions as
-						talks or posters.
-					</p>
-					<p>
-						Abstracts are limited to 200 words — no images, no references. Abstracts will be
-						published online in <code class="code text-lg"
-							><a href="https://journals.sagepub.com/home/ipe" target="_blank">i-Perception</a
-							></code
-						>.
-					</p>
-					<p>Before submitting an abstract, participants must complete conference registration.</p>
-					<p>
-						Final date for abstract submission is <code class="code text-lg">March 31</code>.
-					</p>
-				</div> -->
-				<!-- <button class="btn hover:variant-outline-primary" use:popup={popupAbstracts}> -->
 				<div>
 					<a href="https://easychair.org/smart-program/APCV2024/" target="_blank">
 						<p class="mt-4 text-xl dark">
@@ -160,23 +69,11 @@
 						Thank you for your submissions.
 					</p> -->
 				</div>
-				<!-- <div>
-					<p class="mt-4 text-xl dark">
-						<a href={'#'} on:click|preventDefault={() => scrollToElement('symposia')}>
-							<span class="underline hover:no-underline">Call for symposia</span> <code class="code text-lg">closed</code>
-						</a>
-					</p>
-				</div> -->
-				<!-- </button
-				> -->
 
 				<div>
 					<p class="mt-4 text-xl dark"><code class="code text-lg">apcv2024@gmail.com</code></p>
 				</div>
-				<!-- </button> -->
 			</div>
-			<!-- <p>More information soon</p> -->
-			<!-- <button class="btn btn-lg variant-outline-primary hover:variant-outline-tertiary text-2xl">Register now!</button> -->
 		</div>
 		<span style="opacity: {1 - Math.max(0, $scroll / 400)}" class=" -translate-y-6">
 			<svg

@@ -1,7 +1,16 @@
 <script lang="ts">
 	import '../app.postcss';
 	import { AppShell, storePopup, initializeStores, Drawer } from '@skeletonlabs/skeleton';
-	import { computePosition, autoUpdate, flip, shift, offset, arrow, autoPlacement, detectOverflow	 } from '@floating-ui/dom';
+	import {
+		computePosition,
+		autoUpdate,
+		flip,
+		shift,
+		offset,
+		arrow,
+		autoPlacement,
+		detectOverflow
+	} from '@floating-ui/dom';
 	import { dev } from '$app/environment';
 	import { inject } from '@vercel/analytics';
 	import { page } from '$app/stores';
@@ -16,7 +25,16 @@
 	initializeStores();
 
 	inject({ mode: dev ? 'development' : 'production' });
-	storePopup.set({ computePosition, autoUpdate, autoPlacement, flip, shift, offset, arrow, detectOverflow });
+	storePopup.set({
+		computePosition,
+		autoUpdate,
+		autoPlacement,
+		flip,
+		shift,
+		offset,
+		arrow,
+		detectOverflow
+	});
 </script>
 
 <svelte:head>
@@ -42,18 +60,13 @@
 	</svelte:fragment>
 	<svelte:fragment slot="sidebarLeft">
 		<!-- Left Sidebar -->
-		{#if $page.data.path.includes('Program')}
-			<div class="hidden md:block lg:pl-12 xl:pl-24 py-4 md:py-6 lg:py-8">
-				<!-- <p class="font-bold p-4 lg:p-6 pb-4 lg:pb-2 text-2xl lg:text-4xl">Program</p> -->
-				<!-- <ProgramNav /> -->
-			</div>
+		{#if $page.data?.path?.includes('Program')}
+			<div class="hidden md:block lg:pl-12 xl:pl-24 py-4 md:py-6 lg:py-8"></div>
 		{/if}
 	</svelte:fragment>
 	<!-- Page Route Content -->
 	<slot />
 	<svelte:fragment slot="pageFooter">
-		<!-- {#if !$page.data.path.includes('Program')} -->
-			<Footer />
-		<!-- {/if} -->
+		<Footer />
 	</svelte:fragment>
 </AppShell>

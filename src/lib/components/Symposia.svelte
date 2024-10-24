@@ -1,8 +1,6 @@
 <script lang="ts">
 	import Symposium from './Symposium.svelte';
 	import type { Symposiums } from '$lib/types';
-	import Tab from './Tab.svelte';
-	import TabGroup from './TabGroup.svelte';
 
 	const symposia: Symposiums[] = [
 		{
@@ -194,28 +192,6 @@ domains, integrating perception and action.`,
 </header>
 
 <div class="w-full gap-4">
-	<!-- <TabGroup>
-		<Tab bind:group={day} name="day1" value={1}>Day 1</Tab>
-		<Tab bind:group={day} name="day2" value={2}>Day 2</Tab>
-		<Tab bind:group={day} name="day3" value={3}>Day 3</Tab>
-		<svelte:fragment slot="panel">
-			<div class=" overscroll-y-auto ">
-				{#if day === 1}
-					{#each dayOne as symposium}
-						<Symposium {symposium} />
-					{/each}
-				{:else if day === 2}
-					{#each dayTwo as symposium}
-						<Symposium {symposium} />
-					{/each}
-				{:else if day === 3}
-					{#each dayThree as symposium}
-						<Symposium {symposium} />
-					{/each}
-				{/if}
-			</div>
-		</svelte:fragment>
-	</TabGroup> -->
 	{#each symposia as symposium}
 		<Symposium {symposium} />
 	{/each}

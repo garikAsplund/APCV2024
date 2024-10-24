@@ -1,38 +1,8 @@
 <script lang="ts">
 	import { modeCurrent } from '@skeletonlabs/skeleton';
 	import pdfUrl from '$lib/images/Getting Around Guide.pdf?url';
-	const images = [
-		{
-			largeURL:
-				'https://www.yale-nus.edu.sg/college-life/wp-content/uploads/sites/28/2022/01/TCT-new-pic-3-scaled.jpg',
-			thumbnailURL:
-				'https://www.yale-nus.edu.sg/college-life/wp-content/uploads/sites/28/2022/01/TCT-new-pic-3-scaled.jpg',
-			width: '100%',
-			height: 'auto'
-		}
-		// {
-		// 	largeURL: 'https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg',
-		// 	thumbnailURL: 'https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg',
-		// 	width: 1669,
-		// 	height: 2500
-		// },
-		// {
-		// 	largeURL: 'https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg',
-		// 	thumbnailURL: 'https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg',
-		// 	width: 2500,
-		// 	height: 1666
-		// }
-	];
-
-	// import campusImageDark from '$lib/images/yale-nus.jpeg';
 
 	const hotels = [
-		// {
-		// 	name: 'Prince George’s Park Residence (PGPR)',
-		// 	website: 'https://uci.nus.edu.sg/ceu/student-hostel/pgpr/',
-		// 	address: '',
-		// 	info: '$ On campus hostel with standard rooms, common corridor, no A/C'
-		// },
 		{
 			name: 'Fragrance Hotel',
 			website: 'https://www.fragrancehotel.com/our-hotels/fragrance-oceanview.html',
@@ -57,8 +27,6 @@
 			address: '50 Telok Blangah Road',
 			info: '$$$ 45 minutes on public transit or 15 minutes by car'
 		}
-
-		// { name: '', website: '', address: ''},
 	];
 </script>
 
@@ -96,7 +64,6 @@
 			and Yale University in 2011. Its beautiful facilities include a performance hall, lecture spaces,
 			a black box theatre, a library, and a multipurpose hall—all built around a green space and pond.
 		</p>
-		<!-- <PhotoSwipe {images} galleryID="my-test-gallery" /> -->
 		<p>
 			The conference will enjoy the use of these spaces, and the College is also a convenient
 			launching point for exploring other parts of Singapore.
@@ -272,37 +239,6 @@
 	</article>
 </div>
 <hr class="opacity-50" />
-<!-- 
-<header class="flex w-full justify-between items-baseline mt-36 h-24">
-	<h2 class="h2 scroll-mt-24" id="Lecture halls">Lecture halls</h2>
-</header>
-
-<div class=" mb-6 space-y-36 ml-4">
-	<article class="text-left text-lg">
-		<p class="text-surface-600-300-token leading-loose">
-			Talks and poster sessions will be held in the Faculty of Science and School of Medicine.
-			<br />
-			LT27 as seen from Lower Kent Ridge Road:
-		</p>
-		<img
-			class="mb-24"
-			src="https://phylorf.org/wp-content/uploads/2023/02/NUS_SoC_LT27.jpg"
-			alt="LT27 as seen from Lower Kent Ridge Road"
-		/>
-		<div class="flex w-full bg-scroll h-96 scrollbar-hide mb-3 -z-10">
-			<iframe
-				src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6579.5327889352475!2d103.77745238654909!3d1.2956608320922984!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1a51363c2731%3A0xc4627bf2b73714bf!2sMD6%20-%20Centre%20for%20Translational%20Medicine!5e0!3m2!1sen!2sus!4v1712206289338!5m2!1sen!2sus"
-				class="w-full saturate-100 contrast-125"
-				style="border:0;"
-				allowfullscreen=""
-				loading="lazy"
-				title="Map of Singapore and NUS"
-				referrerpolicy="no-referrer-when-downgrade"
-			></iframe>
-		</div>
-	</article>
-</div>
-<hr class="opacity-50" /> -->
 
 <header class="flex w-full justify-between items-baseline mt-36 h-24">
 	<h2 class="h2 scroll-mt-5" id="The city">The city</h2>
@@ -310,14 +246,6 @@
 
 <div class=" mb-6 space-y-36 ml-4">
 	<article class="text-left space-y-6 text-lg text-surface-600-300-token leading-loose">
-		<!-- {#if $modeCurrent === true}
-			<img src="" alt="" />
-		{:else}
-			<img
-				src="https://www.yale-nus.edu.sg/wp-content/uploads/2016/07/Banner-Campus-1024x441.jpg"
-				alt="Singapore"
-			/>
-		{/if} -->
 		<p>
 			Singapore is a vibrant city-state located just north of the equator at the tip of the Malay
 			peninsula. The island is only 734 square kilometers, yet contains some five million people.
@@ -347,12 +275,6 @@
 
 <div class=" mb-6 space-y-36 ml-4">
 	<article class="text-left text-lg space-y-6">
-		<!-- {
-			name: 'Prince George’s Park Residence (PGPR)',
-			website: 'https://uci.nus.edu.sg/ceu/student-hostel/pgpr/',
-			address: '',
-			info: '$ On campus hostel with standard rooms, common corridor, no A/C'
-		}, -->
 		<h4 class="h4 text-surface-300-600" data-toc-ignore>University housing</h4>
 		<p class="text-surface-600-300-token leading-loose">
 			There is limited university housing available at a reasonable rate. A single room is S$57 per

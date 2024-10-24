@@ -46,7 +46,6 @@
 	<hr class="h-0.5 bg-surface-800-100-token" />
 	{#each Object.entries(committee) as [title, content]}
 		<div class="m-6">
-			<!-- <h3 class="h3 mb-3">{title}</h3> -->
 			{#each content as member}
 				<p class="text-surface-600-300-token text-xl">
 					{#if member.website}

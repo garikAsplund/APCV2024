@@ -181,7 +181,8 @@ and Mickey Goldberg&#39;s labs.)`,
 			name: 'Li Zhaoping',
 			affiliation: 'Professor, Head of Sensory and Sensorimotor Systems',
 			school: 'Max Planck Institute for Biological Cybernetics',
-			title: 'VBC: the V1 Saliency Hypothesis, the Attentional Bottleneck, and the Central-Peripheral Dichotomy',
+			title:
+				'VBC: the V1 Saliency Hypothesis, the Attentional Bottleneck, and the Central-Peripheral Dichotomy',
 			abstract: `The V1 Saliency Hypothesis (V1SH) holds that neural responses in primary visual
 cortex (V1) to visual inputs form a bottom-up saliency map of the visual field. V1SH
 has received convergent experimental support: e.g., V1 activity to a visual location is
@@ -247,12 +248,8 @@ control plays across cognitive, social, and emotional domains.`,
 <header class="flex w-full justify-between items-baseline mt-12 mb-8">
 	<h2 class="h2 scroll-mt-5" id="Keynotes">Keynote speakers</h2>
 </header>
-<div class="flex flex-row-reverse justify-center gap-24 mr-4">
-	<!-- <aside class="hidden lg:block w-48"> -->
-	<!-- Table of Contents -->
-	<!-- <TableOfContents class="sticky top-12">On the Page</TableOfContents> -->
-	<!-- </aside> -->
 
+<div class="flex flex-row-reverse justify-center gap-24 mr-4">
 	<div class="w-full overflow-hidden text-token grid grid-cols-1">
 		{#each speakers as speaker (speaker.slot)}
 			<div id={speaker.slot.toString()}>

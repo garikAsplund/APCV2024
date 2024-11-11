@@ -18,6 +18,23 @@
 	import type { ComponentEvents } from 'svelte';
 	import { scroll } from '$lib/stores';
 
+	let pageTitle = 'Home';
+
+	function capitalizeFirstChar(str: string) {
+		return str.charAt(0).toUpperCase() + str.slice(1);
+	}
+
+	$: {
+		const path = $page.url.pathname.split('/').pop();
+		if (path === 'to-presenters') {
+			pageTitle = 'To Presenters';
+		} else if (path === 'abstract-submission') {
+			pageTitle = 'Abstract Submission';
+		} else {
+			pageTitle = path ? capitalizeFirstChar(path) : 'Home';
+		}
+	}
+
 	function scrollHandler(event: ComponentEvents<AppShell>['scroll']) {
 		$scroll = event.currentTarget.scrollTop;
 	}
@@ -38,7 +55,7 @@
 </script>
 
 <svelte:head>
-	<title>APCV24 | {$page.data.path ? $page.data.path : 'Home'}</title>
+	<title>APCV24 | {pageTitle}</title>
 	<meta
 		name="description"
 		content="The 16th Asia Pacific Conference on Vision (APCV) will be held in Singapore from 10-12 July 2024. 

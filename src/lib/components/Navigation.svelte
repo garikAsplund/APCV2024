@@ -16,27 +16,28 @@
 <nav class="list-nav w-full flex justify-center md:p-2 lg:px-6 lg:text-xl">
 	<ul class="w-full flex flex-col md:flex-row md:justify-around">
 		{#each [
-			'Program',
-			'Registration',
-			'Abstract Submission', 
-			'To Presenters', 
-			'Location', 
-			] as item}
+			{ name: 'Program', path: '/program' },
+			{ name: 'Registration', path: '/registration' },
+			{ name: 'Abstract Submission', path: '/abstract-submission' },
+			{ name: 'To Presenters', path: '/to-presenters' },
+			{ name: 'Location', path: '/location' }
+		] as item}
 			<li class="md:inline-flex flex justify-start w-full">
 			<a	
-					class="btn btn-lg w-full text-xl md:text-lg hover:bg-primary-600/20 border-surface-800-100-token"
-					href="/{formatUrl(item)}"
-					on:click={drawerClose}
-					class:border-b-2={$page.data?.path?.includes(formatUrl(item)) || ($page.data?.path === "to-presenters" && item === "To Presenters") || ($page.data?.path === "abstract-submission" && item === "Abstract Submission")}
-				>
-					{item}
-				</a>
+				class="btn btn-lg w-full text-xl md:text-lg hover:bg-primary-600/20 border-surface-800-100-token"
+				href={item.path}
+				on:click={drawerClose}
+				class:border-b-2={$page.data?.path?.includes(item.path)}
+			>
+				{item.name}
+			</a>
 			</li>
-			{#if item === 'Program'}
+			{#if item.name === 'Program'}
 				<div class="md:hidden w-full px-6 text-lg text-primary-200-token">
 					<!-- <ProgramNav /> -->
 				</div>
 			{/if}
 		{/each}
 	</ul>
-</nav>
+   </nav>
+   

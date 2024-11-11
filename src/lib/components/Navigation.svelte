@@ -2,11 +2,14 @@
 	import { page } from '$app/stores';
 	import { getDrawerStore } from '@skeletonlabs/skeleton';
 	import ProgramNav from './ProgramNav.svelte';
-
 	const drawerStore = getDrawerStore();
-
 	function drawerClose(): void {
 		drawerStore.close();
+	}
+
+	// Add this helper function to convert spaces to hyphens
+	function formatUrl(item: string): string {
+		return item.toLowerCase().replace(/\s+/g, '-');
 	}
 </script>
 
@@ -20,11 +23,11 @@
 			'Location', 
 			] as item}
 			<li class="md:inline-flex flex justify-start w-full">
-				<a
+			<a	
 					class="btn btn-lg w-full text-xl md:text-lg hover:bg-primary-600/20 border-surface-800-100-token"
-					href="/{item.toLowerCase()}"
+					href="/{formatUrl(item)}"
 					on:click={drawerClose}
-					class:border-b-2={$page.data?.path?.includes(item) || ($page.data?.path === "To presenters" && item === "To Presenters") || ($page.data?.path === "Abstract submission" && item === "Abstract Submission")}
+					class:border-b-2={$page.data?.path?.includes(formatUrl(item)) || ($page.data?.path === "to-presenters" && item === "To Presenters") || ($page.data?.path === "abstract-submission" && item === "Abstract Submission")}
 				>
 					{item}
 				</a>

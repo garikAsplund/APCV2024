@@ -27,7 +27,7 @@
 				class="btn btn-lg w-full text-xl md:text-lg hover:bg-primary-600/20 border-surface-800-100-token"
 				href={item.path}
 				on:click={drawerClose}
-				class:border-b-2={$page.data?.path?.includes(item.path)}
+				class:border-b-2={$page.url.pathname.includes(item.path)}
 			>
 				{item.name}
 			</a>

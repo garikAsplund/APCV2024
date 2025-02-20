@@ -70,9 +70,9 @@
 					</p> -->
 				</div>
 
-				<div>
+				<!-- <div>
 					<p class="mt-4 text-xl dark"><code class="code text-lg">apcv2024@gmail.com</code></p>
-				</div>
+				</div> -->
 			</div>
 		</div>
 		<span style="opacity: {1 - Math.max(0, $scroll / 400)}" class=" -translate-y-6">

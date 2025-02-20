@@ -40,9 +40,9 @@
 				<p>
 					In the conference program, your title is preceded by a number in brackets. That number corresponds to the posterboard to which you are assigned. Please find the correct posterboard on the morning of your poster presentation, then affix your poster to it using the supplied adhesives.
 				</p>
-				<p>
+				<!-- <p>
 					If you have any questions or requests, please write us at apcv2024@gmail.com.
-				</p>
+				</p> -->
 			</div>
 		</div>
 	</div>

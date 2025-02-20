@@ -56,11 +56,11 @@
 			</div>
 		</div>
 	</div>
-	<p class="text-surface-600-300-token pb-24">
+	<!-- <p class="text-surface-600-300-token pb-24">
 		If you are interested in additional banquet tickets, please contact <code class="code text-lg"
 			>apcv2024@gmail.com</code
 		>
-	</p>
+	</p> -->
 </div>
 <article class="text-left space-y-6 text-lg text-surface-600-300-token leading-loose">
 <h4 class="h4 text-surface-300-600" data-toc-ignore>Cancellation policy</h4>

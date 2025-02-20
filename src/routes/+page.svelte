@@ -3,6 +3,7 @@
 	import Welcome from '$lib/components/Welcome.svelte';
 	import Hero from '$lib/components/Hero.svelte';
 	import Committees from '$lib/components/Committees.svelte';
+	import Thanks from '$lib/components/Thanks.svelte';
 </script>
 
 <Hero />
@@ -11,4 +12,5 @@
 	<Welcome />
 	<Sponsors />
 	<Committees />
+	<Thanks />
 </div>

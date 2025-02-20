@@ -13,14 +13,12 @@
 <svg
 	xmlns="http://www.w3.org/2000/svg"
 	xmlns:xlink="http://www.w3.org/1999/xlink"
-	class="h-96 w-96 dark:hidden"
-	height="800"
-	width="1200"
+	class="h-48 w-auto dark:hidden"
 	viewBox="-71.10975 -54.0925 616.2845 324.555"
 	><path
 		fill="#1D427C"
 		d="M204.756 143.92h.068v-17.889h3.185v22.22h-4.072l-10.064-18.267h-.063v18.266h-3.18v-22.219h4.328z"
-	/><g transform="translate(-.012 -.852)"
+	/><g 
 		><defs><path id="a" d="M0 0h474.837v217.59H0z" /></defs><clipPath id="b"
 			><use height="100%" width="100%" overflow="visible" xlink:href="#a" /></clipPath
 		><path

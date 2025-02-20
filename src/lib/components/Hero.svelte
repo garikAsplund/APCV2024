@@ -37,42 +37,26 @@
 				<div>
 					<a href="https://easychair.org/smart-program/APCV2024/" target="_blank">
 						<p class="mt-4 text-xl dark">
-							<span class="underline hover:no-underline">Online program</span>
+							<span class="underline underline-offset-4 hover:no-underline">Online program</span>
 							<code class="code text-lg">available now</code>
 							<!-- through 31 May (early)
 						and 30 June (normal) -->
 						</p>
 					</a>
 				</div>
-					<div>
-					<!-- <a href="https://easychair.org/conferences/?conf=apcv2024" target="_blank"> -->
-						<p class="mt-4 text-xl dark">
-							<span>Conference registration</span>
-							<code class="code text-lg">closed</code>
-							<!-- through 31 May (early)
-						and 30 June (normal) -->
-						</p>
-					<!-- </a> -->
-					<!-- <p class="text-base mt-4 opacity-80">
-						Standard registration until 30 June
-					</p> -->
-				</div>
-				<div>
-					<p class="mt-4 text-xl dark">
-						<!-- <a href="/abstract submission"> -->
-							Call for abstracts
-							<code class=" code text-lg">closed</code>
-						<!-- </a> -->
-					</p>
-
-					<!-- <p class="text-base mt-4 opacity-80">
-						Thank you for your submissions.
-					</p> -->
-				</div>
+				
 
 				<!-- <div>
 					<p class="mt-4 text-xl dark"><code class="code text-lg">apcv2024@gmail.com</code></p>
 				</div> -->
+				<div>
+					<p class="mt-4 text-xl dark">
+						For the 2025 APCV
+						<a href="https://conference.unsw.edu.au/en/epc-apcv-2025" target="_blank" class="underline underline-offset-4 hover:no-underline">
+							click here
+						</a>
+					</p>
+				</div>
 			</div>
 		</div>
 		<span style="opacity: {1 - Math.max(0, $scroll / 400)}" class=" -translate-y-6">

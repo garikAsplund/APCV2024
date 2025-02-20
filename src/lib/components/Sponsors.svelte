@@ -14,7 +14,7 @@
 			<h2 class="h2 mb-4">Thank you to our hosting institutions</h2>
 			<hr class="h-0.5 bg-surface-800-100-token" />
 		</div>
-		<div class="flex flex-col lg:flex-row w-full lg:justify-center items-center gap-16 lg:gap-36">
+		<div class="flex flex-col lg:flex-row w-full lg:justify-center items-center gap-16 xl:gap-36">
 			<a href="https://www.yale-nus.edu.sg/" aria-label="Link to Yale NUS College"><YaleNUS /></a>
 			<a href="https://nus.edu.sg/" aria-label="Link to National University of Singapore">
 				<NUS />
@@ -30,7 +30,7 @@
 			<hr class="h-0.5 bg-surface-800-100-token" />
 		</div>
 		<div
-			class="flex flex-col lg:flex-row w-full lg:justify-center items-center gap-16 lg:gap-16 xl:gap-36"
+			class="flex flex-col lg:flex-row w-full lg:justify-center items-center gap-16 xl:gap-36"
 		>
 			<a
 				href="https://www.ntu.edu.sg/"

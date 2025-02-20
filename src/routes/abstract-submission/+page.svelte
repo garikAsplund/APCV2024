@@ -11,6 +11,17 @@
 		<div class="space-y-6 text-xl text-left">
 			<div class="ml-4 space-y-4 text-surface-600-300-token">
 				<p>Abstract submission has now closed. Thank you for your submissions.</p>
+				<p>
+					Abstracts for talks (12 minutes + 3 minutes for questions) or posters require only a
+					simple submission, consisting of:
+				</p>
+				<ul class="mx-6 text-base">
+					<li>Author details</li>
+					<li>Abstract title</li>
+					<li>Abstract text | <span class="text-sm">up to 300 words</span></li>
+					<li>Keywords to help with program construction</li>
+					<li>Your preference for giving a talk or presenting a poster</li>
+				</ul>
 			</div>
 		</div>
 	</div>

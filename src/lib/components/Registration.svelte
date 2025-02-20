@@ -1,12 +1,13 @@
 <article class="text-left space-y-6 text-lg text-surface-600-300-token leading-loose">
 	<p class="text-left">
-	Registration is now open and can be completed <a
+	Registration is now closed.
+	 <!-- and can be completed <a
 		href="https://easychair.org/conferences/?conf=apcv2024"
 		class="underline hover:no-underline">here</a
 	>. Payments are now being collected. After registration, you will receive an e-mail with a link to
 	NUS’ payment portal and instructions about which options to select there. This payment e-mail will
 	arrive within a day of new registrations in most cases, though it will come later for those who
-	requested University housing.
+	requested University housing. -->
 </p>
 <p class="text-left">
 	Registration fees finance the rent of space, poster panels, AV support, furnishings, coffee

@@ -15,11 +15,11 @@
 			<hr class="h-0.5 bg-surface-800-100-token" />
 		</div>
 		<div class="flex flex-col lg:flex-row w-full lg:justify-center items-center gap-16 xl:gap-36">
-			<a href="https://www.yale-nus.edu.sg/" aria-label="Link to Yale NUS College"><YaleNUS /></a>
-			<a href="https://nus.edu.sg/" aria-label="Link to National University of Singapore">
+			<a href="https://www.yale-nus.edu.sg/" aria-label="Link to Yale NUS College" class="hover:opacity-75 transition-all duration-500"><YaleNUS /></a>
+			<a href="https://nus.edu.sg/" aria-label="Link to National University of Singapore" class="hover:opacity-75 transition-all duration-500">
 				<NUS />
 			</a>
-			<a href="https://n1labs.org/" aria-label="Link to N One Institute for Health"><N1 /></a>
+			<a href="https://n1labs.org/" aria-label="Link to N One Institute for Health" class="hover:opacity-75 transition-all duration-500"><N1 /></a>
 		</div>
 	</div>
 
@@ -35,11 +35,11 @@
 			<a
 				href="https://www.ntu.edu.sg/"
 				aria-label="Link to Nanyang Technological University"
-				class=""><NTU /></a
+				class="hover:opacity-75 transition-all duration-500"><NTU /></a
 			>
 			<div class="w-64 h-30 flex-shrink-0">
 				<!-- Fixed container for ASTAR -->
-				<a href="https://www.a-star.edu.sg/" aria-label="Link to A STAR" class="block h-full mb-8">
+				<a href="https://www.a-star.edu.sg/" aria-label="Link to A STAR" class="block h-full mb-8 hover:opacity-75 transition-all duration-500">
 					<ASTAR />
 				</a>
 			</div>
